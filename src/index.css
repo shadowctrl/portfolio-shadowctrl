@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald&family=Poppins&family=Source+Code+Pro&family=Libre+Barcode+128+Text&family=Fira+Code&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@font-face {
+  font-family: mars;
+  src: url(/fonts/mars/Mars.ttf);
+}
+
+html, body{
+    /* overflow-x: hidden; */
+    scroll-behavior: smooth;
+    
+  }
+  
+  *{
+    margin: 0;
+    padding: 0;
+    font-family: poppins;
+  background-color: #282C33;
+  }
+  
