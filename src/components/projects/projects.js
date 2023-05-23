@@ -10,7 +10,7 @@ const projects = [
   },
   {
     image: "/images/csi.png",
-    languages: "Mern Stack",
+    languages: "Reactjs, Html, Css, Javascript",
     title: "CSI International Conference",
     description: "NGTCA 2023 website",
     live: "https://icngt2023.org",

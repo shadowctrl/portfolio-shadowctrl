@@ -56,11 +56,12 @@ const Parent = styled.div`
 const Img = styled.div`
   display: flex;
   align-items: center;
-  /* img {
-    width: 1.5vw;
-  } */
+  img {
+    width: 1.2vw;
+  }
   h1 {
-    font-size: 0.8vw;
+    padding-top: 0.5vh;
+    font-size: 1vw;
     margin-left: 0.4vw;
     color: #c778dd;
     font-family: mars;
