@@ -4,7 +4,7 @@ import anonymous from "../../assets/anonymous.png";
 import FormatQuoteIcon from "@mui/icons-material/FormatQuote";
 import Project from "../projects/project.jsx";
 import Skills from "../skills/skills";
-
+import Aboutme from "../aboutme/aboutme";
 const handleContact = () => {
   window.open("/contact", "_blank");
 };
@@ -42,6 +42,7 @@ const Main = () => {
         <SideBox />
         <Project />
         <Skills />
+        <Aboutme />
       </Main2>
     </Parent>
   );
@@ -127,7 +128,7 @@ const Main2 = styled.div`
 const FormatQuoteTop = styled.div`
   color: #bdb7b7;
   position: absolute;
-  margin-left: 27vw;
+  margin-left: 13vw;
   margin-top: -1.5vh;
 `;
 const Quote = styled.div`
@@ -136,17 +137,17 @@ const Quote = styled.div`
   align-items: center;
   color: white;
   font-size: 2vw;
-  margin-top: 2vh;
+  margin-top: -20vh;
   border: 1px solid #bdb7b7;
-  margin-left: 23vw;
-  margin-right: 23vw;
+  margin-left: 10vw;
+  margin-right: 35vw;
   padding: 1vh;
 `;
 
 const FormatQuoteBottom = styled.div`
   color: #bdb7b7;
   position: absolute;
-  margin-left: 71vw;
+  margin-left: 60vw;
   margin-top: -1.5vh;
 `;
 
@@ -154,6 +155,6 @@ const SideBox = styled.div`
   color: white;
   border: 1px solid #bdb7b7;
   padding: 2vw;
-  margin-top: 5vh;
+  margin-top: 10vh;
   margin-left: 90vw;
 `;

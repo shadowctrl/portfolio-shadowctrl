@@ -21,7 +21,7 @@ const Skills = () => {
         />
         <Skill>
           <Languages>
-            <SkillTitle> Languages</SkillTitle>
+            <SkillTitle> LANGUAGES</SkillTitle>
 
             <ul>
               <li>NodeJS</li>
@@ -29,19 +29,21 @@ const Skills = () => {
               <li>Python3</li>
               <li>Html</li>
               <li>Css</li>
+              <li>MongoDB</li>
             </ul>
           </Languages>
 
           <Databases>
-            <SkillTitle>Databases</SkillTitle>
+            <SkillTitle>FRAMEWORKS</SkillTitle>
             <ul>
-              <li>MongoDB</li>
-              <li>MySQL</li>
+              <li>TAILWIND</li>
+              <li>BOOTSTRAP</li>
+              <li>METASPLOIT</li>
             </ul>
           </Databases>
 
           <Os>
-            <SkillTitle>Operating Systems</SkillTitle>
+            <SkillTitle>OPERATING SYSTEMS</SkillTitle>
             <ul>
               <li>Kali Linux</li>
               <li>Parrot Security</li>
@@ -52,12 +54,13 @@ const Skills = () => {
           </Os>
 
           <Other>
-            <SkillTitle>Other</SkillTitle>
+            <SkillTitle>OTHERS</SkillTitle>
             <ul>
               <li>Cyber Security</li>
               <li>Networking</li>
               <li>Discord API</li>
               <li>Google API</li>
+              <li>Instagram API</li>
               <li>Linux System Administration</li>
             </ul>
           </Other>
@@ -104,6 +107,7 @@ const Skill = styled.div`
   margin-top: 5vh;
   margin-left: 5vw;
   color: white;
+  font-size: 1.1vw;
   display: grid;
   grid-column-gap: 5vw;
   grid-row-gap: 5vh;
