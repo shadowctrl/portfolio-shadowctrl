@@ -5,6 +5,9 @@ import FormatQuoteIcon from "@mui/icons-material/FormatQuote";
 import Project from "../projects/project.jsx";
 import Skills from "../skills/skills";
 import Aboutme from "../aboutme/aboutme";
+import Contacts from "../contacts/contacts";
+import Footer from "../footer/footer";
+
 const handleContact = () => {
   window.open("/contact", "_blank");
 };
@@ -43,7 +46,9 @@ const Main = () => {
         <Project />
         <Skills />
         <Aboutme />
+        <Contacts />
       </Main2>
+      <Footer />
     </Parent>
   );
 };
@@ -109,12 +114,13 @@ const Box = styled.div`
 const Contact = styled.div`
   font-size: 1.5vw;
   margin-top: 1vw;
-  margin-right: 79vw;
+  margin-right: 78vw;
   padding: 0.2vw 0.4vw;
   color: #c778dd;
   font-family: Source Code Pro;
   font-weight: 600;
   border: 1px solid white;
+  box-sizing: border-box;
   box-shadow: 0vh 1vh 1vh;
   cursor: pointer;
 `;
