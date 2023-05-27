@@ -9,6 +9,18 @@ const aboutme = () => {
         <Dash />
       </Head>
       <Container>
+        <Border>
+          <span>S</span>
+          <span>H</span>
+          <span>A</span>
+          <span>D</span>
+          <span>O</span>
+          <span>W</span>
+          <span>C</span>
+          <span>T</span>
+          <span>R</span>
+          <span>L</span>
+        </Border>
         <About>
           As a highly motivated MERN stack developer with expertise in Discord
           API, Google API, Firebase, and Cyber Security, I am excited to offer
@@ -68,21 +80,34 @@ const SideBox = styled.div`
   margin-left: 90vw;
 `;
 
+const Border = styled.div`
+  border: 1px solid #bdbdbd;
+  padding: 0.5vw;
+  writing-mode: vertical-lr;
+  text-orientation: upright;
+  text-align: center;
+  font-size: 1vw;
+  color: #c778dd;
+  span {
+    font-family: Source Code Pro;
+    padding-top: 1.5vh;
+  }
+`;
 const Container = styled.div`
   display: flex;
-  margin-right: 20vw;
+  margin-right: 10vw;
   img {
-    width: 18vw;
-    height: 55vh;
+    width: 15vw;
+    /* height: 55vh; */
     border-radius: 1vw;
     opacity: 0.8;
     box-shadow: 2vw 2vh 2vw;
   }
 `;
 const About = styled.div`
-  padding-left: 10vw;
+  padding-left: 7.5vw;
   padding-top: 5vh;
-  padding-right: 5vw;
+  padding-right: 4vw;
   text-align: justify;
   color: #abb2bf;
   font-family: Fira Code;
