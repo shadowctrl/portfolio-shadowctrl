@@ -10,21 +10,24 @@ const Footer = () => {
       <Media>
         <InstagramIcon
           style={{
-            marginRight: "2vw",
+            marginRight: "1vw",
             cursor: "pointer",
+            fontSize:"1.5vw"
           }}
           onClick={() => window.open("https://instagram.com/_.shadowctrl._")}
         />
         <GitHubIcon
           style={{
-            marginRight: "2vw",
+            marginRight: "1vw",
             cursor: "pointer",
+            fontSize:"1.5vw"
           }}
           onClick={() => window.open("https://github.com/shadowctrl")}
         />
         <LinkedInIcon
           style={{
             cursor: "pointer",
+            fontSize:"1.5vw"
           }}
           onClick={() => window.open("https://linkedin.com/in/shadowctrl")}
         />
@@ -41,7 +44,7 @@ const Parent = styled.div`
   flex-direction: column;
   justify-content: end;
   align-items: center;
-  padding-bottom: 3vh;
+  padding-bottom: 1vh;
 `;
 const Media = styled.div`
   display: flex;
@@ -49,7 +52,7 @@ const Media = styled.div`
 `;
 const Text = styled.div`
   color: #778899;
-  padding-top: 2vh;
+  padding-top: 1vh;
   font-family: "Libre Barcode 128 Text";
-  font-size: 2.5vw;
+  font-size: 1.5vw;
 `;
