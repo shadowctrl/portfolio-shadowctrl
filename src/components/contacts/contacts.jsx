@@ -77,7 +77,7 @@ const Dash = styled.div`
 const Contact = styled.div`
   display: flex;
   align-items: center;
-  padding-top: 5vh;
+  padding-top: 2vh;
   margin-left: 10vw;
 
   p {
@@ -98,7 +98,7 @@ const Contact = styled.div`
       font-family: Fira code;
       color: #c77;
       font-size: 1.2vw;
-      margin-bottom: 1.2vh;
+      margin-bottom: 1vh;
       text-align: center;
     }
   }
