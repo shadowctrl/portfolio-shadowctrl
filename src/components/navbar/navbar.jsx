@@ -25,7 +25,7 @@ const Navbar = () => {
           onClick={() => window.open("https://tryhackme.com/p/shadowctrl")}
         />
       </Socials>
-      <Img>
+      <Img onClick={() => window.open("/", "_self")}>
         <img src={union} />
         <h1> shadowctrl </h1>
       </Img>
@@ -33,7 +33,7 @@ const Navbar = () => {
       <Components>
         <ul>
           {items.map((value, index) => (
-            <li key={value}>
+            <li key={value} onClick={() => window.open(`/${value}`, "_self")}>
               <span>#</span>
               {value}
             </li>
@@ -54,6 +54,7 @@ const Parent = styled.div`
   justify-content: space-between;
 `;
 const Img = styled.div`
+  cursor: pointer;
   display: flex;
   align-items: center;
   img {
@@ -94,6 +95,21 @@ const Components = styled.div`
   }
   li {
     margin-right: 1vw;
+    cursor: pointer;
+  }
+  li:hover {
+    animation: bounce 0.1s infinite linear;
+    @keyframes bounce {
+      0% {
+        transform: translateY(0);
+      }
+      50% {
+        transform: translateY(-0.3vh);
+      }
+      100% {
+        transform: translateY(0);
+      }
+    }
   }
   span {
     color: #c778dd;
