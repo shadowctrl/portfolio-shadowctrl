@@ -8,16 +8,12 @@ import projects from "./projects";
 import AutorenewSharp from "@material-ui/icons/AutorenewSharp";
 
 const Project = () => {
-  const handleProjects = () => {
-    console.log("Handle click view all projects");
-  };
-
   return (
     <Projects>
       <Head>
         <span>#</span>Projects
         <Dash />
-        <Viewall onClick={handleProjects()}>
+        <Viewall onClick={() => window.open("/Works", "_self")}>
           View all <EastSharpIcon style={{ fontSize: "1.3vw" }} />
         </Viewall>
       </Head>
