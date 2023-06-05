@@ -137,7 +137,7 @@ const Box = styled.div`
   position: absolute;
   right: 0;
   border: 1px solid #c778dd;
-  box-shadow: -1vw 0 3.5vw 2vw #c778dd;
+  box-shadow: -1vw 0 3vw 1vw #c778dd;
   padding: 50vh 0vw;
 `;
 
@@ -145,7 +145,7 @@ const Box1 = styled.div`
   position: absolute;
   left: 0;
   border: 1px solid #c778dd;
-  box-shadow: 1vw 0 3.5vw 2vw #c778dd;
+  box-shadow: 1vw 0 3vw 1vw #c778dd;
   padding: 50vh 0vw;
 `;
 const ProjectMain = styled.div`
