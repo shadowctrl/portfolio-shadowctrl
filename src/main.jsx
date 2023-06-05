@@ -21,6 +21,17 @@ ReactDOM.createRoot(document.getElementById("root")).render(
           }
         />
         <Route
+          path="/Home"
+          element={
+            <>
+              <App />
+              <Footer />
+            </>
+          }
+        >
+          {" "}
+        </Route>
+        <Route
           path="/Works"
           element={
             <>
