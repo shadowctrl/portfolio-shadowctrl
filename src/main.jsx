@@ -4,13 +4,30 @@ import App from "./App";
 import "./index.css";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Error from "./error";
-
+import Works from "./components/works/works";
+import Footer from "./components/footer/footer";
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
     <BrowserRouter>
       <Routes>
         <Route path="*" element={<Error />} />
-        <Route path="/" element={<App />} />
+        <Route
+          path="/"
+          element={
+            <>
+              <App />
+              <Footer />
+            </>
+          }
+        />
+        <Route
+          path="/Works"
+          element={
+            <>
+              <Works /> <Footer />
+            </>
+          }
+        ></Route>
       </Routes>
     </BrowserRouter>
   </React.StrictMode>
