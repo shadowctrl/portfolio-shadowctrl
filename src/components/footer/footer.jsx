@@ -12,7 +12,7 @@ const Footer = () => {
           style={{
             marginRight: "1vw",
             cursor: "pointer",
-            fontSize:"1.5vw"
+            fontSize: "1.5vw",
           }}
           onClick={() => window.open("https://instagram.com/_.shadowctrl._")}
         />
@@ -20,14 +20,14 @@ const Footer = () => {
           style={{
             marginRight: "1vw",
             cursor: "pointer",
-            fontSize:"1.5vw"
+            fontSize: "1.5vw",
           }}
           onClick={() => window.open("https://github.com/shadowctrl")}
         />
         <LinkedInIcon
           style={{
             cursor: "pointer",
-            fontSize:"1.5vw"
+            fontSize: "1.5vw",
           }}
           onClick={() => window.open("https://linkedin.com/in/shadowctrl")}
         />
@@ -44,6 +44,7 @@ const Parent = styled.div`
   flex-direction: column;
   justify-content: end;
   align-items: center;
+  padding-top: 10vh;
   padding-bottom: 1vh;
 `;
 const Media = styled.div`
