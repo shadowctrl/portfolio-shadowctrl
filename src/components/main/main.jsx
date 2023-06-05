@@ -48,7 +48,6 @@ const Main = () => {
         <Aboutme />
         <Contacts />
       </Main2>
-      <Footer />
     </Parent>
   );
 };
@@ -129,7 +128,7 @@ const Main2 = styled.div`
   /* height: 100vh; */
   /* scroll-snap-align: start; */
   margin-top: 40vh;
-  padding-bottom: 10vh;
+  /* padding-bottom: 10vh; */
 `;
 const FormatQuoteTop = styled.div`
   color: #bdb7b7;
