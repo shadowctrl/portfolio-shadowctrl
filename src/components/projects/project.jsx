@@ -29,7 +29,7 @@ const Project = () => {
         }}
       />
       <ProjectsRenderer>
-        {projects.map((value, index) => (
+        {projects.slice(0, 3).map((value, index) => (
           <ProjectContainer key={value.title}>
             <ProjectImage>
               <img src={value.image} />
