@@ -9,7 +9,7 @@ import AutorenewSharp from "@material-ui/icons/AutorenewSharp";
 const works = () => {
   return (
     <Parent>
-      <Navbar />
+      
       <Head>
         <span>/</span>Projects
       </Head>
