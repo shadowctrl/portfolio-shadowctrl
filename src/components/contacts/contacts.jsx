@@ -98,6 +98,7 @@ const Contact = styled.div`
       font-family: Fira code;
       color: #c77;
       font-size: 1.2vw;
+      margin-top:-1vh;
       margin-bottom: 1vh;
       text-align: center;
     }
