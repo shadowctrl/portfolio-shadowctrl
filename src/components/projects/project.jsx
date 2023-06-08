@@ -7,11 +7,13 @@ import CachedSharpIcon from "@mui/icons-material/CachedSharp";
 import projects from "./projects";
 import AutorenewSharp from "@material-ui/icons/AutorenewSharp";
 
-const Project = () => {
+export const Project = (Title) => {
   return (
     <Projects>
       <Head>
-        <span>#</span>Projects
+        <span>#</span>
+        {Title}
+
         <Dash />
         <Viewall onClick={() => window.open("/Works", "_self")}>
           View all <EastSharpIcon style={{ fontSize: "1.3vw" }} />
