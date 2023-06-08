@@ -48,7 +48,7 @@ export default Navbar;
 
 const Parent = styled.div`
   padding-left: 10vw;
-  padding-top: 10vh;
+  padding-top: 5vh;
   padding-right: 10vw;
   display: flex;
   justify-content: space-between;
