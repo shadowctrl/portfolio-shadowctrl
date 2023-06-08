@@ -6,10 +6,54 @@ import { onGoingProjects } from "../projects/projects";
 import ArrowOutwardSharpIcon from "@mui/icons-material/ArrowOutwardSharp";
 import AutorenewSharp from "@material-ui/icons/AutorenewSharp";
 
+export const OnGoingWorks = (Title) => {
+  return (
+    <div>
+      <Child2>
+      </Child2>
+      <ProjectsRenderer>
+        {onGoingProjects.map((value, index) => (
+          <ProjectContainer key={value.title}>
+            <ProjectImage>
+              <img src={value.image} />
+            </ProjectImage>
+            <ProjectLang>{value.languages} </ProjectLang>
+            <ProjectTitle>{value.title}</ProjectTitle>
+            <ProjectDes>{value.description}</ProjectDes>
+            <ProjectButtons>
+              {value.live ? (
+                <ProjectLiveButton onClick={() => window.open(value.live)}>
+                  Live{" "}
+                  <ArrowOutwardSharpIcon
+                    style={{ fontSize: "1vw", marginLeft: "0.3vw" }}
+                  />
+                </ProjectLiveButton>
+              ) : (
+                ""
+              )}
+
+              {value.progress ? (
+                <ProjectCachedButton
+                  onClick={() => window.open(value.progress)}
+                >
+                  Progress{" "}
+                  <ArrowOutwardSharpIcon
+                    style={{ fontSize: "1vw", marginLeft: "0.3vw" }}
+                  />
+                </ProjectCachedButton>
+              ) : (
+                ""
+              )}
+            </ProjectButtons>
+          </ProjectContainer>
+        ))}
+      </ProjectsRenderer>
+    </div>
+  );
+};
 const works = () => {
   return (
     <Parent>
-      
       <Head>
         <span>/</span>Projects
       </Head>
