@@ -8,6 +8,7 @@ import Works from "./components/works/works";
 import Footer from "./components/footer/footer";
 import Contactus from "./components/contactus/contactus";
 import Navbar from "./components/navbar/navbar";
+import Aboutme from "./components/aboutme/aboutme";
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
     <BrowserRouter>
@@ -46,6 +47,16 @@ ReactDOM.createRoot(document.getElementById("root")).render(
             <>
               <Navbar />
               <Contactus /> <Footer />
+            </>
+          }
+        />
+        <Route
+          path="About Me"
+          element={
+            <>
+              <Navbar />
+              <Aboutme />
+              <Footer />
             </>
           }
         />
