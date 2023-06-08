@@ -1,11 +1,12 @@
 import React from "react";
 import styled from "styled-components";
-
+import Project from "../projects/project";
+import { OnGoingWorks } from "../works/works";
 const aboutme = () => {
   return (
     <Parent>
       <Head>
-        <span>#</span>About-Me
+        <span>/</span>About-Me
         <Dash />
       </Head>
       <Container>
@@ -40,8 +41,76 @@ const aboutme = () => {
           dedication to delivering projects on time and within budget, I am
           confident that I can exceed your expectations as a freelancer.
         </About>
-        <img src="/images/dp.jpg" alt="Shadowctrl" />
+        <img src="/images/shadowctrl.jpg" alt="Shadowctrl" />
       </Container>
+      <Skills>
+        <Head>
+          <span>#</span>Skills
+          <Dash />
+        </Head>
+
+        <SkillContainer>
+          <Databases>
+            <SkillTitle>FRAMEWORKS</SkillTitle>
+            <ul>
+              <li>TAILWIND</li>
+              <li>BOOTSTRAP</li>
+              <li>METASPLOIT</li>
+            </ul>
+          </Databases>
+
+          <Os>
+            <SkillTitle>OPERATING SYSTEMS</SkillTitle>
+            <ul>
+              <li>Kali Linux</li>
+              <li>Parrot Security</li>
+              <li>Black Arch</li>
+              <li>Garuda Linux</li>
+              <li>Windows</li>
+            </ul>
+          </Os>
+          <Languages>
+            <SkillTitle>LANGUAGES</SkillTitle>
+            <ul>
+              <li>NodeJS</li>
+              <li>ReactJS</li>
+              <li>Python3</li>
+              <li>Html</li>
+              <li>Css</li>
+              <li>MongoDB</li>
+            </ul>
+          </Languages>
+          <Other>
+            <SkillTitle>OTHERS</SkillTitle>
+            <ul>
+              <li>Cyber Security</li>
+              <li>Networking</li>
+              <li>Discord API</li>
+              <li>Google API</li>
+              <li>Instagram API</li>
+              <li>Linux System Administration</li>
+            </ul>
+          </Other>
+        </SkillContainer>
+      </Skills>
+      <Head>
+        <span>#</span>Current Works
+        <Dash />
+      </Head>
+      <OnGoingWorks />
+
+      <PersonalTouch>
+        <Hobbies>
+          <Head>
+            <span>#</span>Hobbies &nbsp;<span>/</span>&nbsp; Interests <Dash />
+          </Head>
+          <p>
+            Iam not immersed in the Cyber World, you could find me exploring
+            outdoors. I have a deep love for travelling and bike rides which
+            helps me recharge and gain fresh perspectives
+          </p>
+        </Hobbies>
+      </PersonalTouch>
     </Parent>
   );
 };
@@ -111,4 +180,56 @@ const About = styled.div`
   text-align: justify;
   color: #abb2bf;
   font-family: Fira Code;
+`;
+
+const Skills = styled.div``;
+const SkillContainer = styled.div`
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: start;
+  column-gap: 3vw;
+  margin-top: 5vh;
+  color: #abb2bf;
+  font-family: Fira Code;
+  font-size: 1.2vw;
+  ul {
+    list-style-type: armenian;
+  }
+`;
+const SkillTitle = styled.div`
+  color: white;
+  text-align: center;
+  padding-top: 1.5vh;
+`;
+
+const Languages = styled.div`
+  border: 1px solid #abb2bf;
+  padding: 1vw;
+`;
+const Databases = styled.div`
+  border: 1px solid #abb2bf;
+  padding: 1vw;
+`;
+const Os = styled.div`
+  border: 1px solid #abb2bf;
+  padding: 1vw;
+`;
+const Other = styled.div`
+  border: 1px solid #abb2bf;
+  padding: 1vw;
+`;
+
+const PersonalTouch = styled.div``;
+const Hobbies = styled.div`
+  p {
+    font-family: poppins;
+    margin-top: 5vh;
+    margin-left: 10vw;
+    margin-right: 10vw;
+    color: #bcc4d3;
+    font-size: 1vw;
+    padding: 0.8vw;
+    border: 1px solid #abb2bf;
+  }
 `;
