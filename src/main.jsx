@@ -6,6 +6,8 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Error from "./error";
 import Works from "./components/works/works";
 import Footer from "./components/footer/footer";
+import Contactus from "./components/contactus/contactus";
+import Navbar from "./components/navbar/navbar";
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
     <BrowserRouter>
@@ -28,17 +30,25 @@ ReactDOM.createRoot(document.getElementById("root")).render(
               <Footer />
             </>
           }
-        >
-          {" "}
-        </Route>
+        />
         <Route
           path="/Works"
           element={
             <>
-              <Works /> <Footer />
+              <Navbar /> <Works /> <Footer />
             </>
           }
-        ></Route>
+        />
+
+        <Route
+          path="Contact"
+          element={
+            <>
+              <Navbar />
+              <Contactus /> <Footer />
+            </>
+          }
+        />
       </Routes>
     </BrowserRouter>
   </React.StrictMode>
