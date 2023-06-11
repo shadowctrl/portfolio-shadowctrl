@@ -103,7 +103,7 @@ const Main1 = styled.div`
   /* scroll-snap-align: start; */
 `;
 const Intro = styled.div`
-  margin-top: 20vh;
+  margin-top: 15vh;
   margin-left: 10vw;
   font-size: 2.3vw;
   color: whitesmoke;
