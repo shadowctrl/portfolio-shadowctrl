@@ -123,6 +123,7 @@ const ServiceItems = styled.div`
   span {
     background-color: #fad0c4;
     background-image: linear-gradient(315deg, #fad0c4 0%, #f1a7f1 74%);
+    background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
   }
