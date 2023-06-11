@@ -1,7 +1,11 @@
 import React from "react";
 import styled from "styled-components";
 import Project from "../projects/project";
+import AllInclusiveIcon from "@mui/icons-material/AllInclusive";
+import HdrStrongIcon from "@mui/icons-material/HdrStrong";
+
 import { OnGoingWorks } from "../works/works";
+import { StraightOutlined } from "@mui/icons-material";
 const aboutme = () => {
   return (
     <Parent>
@@ -97,19 +101,59 @@ const aboutme = () => {
         <span>#</span>Current Works
         <Dash />
       </Head>
+      <HdrStrongIcon
+        style={{
+          fontSize: "5vw",
+          position: "absolute",
+          right: "2vw",
+          color: "slategray",
+        }}
+      />
       <OnGoingWorks />
-
+      <HdrStrongIcon
+        style={{
+          fontSize: "5vw",
+          position: "absolute",
+          left: "2vw",
+          color: "slategray",
+        }}
+      />
       <PersonalTouch>
         <Hobbies>
           <Head>
             <span>#</span>Hobbies &nbsp;<span>/</span>&nbsp; Interests <Dash />
           </Head>
           <p>
-            Iam not immersed in the Cyber World, you could find me exploring
-            outdoors. I have a deep love for travelling and bike rides which
-            helps me recharge and gain fresh perspectives
+            I am not completely immersed in the Cyber World, you could find me
+            exploring outdoors. I have a deep love for travelling and bike rides
+            which helps me recharge and gain fresh perspectives
           </p>
         </Hobbies>
+        <Facts>
+          <Head>
+            <span>#</span>My-Fun-Facts
+            <Dash />
+            <AllInclusiveIcon
+              style={{
+                marginLeft: "1vw",
+                fontSize: "3vw",
+                color: "slategray",
+              }}
+            />
+            <StraightLine2 />
+          </Head>
+          <StraightLine />
+          <FactsContainer>
+            <FactsItem>I winter more than summer</FactsItem>
+            <FactsItem>I often go for a short ride</FactsItem>
+            <FactsItem>I love to Travel places</FactsItem>
+            <FactsItem>I listen to music when i work</FactsItem>
+            <FactsItem>Iam a Basket Ball player since my schooling</FactsItem>
+            <FactsItem>I love to play pc games</FactsItem>
+            <FactsItem>Iam not a mobilized </FactsItem>
+            <FactsItem>I am not an avid mobile device user</FactsItem>
+          </FactsContainer>
+        </Facts>
       </PersonalTouch>
     </Parent>
   );
@@ -220,10 +264,12 @@ const Other = styled.div`
   padding: 1vw;
 `;
 
-const PersonalTouch = styled.div``;
+const PersonalTouch = styled.div`
+  margin-top: 10vh;
+`;
 const Hobbies = styled.div`
   p {
-    font-family: poppins;
+    font-family: Fira Code;
     margin-top: 5vh;
     margin-left: 10vw;
     margin-right: 10vw;
@@ -232,4 +278,44 @@ const Hobbies = styled.div`
     padding: 0.8vw;
     border: 1px solid #abb2bf;
   }
+`;
+
+const Facts = styled.div``;
+const FactsContainer = styled.div`
+  margin-top: 5vh;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  color: #bcc4d3;
+  font-family: Fira Code;
+  margin-right: 10vw;
+  margin-left: 10vw;
+  column-gap: 1vw;
+  row-gap: 2vh;
+`;
+const FactsItem = styled.div`
+  padding: 0.5vw;
+  border: 1px solid #7b7a7a;
+`;
+
+const StraightLine = styled.div`
+  border-left: 1px solid white;
+  border-bottom: 1px solid white;
+  margin-top: 15vh;
+  height: 15vh;
+  width: 15vh;
+  position: absolute;
+  margin-left: 10vw;
+`;
+
+const StraightLine2 = styled.div`
+  border-right: 1px solid white;
+  border-top: 1px solid white;
+  margin-top: 15vh;
+  height: 15vh;
+  width: 15vh;
+  position: absolute;
+  right: 8vw;
+  margin-left: 10vw;
 `;
