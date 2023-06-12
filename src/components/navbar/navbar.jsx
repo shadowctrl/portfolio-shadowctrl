@@ -1,26 +1,34 @@
 import React from "react";
 import styled from "styled-components";
 import union from "../../assets/Union.svg";
-import discord from "../../assets/Discord.svg";
 import thm from "../../assets/thm.svg";
 import items from "./components";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import InstagramIcon from "@mui/icons-material/Instagram";
-
+import "./navbar.css";
 const Navbar = () => {
   return (
     <Parent>
       <Line></Line>
       <Socials>
         <InstagramIcon
+          className="SocialItem1"
+          style={{
+            fontSize: "1.8vw",
+          }}
           onClick={() => window.open("https://instagram.com/_.shadowctrl._")}
         />
         <br />
         <GitHubIcon
+          className="SocialItem2"
+          style={{
+            fontSize: "1.8vw",
+          }}
           onClick={() => window.open("https://github.com/shadowctrl")}
         />
         <br />
         <img
+          className="SocialItem3"
           src={thm}
           onClick={() => window.open("https://tryhackme.com/p/shadowctrl")}
         />
@@ -52,6 +60,11 @@ const Parent = styled.div`
   padding-right: 10vw;
   display: flex;
   justify-content: space-between;
+
+  @media all and (max-width: 768px) and (max-height: 1024px) and (orientation: portrait) {
+    padding-top: 1vh;
+    padding-right: 0;
+  }
 `;
 const Img = styled.div`
   cursor: pointer;
@@ -67,6 +80,14 @@ const Img = styled.div`
     color: #c778dd;
     font-family: mars;
   }
+  @media all and (max-width: 768px) and (max-height: 1024px) and (orientation: portrait) {
+    img {
+      width: 3vw;
+    }
+    h1 {
+      font-size: 3vw;
+    }
+  }
 `;
 
 const Line = styled.div`
@@ -74,7 +95,32 @@ const Line = styled.div`
   position: absolute;
   margin-left: -6.3vw;
   margin-top: -10vh;
-  height: 19vh;
+  animation: popdown 0.5s ease-in forwards;
+  @keyframes popdown {
+    0% {
+      height: 0vh;
+    }
+    100% {
+      height: 19vh;
+    }
+  }
+
+  @media all and (max-width: 768px) and (max-height: 1024px) and (orientation: portrait) {
+    margin-left: -5vw;
+
+    animation: popdownmob 0.5s ease-in forwards;
+
+    @keyframes popdownmob {
+      0% {
+        height: 0vh;
+      }
+      100% {
+        height: 15vh;
+      }
+    }
+  }
+  @media all and (max-width: 1024px) and (max-height: 768px) and (orientation: landscape) {
+  }
 `;
 const Socials = styled.div`
   cursor: pointer;
@@ -82,8 +128,14 @@ const Socials = styled.div`
   margin-top: 10vh;
   color: #abb2bf;
   margin-left: -7vw;
+
   img {
     width: 1.8vw;
+  }
+  @media all and (max-width: 768px) and (max-height: 1024px) and (orientation: portrait) {
+    margin-top: 5.2vh;
+    margin-left: -5.8vw;
+    font-size: 2vw;
   }
 `;
 const Components = styled.div`
@@ -113,5 +165,8 @@ const Components = styled.div`
   }
   span {
     color: #c778dd;
+  }
+  @media all and (max-width: 768px) and (max-height: 1024px) and (orientation: portrait) {
+    font-size: 2.3vw;
   }
 `;

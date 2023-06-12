@@ -101,6 +101,7 @@ const Parent = styled.div`
 const Main1 = styled.div`
   /* height: 100vh; */
   /* scroll-snap-align: start; */
+  /* position: relative; */
 `;
 const Intro = styled.div`
   margin-top: 15vh;
@@ -120,6 +121,15 @@ const Intro = styled.div`
     color: grey;
     font-family: "Libre Barcode 128 Text";
   }
+  @media all and (max-width: 768px) and (max-height: 1024px) and (orientation: portrait) {
+    margin-top: 4vh;
+    font-size: 4vw;
+    p {
+      margin-top: 0.5vh;
+      font-size: 3vw;
+      margin-right: 0;
+    }
+  }
 `;
 const Img = styled.div`
   position: absolute;
@@ -127,6 +137,20 @@ const Img = styled.div`
   margin-top: -40vh;
   img {
     width: 25vw;
+  }
+  @media all and (max-width: 768px) and (max-height: 1024px) and (orientation: portrait) {
+    margin: 0vh;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5vh;
+    img {
+      text-align: center;
+      width: 70vw;
+      /* display: none; */
+    }
   }
 `;
 
@@ -140,18 +164,36 @@ const Para = styled.div`
   margin-right: 3vw;
   color: #bdb7b7;
   font-family: Fira Code;
+  @media all and (max-width: 768px) and (max-height: 1024px) and (orientation: portrait) {
+    font-size: 4vw;
+    margin-right: -10vw;
+    margin-left: 0vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1vw;
+    margin-top: 1vh;
+    /* display: none; */
+  }
 `;
 const Box = styled.div`
   height: 2vh;
   width: 1vw;
   background-color: #c778dd;
-  margin-right: 0.5svw;
+  margin-right: 0.5vw;
+  @media all and (max-width: 768px) and (max-height: 1024px) and (orientation: portrait) {
+    height: 2vh;
+    width: 4vw;
+
+    /* display: none; */
+  }
 `;
 
 const Contact = styled.div`
   font-size: 1.5vw;
   margin-top: 1vw;
-  margin-right: 78vw;
+  width: 10vw;
+  /* margin-right: 78vw; */
   padding: 0.2vw 0.4vw;
   color: #c778dd;
   font-family: Source Code Pro;
@@ -160,19 +202,34 @@ const Contact = styled.div`
   box-sizing: border-box;
   box-shadow: 0vh 1vh 1vh;
   cursor: pointer;
+  @media all and (max-width: 768px) and (max-height: 1024px) and (orientation: portrait) {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    width: 21vw;
+    text-align: center;
+    font-size: 3vw;
+    margin: 0;
+    box-shadow: 0vh 0.5vh 0.5vh;
+  }
 `;
 
 const Main2 = styled.div`
-  /* height: 100vh; */
-  /* scroll-snap-align: start; */
   margin-top: 40vh;
-  /* padding-bottom: 10vh; */
+  position: relative;
+  @media all and (max-width: 768px) and (max-height: 1024px) and (orientation: portrait) {
+    margin: 0;
+    /* margin-top: 10vh; */
+  }
 `;
 const FormatQuoteTop = styled.div`
   color: #bdb7b7;
   position: absolute;
   margin-left: 13vw;
   margin-top: -1.5vh;
+  @media all and (max-width: 768px) and (max-height: 1024px) and (orientation: portrait) {
+    margin-top: -1.2vh;
+  }
 `;
 const Quote = styled.div`
   display: flex;
@@ -185,6 +242,9 @@ const Quote = styled.div`
   margin-left: 10vw;
   margin-right: 35vw;
   padding: 1vh;
+  @media all and (max-width: 768px) and (max-height: 1024px) and (orientation: portrait) {
+    font-size: 2.5vw;
+  }
 `;
 
 const FormatQuoteBottom = styled.div`
@@ -192,6 +252,9 @@ const FormatQuoteBottom = styled.div`
   position: absolute;
   margin-left: 60vw;
   margin-top: -1.5vh;
+  @media all and (max-width: 768px) and (max-height: 1024px) and (orientation: portrait) {
+    margin-top: -1.2vh;
+  }
 `;
 
 const SideBox = styled.div`
@@ -200,6 +263,12 @@ const SideBox = styled.div`
   padding: 2vw;
   margin-top: 10vh;
   margin-left: 90vw;
+  @media all and (max-width: 768px) and (max-height: 1024px) and (orientation: portrait) {
+    positon: absolute;
+    padding: 4vw;
+    margin-top: 17vh;
+    margin-left: 100vw;
+  }
 `;
 
 const Head = styled.div`
@@ -213,6 +282,8 @@ const Head = styled.div`
   font-weight: 600;
   span {
     color: #c778dd;
+  }
+  @media all and (max-width: 768px) and (max-height: 1024px) and (orientation: portrait) {
   }
 `;
 const Dash = styled.div`
