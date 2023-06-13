@@ -177,6 +177,11 @@ const Head = styled.div`
   span {
     color: #c778dd;
   }
+  @media all and (max-width: 768px) and (max-height: 1024px) and (orientation: portrait) {
+    font-size: 5vw;
+    margin-left: 5vw;
+    margin-top: 3vh;
+  }
 `;
 
 const Dash = styled.div`

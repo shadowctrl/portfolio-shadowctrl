@@ -64,6 +64,7 @@ const Parent = styled.div`
   @media all and (max-width: 768px) and (max-height: 1024px) and (orientation: portrait) {
     padding-top: 1vh;
     padding-right: 0;
+    padding-left: 8vw;
   }
 `;
 const Img = styled.div`
@@ -106,7 +107,7 @@ const Line = styled.div`
   }
 
   @media all and (max-width: 768px) and (max-height: 1024px) and (orientation: portrait) {
-    margin-left: -5vw;
+    margin-left: -4.3vw;
 
     animation: popdownmob 0.5s ease-in forwards;
 
@@ -134,7 +135,7 @@ const Socials = styled.div`
   }
   @media all and (max-width: 768px) and (max-height: 1024px) and (orientation: portrait) {
     margin-top: 5.2vh;
-    margin-left: -5.8vw;
+    margin-left: -5vw;
     font-size: 2vw;
   }
 `;
@@ -168,5 +169,6 @@ const Components = styled.div`
   }
   @media all and (max-width: 768px) and (max-height: 1024px) and (orientation: portrait) {
     font-size: 2.3vw;
+    display: none;
   }
 `;

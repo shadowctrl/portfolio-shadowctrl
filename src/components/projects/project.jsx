@@ -69,6 +69,9 @@ export default Project;
 
 const Projects = styled.div`
   padding-top: 5vh;
+  @media all and (max-width: 768px) and (max-height: 1024px) and (orientation: portrait) {
+    padding: 0;
+  }
 `;
 const Head = styled.div`
   display: flex;
@@ -82,15 +85,21 @@ const Head = styled.div`
   span {
     color: #c778dd;
   }
+  @media all and (max-width: 768px) and (max-height: 1024px) and (orientation: portrait) {
+    font-size: 5vw;
+    margin-left: 5vw;
+    margin-top: 3vh;
+  }
 `;
-
 const Dash = styled.div`
   /* position: absolute; */
   border-top: 1px solid #c778dd;
   width: 35vw;
   margin-left: 2vw;
+  @media all and (max-width: 768px) and (max-height: 1024px) and (orientation: portrait) {
+    width: 30vw;
+  }
 `;
-
 const Viewall = styled.div`
   cursor: pointer;
   display: flex;
@@ -99,6 +108,14 @@ const Viewall = styled.div`
   font-size: 1.2vw;
   font-family: Fira Code;
   margin-left: 30vw;
+
+  @media all and (max-width: 768px) and (max-height: 1024px) and (orientation: portrait) {
+    /* margin-left: 10vw;
+     */
+    right: 3vw;
+    position: absolute;
+    font-size: 3vw;
+  }
 
   :hover {
     color: #c778dd;
@@ -110,24 +127,44 @@ const Viewall = styled.div`
     }
   }
 `;
-
 const ProjectsRenderer = styled.div`
   display: grid;
   grid-auto-flow: column;
   margin-left: 10vw;
   margin-right: 10vw;
   color: white;
+
+  @media all and (max-width: 768px) and (max-height: 1024px) and (orientation: portrait) {
+    display: grid;
+    grid-auto-flow: row;
+    grid-area: auto;
+    justify-content: center;
+    justify-items: center;
+    margin-right: 0;
+    margin-left: 0;
+    row-gap: 5vh;
+  }
 `;
 const ProjectContainer = styled.div`
   margin-right: 10vw;
   border: 1px solid white;
   box-shadow: -1vw 1vh 2vh #c778dd;
   padding-bottom: 2vh;
+  @media all and (max-width: 768px) and (max-height: 1024px) and (orientation: portrait) {
+    margin-right: 0;
+    box-shadow: -1vh 1vh 1.5vh #c778dd; 
+  }
 `;
 const ProjectImage = styled.div`
   img {
     width: 20vw;
     height: 20vh;
+  }
+  @media all and (max-width: 768px) and (max-height: 1024px) and (orientation: portrait) {
+    img {
+      width: fit-content;
+      height: 20vh;
+    }
   }
 `;
 const ProjectLang = styled.div`
@@ -136,6 +173,8 @@ const ProjectLang = styled.div`
   text-align: center;
   color: #bdb7b7;
   font-family: Fira Code;
+  @media all and (max-width: 768px) and (max-height: 1024px) and (orientation: portrait) {
+  }
 `;
 const ProjectTitle = styled.div`
   padding: 1vw;
@@ -144,6 +183,12 @@ const ProjectTitle = styled.div`
   font-weight: 600;
   color: #c778dd;
   text-align: center;
+  @media all and (max-width: 768px) and (max-height: 1024px) and (orientation: portrait) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 6vw;
+  }
 `;
 const ProjectDes = styled.div`
   padding-bottom: 1vw;
@@ -152,6 +197,9 @@ const ProjectDes = styled.div`
   font-family: Fira Code;
   color: #bdb7b7;
   text-align: center;
+  @media all and (max-width: 768px) and (max-height: 1024px) and (orientation: portrait) {
+    padding-bottom: 2vh;
+  }
 `;
 const ProjectLiveButton = styled.div`
   cursor: pointer;
@@ -160,6 +208,11 @@ const ProjectLiveButton = styled.div`
   align-items: center;
   border: 1px solid #c778dd;
   padding: 0.5vh 2vw;
+
+  @media all and (max-width: 768px) and (max-height: 1024px) and (orientation: portrait) {
+    padding: 0.5vh 3vw;
+    font-size: 4vw;
+  }
 `;
 const ProjectCachedButton = styled.div`
   cursor: pointer;

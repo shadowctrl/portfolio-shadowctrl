@@ -1,0 +1,19 @@
+@keyframes zoompop {
+    0%{
+    transform: scale(0);
+    }
+    100%{
+    transform: scale(1);
+    }
+    
+ }
+
+ .SocialItem1{
+animation: zoompop 0.5s ease-in 0.5s forwards;
+}
+.SocialItem2{
+animation: zoompop 0.5s ease-in 0.7s forwards;
+}
+.SocialItem3{
+animation: zoompop 0.5s ease-in 0.9s forwards;
+}

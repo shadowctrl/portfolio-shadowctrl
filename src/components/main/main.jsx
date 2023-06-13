@@ -124,6 +124,8 @@ const Intro = styled.div`
   @media all and (max-width: 768px) and (max-height: 1024px) and (orientation: portrait) {
     margin-top: 4vh;
     font-size: 4vw;
+    margin-left: 8vw;
+    margin-right: 2vw;
     p {
       margin-top: 0.5vh;
       font-size: 3vw;
@@ -267,7 +269,6 @@ const SideBox = styled.div`
     positon: absolute;
     padding: 4vw;
     margin-top: 17vh;
-    margin-left: 100vw;
   }
 `;
 
@@ -284,6 +285,9 @@ const Head = styled.div`
     color: #c778dd;
   }
   @media all and (max-width: 768px) and (max-height: 1024px) and (orientation: portrait) {
+    font-size: 5vw;
+    margin-left: 5vw;
+    margin-top: 3vh;
   }
 `;
 const Dash = styled.div`
@@ -299,11 +303,17 @@ const Border = styled.div`
   writing-mode: vertical-lr;
   text-orientation: upright;
   text-align: center;
-  font-size: 1vw;
+  font-size: 1.3vw;
   color: #c778dd;
   span {
     font-family: Source Code Pro;
     padding-top: 1.5vh;
+  }
+  @media all and (max-width: 768px) and (max-height: 1024px) and (orientation: portrait) {
+    padding: 0%.5;
+    font-size: 5vw;
+    margin-top: 3vh;
+    display: none;
   }
 `;
 const Container = styled.div`
@@ -316,6 +326,18 @@ const Container = styled.div`
     opacity: 0.8;
     box-shadow: 2vw 2vh 2vw;
   }
+  @media all and (max-width: 768px) and (max-height: 1024px) and (orientation: portrait) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    row-gap: 5vh;
+    margin: 0vw;
+    padding: 0;
+    img {
+      min-width: 50vw;
+      max-width: 80vw;
+    }
+  }
 `;
 const About = styled.div`
   padding-left: 7.5vw;
@@ -324,4 +346,10 @@ const About = styled.div`
   text-align: justify;
   color: #abb2bf;
   font-family: Fira Code;
+
+  @media all and (max-width: 768px) and (max-height: 1024px) and (orientation: portrait) {
+    padding: 5vw;
+    margin-top: 2vh;
+    font-size: 3vw;
+  }
 `;

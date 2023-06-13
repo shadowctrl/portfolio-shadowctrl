@@ -75,6 +75,8 @@ export default Skills;
 const Parent = styled.div`
   padding-top: 5vh;
   font-family: Fira Code;
+  @media all and (max-width: 768px) and (max-height: 1024px) and (orientation: portrait) {
+  }
 `;
 
 const Head = styled.div`
@@ -89,16 +91,27 @@ const Head = styled.div`
   span {
     color: #c778dd;
   }
+  @media all and (max-width: 768px) and (max-height: 1024px) and (orientation: portrait) {
+    font-size: 5vw;
+    margin-left: 5vw;
+    margin-top: 3vh;
+  }
 `;
 
 const Dash = styled.div`
-  /* position: absolute; */
   border-top: 1px solid #c778dd;
   width: 38vw;
   margin-left: 2vw;
 `;
 const SkillParent = styled.div`
   display: flex;
+  @media all and (max-width: 768px) and (max-height: 1024px) and (orientation: portrait) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+  }
 `;
 const Skill = styled.div`
   border: 0.2vw dotted #c778dd;
@@ -112,6 +125,20 @@ const Skill = styled.div`
   grid-column-gap: 5vw;
   grid-row-gap: 5vh;
   grid-template-columns: 15vw 15vw 15vw;
+
+  @media all and (max-width: 768px) and (max-height: 1024px) and (orientation: portrait) {
+    font-size: 5vw;
+    margin: 0;
+    display: grid;
+    grid-template-columns: none;
+    grid-auto-flow: row dense;
+    grid-column-gap: 0;
+    grid-row-gap: 2vh;
+    place-content: center;
+    padding: 2vw;
+    border: 0.7vw dotted #c778dd;
+    font-size: 4vw;
+  }
 `;
 
 const SkillTitle = styled.div`
@@ -123,6 +150,9 @@ const SkillTitle = styled.div`
   font-size: 1.3vw;
   font-weight: 700;
   font-family: Fira Code;
+  @media all and (max-width: 768px) and (max-height: 1024px) and (orientation: portrait) {
+    font-size: 5vw;
+  }
 `;
 
 const Languages = styled.div`
@@ -136,6 +166,11 @@ const Languages = styled.div`
     padding: 1vh 0vw;
     margin-left: 3vw;
     list-style-type: circle;
+  }
+  @media all and (max-width: 768px) and (max-height: 1024px) and (orientation: portrait) {
+    ul {
+      margin-left: 7vw;
+    }
   }
 `;
 const Databases = styled.div`
@@ -151,6 +186,11 @@ const Databases = styled.div`
     margin-left: 3vw;
     list-style-type: circle;
   }
+  @media all and (max-width: 768px) and (max-height: 1024px) and (orientation: portrait) {
+    ul {
+      margin-left: 7vw;
+    }
+  }
 `;
 const Other = styled.div`
   border: 1px solid white;
@@ -164,6 +204,11 @@ const Other = styled.div`
     margin-left: 3vw;
     list-style-type: circle;
   }
+  @media all and (max-width: 768px) and (max-height: 1024px) and (orientation: portrait) {
+    ul {
+      margin-left: 7vw;
+    }
+  }
 `;
 const Os = styled.div`
   border: 1px solid white;
@@ -176,5 +221,10 @@ const Os = styled.div`
     padding: 1vh 0vw;
     margin-left: 3vw;
     list-style-type: circle;
+  }
+  @media all and (max-width: 768px) and (max-height: 1024px) and (orientation: portrait) {
+    ul {
+      margin-left: 7vw;
+    }
   }
 `;

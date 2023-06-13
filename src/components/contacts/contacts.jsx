@@ -65,6 +65,11 @@ const Head = styled.div`
   span {
     color: #c778dd;
   }
+  @media all and (max-width: 768px) and (max-height: 1024px) and (orientation: portrait) {
+    font-size: 5vw;
+    margin-left: 5vw;
+    margin-top: 3vh;
+  }
 `;
 
 const Dash = styled.div`
@@ -98,9 +103,25 @@ const Contact = styled.div`
       font-family: Fira code;
       color: #c77;
       font-size: 1.2vw;
-      margin-top:-1vh;
+      margin-top: -1vh;
       margin-bottom: 1vh;
       text-align: center;
+    }
+  }
+  @media all and (max-width: 768px) and (max-height: 1024px) and (orientation: portrait) {
+    flex-direction: column;
+    margin-left: 5vw;
+    margin-right: 0;
+
+    p {
+      padding: 0;
+    }
+    span {
+      padding: 2.5vw;
+
+      h3 {
+        font-size: 4vw;
+      }
     }
   }
 `;
@@ -110,4 +131,10 @@ const Container = styled.div`
   align-items: center;
   font-family: Fira Code;
   font-size: 1.1vw;
+  MdEmail {
+    size: "2vw";
+  }
+  @media all and (max-width: 768px) and (max-height: 1024px) and (orientation: portrait) {
+    font-size: 3vw;
+  }
 `;

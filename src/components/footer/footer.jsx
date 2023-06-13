@@ -56,4 +56,7 @@ const Text = styled.div`
   padding-top: 1vh;
   font-family: "Libre Barcode 128 Text";
   font-size: 1.5vw;
+  @media all and (max-width: 768px) and (max-height: 1024px) and (orientation: portrait) {
+    font-size: 5vw;
+  }
 `;
