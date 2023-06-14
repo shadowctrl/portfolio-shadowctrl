@@ -2,6 +2,37 @@ import React from "react";
 import styled from "styled-components";
 import { BsDiscord } from "react-icons/bs";
 import { MdEmail } from "react-icons/md";
+
+const IconDiscord = (size = "1.3vw", pr = "0.5vw", pb = "1vh") => {
+  return (
+    <>
+      <BsDiscord
+        size={size}
+        style={{
+          verticalAlign: "middle",
+          paddingRight: pr,
+          paddingBottom: pb,
+        }}
+      />
+      Raghav#4530
+    </>
+  );
+};
+
+const IconEmail = (size = "1.3vw", pr = "0.5vw") => {
+  return (
+    <>
+      <MdEmail
+        size={size}
+        style={{
+          verticalAlign: "middle",
+          paddingRight: pr,
+        }}
+      />
+      shadowctrl@outlook.com
+    </>
+  );
+};
 const Contacts = () => {
   return (
     <Parent>
@@ -20,26 +51,13 @@ const Contacts = () => {
           <h3> Message Me Here</h3>
           {/* <br /> */}
           <Container>
-            <BsDiscord
-              size="1.3vw"
-              style={{
-                verticalAlign: "middle",
-                paddingRight: "0.5vw",
-                paddingBottom: "1vh",
-              }}
-            />
-            Raghav#4530
+            <Mobile>{IconDiscord("5vw", "0.5vw", "0vw")}</Mobile>
+            <Desktop>{IconDiscord()}</Desktop>
           </Container>
-          {/* <br /> */}
+
           <Container>
-            <MdEmail
-              size="1.3vw"
-              style={{
-                verticalAlign: "middle",
-                paddingRight: "0.5vw",
-              }}
-            />
-            shadowctrl@outlook.com
+            <Mobile>{IconEmail("5vw")}</Mobile>
+            <Desktop>{IconEmail()}</Desktop>
           </Container>
         </span>
       </Contact>
@@ -111,8 +129,7 @@ const Contact = styled.div`
   @media all and (max-width: 768px) and (max-height: 1024px) and (orientation: portrait) {
     flex-direction: column;
     margin-left: 5vw;
-    margin-right: 0;
-
+    margin-right: 5vw;
     p {
       padding: 0;
     }
@@ -135,6 +152,20 @@ const Container = styled.div`
     size: "2vw";
   }
   @media all and (max-width: 768px) and (max-height: 1024px) and (orientation: portrait) {
-    font-size: 3vw;
+    font-size: 4vw;
+  }
+`;
+
+const Mobile = styled.div`
+  display: none;
+  @media all and (max-width: 768px) and (max-height: 1024px) and (orientation: portrait) {
+    display: flex;
+    align-items: center;
+  }
+`;
+const Desktop = styled.div`
+  display: flex;
+  @media all and (max-width: 768px) and (max-height: 1024px) and (orientation: portrait) {
+    display: none;
   }
 `;
