@@ -9,11 +9,9 @@ const __dirname = path.resolve();
 
 app.use((req, res, next) => {
   const { headers, hostname, originalUrl } = req;
-  console.log(req.socket.remoteAddress);
   if (/^\d+\.\d+\.\d+\.\d+$/.test(hostname)) {
     const domain = "shadowctrl.me";
     const redirectTo = `https://${domain}/`;
-
     return res.redirect(301, redirectTo);
   }
 
