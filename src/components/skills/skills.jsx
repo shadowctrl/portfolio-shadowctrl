@@ -2,6 +2,20 @@ import React from "react";
 import styled from "styled-components";
 import CropIcon from "@mui/icons-material/Crop";
 import DashboardOutlinedIcon from "@mui/icons-material/DashboardOutlined";
+
+const IconCrop = (size, mt = "5vh", mtr = "10vw") => {
+  return (
+    <CropIcon
+      style={{
+        color: "slategrey",
+        fontSize: size,
+        marginTop: mt,
+        marginLeft: mtr,
+        marginBottom: mt,
+      }}
+    />
+  );
+};
 const Skills = () => {
   return (
     <Parent>
@@ -11,14 +25,8 @@ const Skills = () => {
       </Head>
 
       <SkillParent>
-        <CropIcon
-          style={{
-            color: "slategrey",
-            fontSize: "5vw",
-            marginTop: "5vh",
-            marginLeft: "10vw",
-          }}
-        />
+        <Mobile>{IconCrop("50vw", "2vh", "0vw")}</Mobile>
+        <Desktop>{IconCrop("10vw")}</Desktop>
         <Skill>
           <Languages>
             <SkillTitle> LANGUAGES</SkillTitle>
@@ -102,6 +110,19 @@ const Dash = styled.div`
   border-top: 1px solid #c778dd;
   width: 38vw;
   margin-left: 2vw;
+`;
+const Mobile = styled.div`
+  display: none;
+  @media all and (max-width: 768px) and (max-height: 1024px) and (orientation: portrait) {
+    display: flex;
+    justify-content: center;
+  }
+`;
+const Desktop = styled.div`
+  display: block;
+  @media all and (max-width: 768px) and (max-height: 1024px) and (orientation: portrait) {
+    display: none;
+  }
 `;
 const SkillParent = styled.div`
   display: flex;

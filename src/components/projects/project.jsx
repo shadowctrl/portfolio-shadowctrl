@@ -7,6 +7,13 @@ import CachedSharpIcon from "@mui/icons-material/CachedSharp";
 import projects from "./projects";
 import AutorenewSharp from "@material-ui/icons/AutorenewSharp";
 
+export const ViewAll = (size) => {
+  return (
+    <Viewall onClick={() => window.open("/Works", "_self")}>
+      View all <EastSharpIcon style={{ fontSize: `${size}` }} />
+    </Viewall>
+  );
+};
 export const Project = (Title) => {
   return (
     <Projects>
@@ -15,9 +22,8 @@ export const Project = (Title) => {
         {Title}
 
         <Dash />
-        <Viewall onClick={() => window.open("/Works", "_self")}>
-          View all <EastSharpIcon style={{ fontSize: "1.3vw" }} />
-        </Viewall>
+        <Mobile>{ViewAll("4vw")}</Mobile>
+        <Desktop>{ViewAll("1.5vw")}</Desktop>
       </Head>
       <DragIndicatorSharpIcon
         style={{
@@ -110,10 +116,9 @@ const Viewall = styled.div`
   margin-left: 30vw;
 
   @media all and (max-width: 768px) and (max-height: 1024px) and (orientation: portrait) {
-    /* margin-left: 10vw;
-     */
-    right: 3vw;
-    position: absolute;
+    display: flex;
+    margin: 0;
+    margin-left: 10vw;
     font-size: 3vw;
   }
 
@@ -127,6 +132,20 @@ const Viewall = styled.div`
     }
   }
 `;
+const Mobile = styled.div`
+  display: none;
+  @media all and (max-width: 768px) and (max-height: 1024px) and (orientation: portrait) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+`;
+const Desktop = styled.div`
+  display: block;
+  @media all and (max-width: 768px) and (max-height: 1024px) and (orientation: portrait) {
+    display: none;
+  }
+`;
 const ProjectsRenderer = styled.div`
   display: grid;
   grid-auto-flow: column;
@@ -137,7 +156,6 @@ const ProjectsRenderer = styled.div`
   @media all and (max-width: 768px) and (max-height: 1024px) and (orientation: portrait) {
     display: grid;
     grid-auto-flow: row;
-    grid-area: auto;
     justify-content: center;
     justify-items: center;
     margin-right: 0;
@@ -152,7 +170,7 @@ const ProjectContainer = styled.div`
   padding-bottom: 2vh;
   @media all and (max-width: 768px) and (max-height: 1024px) and (orientation: portrait) {
     margin-right: 0;
-    box-shadow: -1vh 1vh 1.5vh #c778dd; 
+    box-shadow: -1vh 1vh 1.5vh #c778dd;
   }
 `;
 const ProjectImage = styled.div`

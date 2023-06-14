@@ -8,9 +8,6 @@ import Aboutme from "../aboutme/aboutme";
 import Contacts from "../contacts/contacts";
 import Footer from "../footer/footer";
 
-const handleContact = () => {
-  window.open("/contact", "_blank");
-};
 const Main = () => {
   return (
     <Parent>
@@ -24,7 +21,9 @@ const Main = () => {
             He develops robust security mechanisms to protect critical systems
             and crafts responsive websites that meet creativity
           </p>
-          <Contact onClick={() => handleContact()}>Contact Me</Contact>
+          <Contact onClick={() => window.open("/contact", "_blank")}>
+            Contact Me
+          </Contact>
         </Intro>
         <Img>
           <img src={anonymous} />
