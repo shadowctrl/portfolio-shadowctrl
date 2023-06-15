@@ -13,7 +13,7 @@ const contactus = () => {
       </Head>
       <Media>
         <li onClick={() => window.open("https://instagram.com/_.shadowctrl._")}>
-          <img src="/images/instagram.png" alt="" width="50vw" />
+          <img src="/images/instagram.png" alt="Instagram" width="50vw" />
           _.shadowctrl._{" "}
           <VerifiedIcon
             style={{
@@ -24,7 +24,7 @@ const contactus = () => {
           />
         </li>
         <li onClick={() => window.open("https://github.com/shadowctrl")}>
-          <img src="/images/github.png" alt="" width="50vw" />
+          <img src="/images/github.png" alt="Github" width="50vw" />
           shadowctrl
           <VerifiedIcon
             style={{
@@ -36,7 +36,7 @@ const contactus = () => {
         </li>
         <li onClick={() => window.open("https://youtube.com/@shadowctrl")}>
           <span>
-            <img src="/images/youtube.png" alt="" width="35vw" />
+            <img src="/images/youtube.png" alt="Youtube" width="35vw" />
           </span>
           shadowctrl
           <VerifiedIcon

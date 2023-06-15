@@ -28,13 +28,14 @@ const Navbar = () => {
         />
         <br />
         <img
+          alt="Github"
           className="SocialItem3"
           src={thm}
           onClick={() => window.open("https://tryhackme.com/p/shadowctrl")}
         />
       </Socials>
       <Img onClick={() => window.open("/", "_self")}>
-        <img src={union} />
+        <img src={union} alt="Logo Union" />
         <h1> shadowctrl </h1>
       </Img>
 

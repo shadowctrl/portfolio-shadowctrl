@@ -13,9 +13,11 @@ const Main = () => {
     <Parent>
       <Main1>
         <Intro>
-          Shadowctrl is a <span> Security Professional </span>
-          <br />
-          and a <span>Mern Stack Developer</span>
+          <h1>
+            Shadowctrl is a <span> Security Professional </span>
+            <br />
+            and a <span>Mern Stack Developer</span>
+          </h1>
           <p>
             {" "}
             He develops robust security mechanisms to protect critical systems
@@ -26,7 +28,7 @@ const Main = () => {
           </Contact>
         </Intro>
         <Img>
-          <img src={anonymous} />
+          <img src={anonymous} alt="Hacker" />
           <Para>
             <Box />
             Currently working on portfolio
@@ -96,6 +98,7 @@ const Parent = styled.div`
   overflow-y: scroll;
   scroll-snap-type: y mandatory;
   width: 100vw; */
+  transition: all 0.1s ease-in-out;
 `;
 const Main1 = styled.div`
   /* height: 100vh; */
@@ -105,7 +108,9 @@ const Main1 = styled.div`
 const Intro = styled.div`
   margin-top: 15vh;
   margin-left: 10vw;
-  font-size: 2.3vw;
+  h1 {
+    font-size: 2.3vw;
+  }
   color: whitesmoke;
   font-family: Source Code Pro;
   span {
@@ -115,7 +120,9 @@ const Intro = styled.div`
   }
   p {
     margin-top: 4vh;
-    font-size: 2vw;
+    h1 {
+      font-size: 2vw;
+    }
     margin-right: 30vw;
     color: grey;
     font-family: "Libre Barcode 128 Text";

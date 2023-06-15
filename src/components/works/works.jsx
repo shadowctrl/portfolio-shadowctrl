@@ -9,13 +9,12 @@ import AutorenewSharp from "@material-ui/icons/AutorenewSharp";
 export const OnGoingWorks = (Title) => {
   return (
     <div>
-      <Child2>
-      </Child2>
+      <Child2></Child2>
       <ProjectsRenderer>
         {onGoingProjects.map((value, index) => (
           <ProjectContainer key={value.title}>
             <ProjectImage>
-              <img src={value.image} />
+              <img src={value.image} alt="Projects" />
             </ProjectImage>
             <ProjectLang>{value.languages} </ProjectLang>
             <ProjectTitle>{value.title}</ProjectTitle>
@@ -69,7 +68,7 @@ const works = () => {
           {projects.map((value, index) => (
             <ProjectContainer key={value.title}>
               <ProjectImage>
-                <img src={value.image} />
+                <img src={value.image} alt="Projects" />
               </ProjectImage>
               <ProjectLang>{value.languages} </ProjectLang>
               <ProjectTitle>{value.title}</ProjectTitle>
@@ -111,7 +110,7 @@ const works = () => {
         {onGoingProjects.map((value, index) => (
           <ProjectContainer key={value.title}>
             <ProjectImage>
-              <img src={value.image} />
+              <img src={value.image} alt="Projects" />
             </ProjectImage>
             <ProjectLang>{value.languages} </ProjectLang>
             <ProjectTitle>{value.title}</ProjectTitle>

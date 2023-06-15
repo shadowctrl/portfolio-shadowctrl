@@ -36,7 +36,7 @@ export const Project = (Title) => {
         {projects.slice(0, 3).map((value, index) => (
           <ProjectContainer key={value.title}>
             <ProjectImage>
-              <img src={value.image} />
+              <img src={value.image} alt="Projects"/>
             </ProjectImage>
             <ProjectLang>{value.languages} </ProjectLang>
             <ProjectTitle>{value.title}</ProjectTitle>
