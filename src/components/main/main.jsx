@@ -1,6 +1,5 @@
 import React from "react";
 import styled from "styled-components";
-import anonymous from "../../assets/anonymous.png";
 import FormatQuoteIcon from "@mui/icons-material/FormatQuote";
 import { Project } from "../projects/project.jsx";
 import Skills from "../skills/skills";
@@ -28,7 +27,7 @@ const Main = () => {
           </Contact>
         </Intro>
         <Img>
-          <img src={anonymous} alt="Hacker" />
+          <img src="/images/anonymous.webp" alt="Hacker" />
           <Para>
             <Box />
             Currently working on portfolio
@@ -65,25 +64,25 @@ const Main = () => {
             <span>L</span>
           </Border>
           <About>
-            As a highly motivated MERN stack developer with expertise in Discord
-            API, Google API, Firebase, and Cyber Security, I am excited to offer
-            my services as a freelancer. With a proven track record of building
-            robust and scalable applications using cutting-edge technologies, I
-            am confident that I can deliver high-quality work to clients with
-            diverse needs.
+            With over 3+ years of learnings in the field of cybersecurity, I
+            bring a wealth of knowledge to the table. Since 2018, I have been
+            immersing myself in the world of cybersecurity, continuously
+            expanding my skills and staying ahead of emerging threats. My
+            passion lies in securing digital assets and ensuring the utmost
+            protection of sensitive information.
             <br /> <br />
-            Whether it's building a custom web application, integrating
-            third-party APIs, or managing a database on Firebase, I have the
-            skills and experience to get the job done. As a Cyber Security
-            graduate, I understand the importance of building secure and
-            resilient applications, and am committed to implementing industry
-            best practices in all my projects.
+            In addition to my cybersecurity prowess, I am also proficient in
+            developing websites using the MERN stack. This combination of skills
+            allows me to not only create dynamic and engaging web applications
+            but also integrate robust security measures into their foundation. I
+            pride myself on delivering secure software solutions that prioritize
+            the confidentiality and integrity of user data.
             <br /> <br />
             With excellent communication skills, a strong work ethic, and a
             dedication to delivering projects on time and within budget, I am
             confident that I can exceed your expectations as a freelancer.
           </About>
-          <img src="/images/dp.jpg" alt="Shadowctrl" />
+          <img src="/images/shadowctrl.webp" alt="Shadowctrl" />
         </Container>
         <Contacts />
       </Main2>
@@ -115,11 +114,11 @@ const Intro = styled.div`
   font-family: Source Code Pro;
   span {
     color: #c778dd;
-
     font-family: Source Code Pro;
   }
   p {
     margin-top: 4vh;
+    font-size: 2vw;
     h1 {
       font-size: 2vw;
     }
@@ -134,8 +133,12 @@ const Intro = styled.div`
     margin-right: 2vw;
     p {
       margin-top: 0.5vh;
-      font-size: 3vw;
+      font-size: 3.5vw;
       margin-right: 0;
+    }
+    h1 {
+      font-size: 4vw;
+      font-family: Fira Code;
     }
   }
 `;
@@ -326,7 +329,7 @@ const Container = styled.div`
   display: flex;
   margin-right: 10vw;
   img {
-    width: 15vw;
+    width: 18vw;
     /* height: 55vh; */
     border-radius: 1vw;
     opacity: 0.8;
@@ -340,8 +343,8 @@ const Container = styled.div`
     margin: 0vw;
     padding: 0;
     img {
-      min-width: 50vw;
-      max-width: 80vw;
+      min-width: 80vw;
+      max-width: 90vw;
     }
   }
 `;

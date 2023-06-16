@@ -36,7 +36,7 @@ export const Project = (Title) => {
         {projects.slice(0, 3).map((value, index) => (
           <ProjectContainer key={value.title}>
             <ProjectImage>
-              <img src={value.image} alt="Projects"/>
+              <img src={value.image} alt="Projects" />
             </ProjectImage>
             <ProjectLang>{value.languages} </ProjectLang>
             <ProjectTitle>{value.title}</ProjectTitle>
@@ -154,13 +154,13 @@ const ProjectsRenderer = styled.div`
   color: white;
 
   @media all and (max-width: 768px) and (max-height: 1024px) and (orientation: portrait) {
-    display: grid;
-    grid-auto-flow: row;
+    display: flex;
+    flex-wrap: wrap;
     justify-content: center;
-    justify-items: center;
-    margin-right: 0;
-    margin-left: 0;
+    align-items: center;
+    margin: 0;
     row-gap: 5vh;
+    column-gap: 3vw;
   }
 `;
 const ProjectContainer = styled.div`

@@ -151,6 +151,8 @@ export default works;
 
 const Parent = styled.div`
   /* margin-left: 10vw; */
+  @media all and (max-width: 768px) and (max-height: 1024px) and (orientation: portrait) {
+  }
 `;
 const Dot = styled.div`
   position: absolute;
@@ -174,22 +176,33 @@ const Head = styled.div`
   span {
     color: #c778dd;
   }
+  @media all and (max-width: 768px) and (max-height: 1024px) and (orientation: portrait) {
+    font-size: 5vw;
+    margin-left: 7vw;
+    margin-top: 3vh;
+  }
 `;
 
 const Box = styled.div`
   position: absolute;
   right: 0;
   border: 1px solid #c778dd;
-  box-shadow: -1vw 0 3vw 1vw #c778dd;
+  box-shadow: 0vw 0 2vw 2vw #c778dd;
   padding: 50vh 0vw;
+  @media all and (max-width: 768px) and (max-height: 1024px) and (orientation: portrait) {
+    display: none;
+  }
 `;
 
 const Box1 = styled.div`
   position: absolute;
   left: 0;
   border: 1px solid #c778dd;
-  box-shadow: 1vw 0 3vw 1vw #c778dd;
+  box-shadow: 0vw 0vw 2vw 2vw #c778dd;
   padding: 50vh 0vw;
+  @media all and (max-width: 768px) and (max-height: 1024px) and (orientation: portrait) {
+    display: none;
+  }
 `;
 const ProjectMain = styled.div`
   display: flex;
@@ -206,6 +219,13 @@ const Child = styled.div`
   span {
     color: #c778dd;
   }
+  @media all and (max-width: 768px) and (max-height: 1024px) and (orientation: portrait) {
+    font-size: 5vw;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    margin-bottom: 2vh;
+  }
 `;
 
 const Child2 = styled.div`
@@ -218,6 +238,14 @@ const Child2 = styled.div`
   span {
     color: #c778dd;
   }
+  @media all and (max-width: 768px) and (max-height: 1024px) and (orientation: portrait) {
+    font-size: 5vw;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    margin-bottom: 2vh;
+    margin-top:2vh;
+  }
 `;
 const ProjectsRenderer = styled.div`
   display: grid;
@@ -228,17 +256,35 @@ const ProjectsRenderer = styled.div`
   margin-left: 10vw;
   margin-right: 10vw;
   color: white;
+  @media all and (max-width: 768px) and (max-height: 1024px) and (orientation: portrait) {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 0vh;
+    /* margin: 0; */
+    justify-content: center;
+    align-items: center;
+  }
 `;
 const ProjectContainer = styled.div`
   margin-right: 10vw;
   border: 1px solid white;
   /* box-shadow: -1vw 1vh 2vh #c778dd; */
   padding-bottom: 2vh;
+  @media all and (max-width: 768px) and (max-height: 1024px) and (orientation: portrait) {
+    margin-right: 0;
+    box-shadow: -1vh 1vh 1.5vh #c778dd;
+  }
 `;
 const ProjectImage = styled.div`
   img {
     width: 20vw;
     height: 20vh;
+  }
+  @media all and (max-width: 768px) and (max-height: 1024px) and (orientation: portrait) {
+    img {
+      width: fit-content;
+      /* height: 20vh; */
+    }
   }
 `;
 const ProjectLang = styled.div`
@@ -255,6 +301,12 @@ const ProjectTitle = styled.div`
   font-weight: 600;
   color: #c778dd;
   text-align: center;
+  @media all and (max-width: 768px) and (max-height: 1024px) and (orientation: portrait) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 6vw;
+  }
 `;
 const ProjectDes = styled.div`
   padding-bottom: 1vw;
@@ -263,6 +315,9 @@ const ProjectDes = styled.div`
   font-family: Fira Code;
   color: #bdb7b7;
   text-align: center;
+  @media all and (max-width: 768px) and (max-height: 1024px) and (orientation: portrait) {
+    padding-bottom: 2vh;
+  }
 `;
 const ProjectLiveButton = styled.div`
   cursor: pointer;
@@ -271,6 +326,10 @@ const ProjectLiveButton = styled.div`
   align-items: center;
   border: 1px solid #c778dd;
   padding: 0.5vh 2vw;
+  @media all and (max-width: 768px) and (max-height: 1024px) and (orientation: portrait) {
+    padding: 0.5vh 3vw;
+    font-size: 4vw;
+  }
 `;
 const ProjectCachedButton = styled.div`
   cursor: pointer;

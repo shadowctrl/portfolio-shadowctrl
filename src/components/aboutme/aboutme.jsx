@@ -27,12 +27,11 @@ const aboutme = () => {
           <span>L</span>
         </Border>
         <About>
-          As a highly motivated MERN stack developer with expertise in Discord
-          API, Google API, Firebase, and Cyber Security, I am excited to offer
-          my services as a freelancer. With a proven track record of building
-          robust and scalable applications using cutting-edge technologies, I am
-          confident that I can deliver high-quality work to clients with diverse
-          needs.
+          As a MERN stack developer with expertise in Discord API, Google API,
+          Firebase, and Cyber Security, I am excited to offer my services as a
+          freelancer. With a proven track record of building robust and scalable
+          applications using cutting-edge technologies, I am confident that I
+          can deliver high-quality work to clients with diverse needs.
           <br /> <br />
           Whether it's building a custom web application, integrating
           third-party APIs, or managing a database on Firebase, I have the
@@ -45,7 +44,7 @@ const aboutme = () => {
           dedication to delivering projects on time and within budget, I am
           confident that I can exceed your expectations as a freelancer.
         </About>
-        <img src="/images/shadowctrl.jpg" alt="Shadowctrl" />
+        <img src="/images/shadowctrl.webp" alt="Shadowctrl" />
       </Container>
       <Skills>
         <Head>
@@ -121,7 +120,7 @@ const aboutme = () => {
       <PersonalTouch>
         <Hobbies>
           <Head>
-            <span>#</span>Hobbies &nbsp;<span>/</span>&nbsp; Interests <Dash />
+            <span>#</span>Hobbies <span>/</span> Interests <Dash />
           </Head>
           <p>
             I am not completely immersed in the Cyber World, you could find me
@@ -148,7 +147,7 @@ const aboutme = () => {
             <FactsItem>I often go for a short ride</FactsItem>
             <FactsItem>I love to Travel places</FactsItem>
             <FactsItem>I listen to music when i work</FactsItem>
-            <FactsItem>Iam a Basket Ball player since my schooling</FactsItem>
+            <FactsItem>I used to play basket ball</FactsItem>
             <FactsItem>I love to play pc games</FactsItem>
             <FactsItem>Iam not a mobilized </FactsItem>
             <FactsItem>I am not an avid mobile device user</FactsItem>
@@ -210,6 +209,12 @@ const Border = styled.div`
     font-family: Source Code Pro;
     padding-top: 1.5vh;
   }
+  @media all and (max-width: 768px) and (max-height: 1024px) and (orientation: portrait) {
+    padding: 0%.5;
+    font-size: 5vw;
+    margin-top: 3vh;
+    display: none;
+  }
 `;
 const Container = styled.div`
   display: flex;
@@ -221,6 +226,17 @@ const Container = styled.div`
     opacity: 0.8;
     box-shadow: 2vw 2vh 2vw;
   }
+  @media all and (max-width: 768px) and (max-height: 1024px) and (orientation: portrait) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0vw;
+    padding: 0vw;
+    img {
+      min-width: 85vw;
+      max-width: 90vw;
+    }
+  }
 `;
 const About = styled.div`
   padding-left: 7.5vw;
@@ -229,9 +245,21 @@ const About = styled.div`
   text-align: justify;
   color: #abb2bf;
   font-family: Fira Code;
+  @media all and (max-width: 768px) and (max-height: 1024px) and (orientation: portrait) {
+    padding: 5vw;
+    margin-top: 2vh;
+    font-size: 3vw;
+  }
 `;
 
-const Skills = styled.div``;
+const Skills = styled.div`
+  @media all and (max-width: 768px) and (max-height: 1024px) and (orientation: portrait) {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
+  }
+`;
 const SkillContainer = styled.div`
   display: flex;
   flex-wrap: wrap;
@@ -244,6 +272,15 @@ const SkillContainer = styled.div`
   font-size: 1.2vw;
   ul {
     list-style-type: armenian;
+  }
+  @media all and (max-width: 768px) and (max-height: 1024px) and (orientation: portrait) {
+    margin-top: 2vh;
+    font-size: 3vw;
+    row-gap: 2vh;
+    column-gap: 3vw;
+    margin-left: 5vw;
+    margin-right: 5vw;
+    align-items: center;
   }
 `;
 const SkillTitle = styled.div`
@@ -271,6 +308,13 @@ const Other = styled.div`
 
 const PersonalTouch = styled.div`
   margin-top: 10vh;
+  @media all and (max-width: 768px) and (max-height: 1024px) and (orientation: portrait) {
+    margin-top: 6vh;
+  }
+`;
+const HobbieTitle = styled.div`
+  display: flex;
+  flex-direction: row;
 `;
 const Hobbies = styled.div`
   p {
@@ -282,6 +326,17 @@ const Hobbies = styled.div`
     font-size: 1vw;
     padding: 0.8vw;
     border: 1px solid #abb2bf;
+  }
+  @media all and (max-width: 768px) and (max-height: 1024px) and (orientation: portrait) {
+    p {
+      font-size: 3vw;
+      margin-top: 2vh;
+      margin-left: 3vw;
+      margin-right: 3vw;
+      padding: 2vw;
+      text-align: justify;
+      border: 1px solid #67696d;
+    }
   }
 `;
 
@@ -298,6 +353,11 @@ const FactsContainer = styled.div`
   margin-left: 10vw;
   column-gap: 1vw;
   row-gap: 2vh;
+  @media all and (max-width: 768px) and (max-height: 1024px) and (orientation: portrait) {
+    margin-left: 2vw;
+    margin-right: 2vw;
+    font-size: 3vw;
+  }
 `;
 const FactsItem = styled.div`
   padding: 0.5vw;
@@ -312,6 +372,13 @@ const StraightLine = styled.div`
   width: 15vh;
   position: absolute;
   margin-left: 10vw;
+  @media all and (max-width: 768px) and (max-height: 1024px) and (orientation: portrait) {
+    margin-top: 29vh;
+    margin-left: 0vw;
+    left: 1.7vw;
+    height: 5vh;
+    width: 5vh;
+  }
 `;
 
 const StraightLine2 = styled.div`
@@ -323,4 +390,11 @@ const StraightLine2 = styled.div`
   position: absolute;
   right: 8vw;
   margin-left: 10vw;
+  @media all and (max-width: 768px) and (max-height: 1024px) and (orientation: portrait) {
+    margin-top: 13vh;
+    margin-right: 0vw;
+    right: 1.7vw;
+    height: 5vh;
+    width: 5vh;
+  }
 `;

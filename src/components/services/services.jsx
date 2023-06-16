@@ -4,6 +4,37 @@ import CodeIcon from "@mui/icons-material/Code";
 import SecurityIcon from "@mui/icons-material/Security";
 import ApiSharpIcon from "@mui/icons-material/ApiSharp";
 
+const IconCode = (size = "10vw") => {
+  return (
+    <span>
+      <CodeIcon
+        style={{
+          fontSize: size,
+        }}
+      />
+    </span>
+  );
+};
+
+const IconSecurity = (size = "10vw") => {
+  return (
+    <SecurityIcon
+      style={{
+        fontSize: size,
+      }}
+    />
+  );
+};
+
+const IconApi = (size = "9vw") => {
+  return (
+    <ApiSharpIcon
+      style={{
+        fontSize: size,
+      }}
+    />
+  );
+};
 const services = () => {
   return (
     <Parent>
@@ -13,13 +44,8 @@ const services = () => {
       </Head>
       <Services>
         <ServiceItems>
-          <span>
-            <CodeIcon
-              style={{
-                fontSize: "10vw",
-              }}
-            />
-          </span>
+          <Mobile>{IconCode("30vw")}</Mobile>
+          <Desktop> {IconCode()}</Desktop>
           <br />
           <span>WEB DEVELOPMENT</span>
           <p>
@@ -31,11 +57,8 @@ const services = () => {
           </p>
         </ServiceItems>
         <ServiceItems>
-          <SecurityIcon
-            style={{
-              fontSize: "10vw",
-            }}
-          />
+          <Mobile>{IconSecurity("30vw")}</Mobile>
+          <Desktop>{IconSecurity()}</Desktop>
           <br />
           <span>VAPT</span>
           <p>
@@ -46,11 +69,8 @@ const services = () => {
           </p>
         </ServiceItems>
         <ServiceItems>
-          <ApiSharpIcon
-            style={{
-              fontSize: "9vw",
-            }}
-          />
+          <Mobile>{IconApi("30vw")}</Mobile>
+          <Desktop>{IconApi()} </Desktop>
           <br />
           <span>DISCORD BOT</span>
           <p>
@@ -70,6 +90,10 @@ export default services;
 const Parent = styled.div`
   margin-left: 10vw;
   margin-top: 5vh;
+  @media all and (max-width: 768px) and (max-height: 1024px) and (orientation: portrait) {
+    margin: 0;
+    margin-left: 0vw;
+  }
 `;
 
 const Head = styled.div`
@@ -82,6 +106,11 @@ const Head = styled.div`
   font-weight: 600;
   span {
     color: #c778dd;
+  }
+  @media all and (max-width: 768px) and (max-height: 1024px) and (orientation: portrait) {
+    font-size: 5vw;
+    margin-left: 5vw;
+    margin-top: 5vh;
   }
 `;
 
@@ -102,6 +131,16 @@ const Services = styled.div`
   justify-items: center;
   align-items: center;
   column-gap: 2vw;
+  @media all and (max-width: 768px) and (max-height: 1024px) and (orientation: portrait) {
+    margin-top: 5vh;
+    margin-left: 0vw;
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 2vh;
+    justify-content: center;
+    align-items: center;
+    margin: 5vw;
+  }
 `;
 
 const ServiceItems = styled.div`
@@ -119,6 +158,10 @@ const ServiceItems = styled.div`
     text-align: justify;
     /* margin-right: 5vw; */
     font-weight: 500;
+    @media all and (max-width: 768px) and (max-height: 1024px) and (orientation: portrait) {
+      font-size: 3.5vw;
+      padding: 2vw;
+    }
   }
   span {
     background-color: #fad0c4;
@@ -126,5 +169,21 @@ const ServiceItems = styled.div`
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+  }
+  @media all and (max-width: 768px) and (max-height: 1024px) and (orientation: portrait) {
+    font-size: 5vw;
+  }
+`;
+
+const Mobile = styled.div`
+  display: none;
+  @media all and (max-width: 768px) and (max-height: 1024px) and (orientation: portrait) {
+    display: flex;
+  }
+`;
+const Desktop = styled.div`
+  display: flex;
+  @media all and (max-width: 768px) and (max-height: 1024px) and (orientation: portrait) {
+    display: none;
   }
 `;

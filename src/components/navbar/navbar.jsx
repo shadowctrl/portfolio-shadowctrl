@@ -169,7 +169,13 @@ const Components = styled.div`
     color: #c778dd;
   }
   @media all and (max-width: 768px) and (max-height: 1024px) and (orientation: portrait) {
+    ul {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      align-content: center;
+    }
     font-size: 2.3vw;
-    display: none;
+    /* display: none; */
   }
 `;
