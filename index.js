@@ -1,8 +1,8 @@
 import express from "express";
-import https from "https";
+//import https from 'https';
 import fs from "fs";
 import path from "path";
-
+import spdy from "spdy";
 const app = express();
 const port = 443;
 const __dirname = path.resolve();
@@ -29,6 +29,6 @@ const options = {
   cert: fs.readFileSync(path.resolve(__dirname, "credentials/public.pem")),
 };
 
-https.createServer(options, app).listen(port, () => {
+spdy.createServer(options, app).listen(port, () => {
   console.log(`Started execution on port ${port}`);
 });

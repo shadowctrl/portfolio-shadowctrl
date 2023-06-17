@@ -1,12 +1,17 @@
-import React from "react";
+import React, { useEffect } from "react";
 import styled from "styled-components";
 import Project from "../projects/project";
 import AllInclusiveIcon from "@mui/icons-material/AllInclusive";
 import HdrStrongIcon from "@mui/icons-material/HdrStrong";
-
 import { OnGoingWorks } from "../works/works";
 import { StraightOutlined } from "@mui/icons-material";
+import ReactGA from "react-ga";
 const aboutme = () => {
+  useEffect(() => {
+    document.title = "About Me";
+    ReactGA.initialize("G-6LSJFNRLP1");
+    ReactGA.pageview(window.location.pathname + window.location.search);
+  }, []);
   return (
     <Parent>
       <Head>

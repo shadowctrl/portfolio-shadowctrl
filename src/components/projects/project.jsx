@@ -1,4 +1,4 @@
-import React from "react";
+import React,{useEffect} from "react";
 import styled from "styled-components";
 import DragIndicatorSharpIcon from "@mui/icons-material/DragIndicatorSharp";
 import EastSharpIcon from "@mui/icons-material/EastSharp";
@@ -6,7 +6,7 @@ import ArrowOutwardSharpIcon from "@mui/icons-material/ArrowOutwardSharp";
 import CachedSharpIcon from "@mui/icons-material/CachedSharp";
 import projects from "./projects";
 import AutorenewSharp from "@material-ui/icons/AutorenewSharp";
-
+import ReactGA from "react-ga";
 export const ViewAll = (size) => {
   return (
     <Viewall onClick={() => window.open("/Works", "_self")}>
@@ -15,6 +15,10 @@ export const ViewAll = (size) => {
   );
 };
 export const Project = (Title) => {
+  // useEffect(() => {
+  //   ReactGA.initialize("G-6LSJFNRLP1");
+  //   ReactGA.pageview(window.location.pathname + window.location.search);
+  // }, []);
   return (
     <Projects>
       <Head>

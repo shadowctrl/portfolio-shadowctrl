@@ -1,8 +1,8 @@
-import React from "react";
+import React,{useEffect} from "react";
 import styled from "styled-components";
 import CropIcon from "@mui/icons-material/Crop";
 import DashboardOutlinedIcon from "@mui/icons-material/DashboardOutlined";
-
+import ReactGA from "react-ga";
 const IconCrop = (size, mt = "5vh", mtr = "10vw") => {
   return (
     <CropIcon
@@ -17,6 +17,10 @@ const IconCrop = (size, mt = "5vh", mtr = "10vw") => {
   );
 };
 const Skills = () => {
+  useEffect(() => {
+    ReactGA.initialize("G-6LSJFNRLP1");
+    ReactGA.pageview(window.location.pathname + window.location.search);
+  }, []);
   return (
     <Parent>
       <Head>

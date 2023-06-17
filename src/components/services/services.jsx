@@ -1,9 +1,9 @@
-import React from "react";
+import React, { useEffect } from "react";
 import styled from "styled-components";
 import CodeIcon from "@mui/icons-material/Code";
 import SecurityIcon from "@mui/icons-material/Security";
 import ApiSharpIcon from "@mui/icons-material/ApiSharp";
-
+import ReactGA from "react-ga";
 const IconCode = (size = "10vw") => {
   return (
     <span>
@@ -36,6 +36,11 @@ const IconApi = (size = "9vw") => {
   );
 };
 const services = () => {
+  useEffect(() => {
+    document.title = "Services";
+    ReactGA.initialize("G-6LSJFNRLP1");
+    ReactGA.pageview(window.location.pathname + window.location.search);
+  }, []);
   return (
     <Parent>
       <Head>

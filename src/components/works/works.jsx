@@ -1,12 +1,17 @@
-import React from "react";
+import React, { useEffect } from "react";
 import styled from "styled-components";
 import Navbar from "../navbar/navbar";
 import projects from "../projects/projects";
 import { onGoingProjects } from "../projects/projects";
 import ArrowOutwardSharpIcon from "@mui/icons-material/ArrowOutwardSharp";
 import AutorenewSharp from "@material-ui/icons/AutorenewSharp";
-
+import ReactGA from "react-ga";
 export const OnGoingWorks = (Title) => {
+  useEffect(() => {
+    document.title = "Works";
+    ReactGA.initialize("G-6LSJFNRLP1");
+    ReactGA.pageview(window.location.pathname + window.location.search);
+  }, []);
   return (
     <div>
       <Child2></Child2>
@@ -51,6 +56,11 @@ export const OnGoingWorks = (Title) => {
   );
 };
 const works = () => {
+  useEffect(() => {
+    document.title = "Works";
+    ReactGA.initialize("G-6LSJFNRLP1");
+    ReactGA.pageview(window.location.pathname + window.location.search);
+  }, []);
   return (
     <Parent>
       <Head>
@@ -244,7 +254,7 @@ const Child2 = styled.div`
     justify-content: start;
     align-items: center;
     margin-bottom: 2vh;
-    margin-top:2vh;
+    margin-top: 2vh;
   }
 `;
 const ProjectsRenderer = styled.div`

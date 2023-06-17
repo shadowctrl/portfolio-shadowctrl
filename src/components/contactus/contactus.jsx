@@ -1,9 +1,9 @@
-import React from "react";
+import React, { useEffect } from "react";
 import styled from "styled-components";
 import Navbar from "../navbar/navbar";
 import Contacts from "../contacts/contacts";
 import VerifiedIcon from "@mui/icons-material/Verified";
-
+import ReactGA from "react-ga";
 const Insta = (width = "50vw", size = "1vw", ml = "0.02vw") => {
   return (
     <li onClick={() => window.open("https://instagram.com/_.shadowctrl._")}>
@@ -54,6 +54,11 @@ const Youtube = (width = "50vw", size = "1vw", ml = "0.02vw") => {
   );
 };
 const contactus = () => {
+  useEffect(() => {
+    document.title = "Contact Us";
+    ReactGA.initialize("G-6LSJFNRLP1");
+    ReactGA.pageview(window.location.pathname + window.location.search);
+  }, []);
   return (
     <Parent>
       <Contacts />
