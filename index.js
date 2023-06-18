@@ -1,5 +1,5 @@
 import express from "express";
-//import https from 'https';
+import compression from "compression";
 import fs from "fs";
 import path from "path";
 import spdy from "spdy";
@@ -7,6 +7,7 @@ const app = express();
 const port = 443;
 const __dirname = path.resolve();
 
+app.use(compression());
 app.use((req, res, next) => {
   const { headers, hostname, originalUrl } = req;
   if (/^\d+\.\d+\.\d+\.\d+$/.test(hostname)) {
@@ -17,8 +18,11 @@ app.use((req, res, next) => {
 
   next();
 });
+const staticOptions = {
+  maxAge: "1d",
+};
 
-app.use(express.static(path.join(__dirname, "dist")));
+app.use(express.static(path.join(__dirname, "dist"), staticOptions));
 
 app.get("*", (req, res) => {
   res.sendFile(path.join(__dirname, "dist", "index.html"));
