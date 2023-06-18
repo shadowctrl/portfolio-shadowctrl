@@ -1,4 +1,4 @@
-import React,{useEffect} from "react";
+import React, { useEffect } from "react";
 import styled from "styled-components";
 import FormatQuoteIcon from "@mui/icons-material/FormatQuote";
 import { Project } from "../projects/project.jsx";
@@ -6,7 +6,7 @@ import Skills from "../skills/skills";
 import Aboutme from "../aboutme/aboutme";
 import Contacts from "../contacts/contacts";
 import Footer from "../footer/footer";
-import ReactGA from 'react-ga';
+import ReactGA from "react-ga";
 const Main = () => {
   useEffect(() => {
     ReactGA.initialize("G-6LSJFNRLP1");
