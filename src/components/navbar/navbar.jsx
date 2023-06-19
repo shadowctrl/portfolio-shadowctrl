@@ -152,7 +152,9 @@ const Components = styled.div`
     cursor: pointer;
   }
   li:hover {
-    animation: bounce 0.1s infinite linear;
+    animation-name: bounce;
+    animation-duration: 0.1s;
+    animation-iteration-count: 3;
     @keyframes bounce {
       0% {
         transform: translateY(0);
