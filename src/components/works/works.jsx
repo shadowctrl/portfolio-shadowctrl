@@ -254,7 +254,7 @@ const Child2 = styled.div`
     justify-content: start;
     align-items: center;
     margin-bottom: 2vh;
-    margin-top: 2vh;
+    margin-top: 10vh;
   }
 `;
 const ProjectsRenderer = styled.div`
@@ -280,6 +280,7 @@ const ProjectContainer = styled.div`
   border: 1px solid white;
   /* box-shadow: -1vw 1vh 2vh #c778dd; */
   padding-bottom: 2vh;
+  width: min-content;
   @media all and (max-width: 768px) and (max-height: 1024px) and (orientation: portrait) {
     margin-right: 0;
     box-shadow: -1vh 1vh 1.5vh #c778dd;
@@ -292,8 +293,7 @@ const ProjectImage = styled.div`
   }
   @media all and (max-width: 768px) and (max-height: 1024px) and (orientation: portrait) {
     img {
-      width: fit-content;
-      /* height: 20vh; */
+      width: 80vw;
     }
   }
 `;
