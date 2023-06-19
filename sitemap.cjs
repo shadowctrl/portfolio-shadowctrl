@@ -9,7 +9,14 @@ const renderToString = (element) =>
   ReactDOMServer.renderToString(React.createElement(element));
 
 async function generateSitemap() {
-  const staticRoutes = ["/", "Home", "About Me", "/Services", "/Contact Us"];
+  const staticRoutes = [
+    "/",
+    "Home",
+    "Works",
+    "About Me",
+    "Services",
+    "Contact",
+  ];
 
   const smStream = new SitemapStream({
     hostname: "https://www.shadowctrl.me",
