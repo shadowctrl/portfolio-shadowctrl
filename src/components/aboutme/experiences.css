@@ -1,0 +1,128 @@
+.timeline{
+ position: relative;
+ margin:10vh 20vw;
+ max-width: 80vw;
+ @media all and (max-width: 768px) and (max-height: 1024px) and (orientation: portrait) {
+margin-left:10vw;
+margin-right: 10vw;
+margin-top: 2vh;
+}
+ }
+
+.container{
+position: relative;
+padding: 1vh 3vw ;
+width: 50%;
+opacity: 0;
+animation: movedown 1s linear forwards;
+}
+
+@keyframes movedown {
+    0%{
+    opacity: 0.8;
+    transform: translateY(-2vh);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0vh);
+    }
+    
+}
+.container img{
+width:3vw;
+position:absolute;
+z-index: 1;
+top:11vh;
+right: -1.5vw;
+@media all and (max-width: 768px) and (max-height: 1024px) and (orientation: portrait) {
+width: 5vw;
+top:6vh;
+right:-2.5vw;
+}
+}
+.text-box{
+position: relative;
+padding:1vh 1vw;
+/* background-color: rgb(199, 120, 221); */
+background-color: #e056fd;
+background-image: linear-gradient(315deg, #e056fd 0%, #000000 74%);
+border-radius: 0.5vw;
+font-size: 1vw;
+color: white;
+@media all and (max-width: 768px) and (max-height: 1024px) and (orientation: portrait) {
+font-size: 2vw;
+}
+}
+.text-box h2{
+font-size: 1.5vw;
+@media all and (max-width: 768px) and (max-height: 1024px) and (orientation: portrait) {
+font-size: 2vw;
+}
+}
+.text-box p{
+font-size:0.8vw;
+@media all and (max-width: 768px) and (max-height: 1024px) and (orientation: portrait) {
+font-size: 1.5vw;
+}
+}
+.left-container{
+    left: -6vw;
+}
+.right-container{
+    left: 50%;
+
+}
+.right-container img{
+    width: 3vw;
+left: -1.5vw;
+@media all and (max-width: 768px) and (max-height: 1024px) and (orientation: portrait) {
+width: 5vw;
+left: -2.5vw;
+}
+/* top: 6vh; */
+}
+
+.timeline::after{
+content: '';
+position: absolute;
+width:0.5vw;
+height: 100%;
+background: white;
+top: 0;
+left: 50%;
+z-index: -1;
+animation:moveline 5.5s linear forwards;
+}
+
+@keyframes moveline {
+
+    0%{
+    height:0;
+    }
+    100%{
+    height:100%;
+    }
+}
+
+.container:nth-child(1){
+animation-delay: 0s;
+}
+
+.container:nth-child(2){
+    animation-delay: 1s;
+    }
+    
+.container:nth-child(3){
+    animation-delay: 2s;
+    }
+    
+.container:nth-child(4){
+    animation-delay: 3s;
+    }
+
+.container:nth-child(5){
+    animation-delay: 4s;    
+    }
+.container:nth-child(6){
+    animation-delay: 5s;
+}
