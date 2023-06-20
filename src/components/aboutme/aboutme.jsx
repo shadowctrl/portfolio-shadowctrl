@@ -1,16 +1,121 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState, useRef } from "react";
 import styled from "styled-components";
-import Project from "../projects/project";
 import AllInclusiveIcon from "@mui/icons-material/AllInclusive";
 import HdrStrongIcon from "@mui/icons-material/HdrStrong";
 import { OnGoingWorks } from "../works/works";
-import { StraightOutlined } from "@mui/icons-material";
 import ReactGA from "react-ga";
+import "./experiences.css";
+
+const Experiences = () => {
+  return (
+    <div id="timeline" className="">
+      <div id="container" className=" left-container">
+        <img src="/images/id.png" alt="" />
+        <div className="text-box ">
+          <h2>Infoziant It solutions</h2>
+          <small>Junior Pentester - 2022</small>
+          <p>
+            I had the opportunity to immerse myself in the world of
+            cybersecurity. Working alongside experienced professionals, I gained
+            practical experience in identifying and exploiting vulnerabilities,
+            conducting penetration tests, and assessing security measures.{" "}
+          </p>
+        </div>
+      </div>
+
+      <div id="container" className=" right-container">
+        <img src="/images/id.png" alt="" />
+        <div className="text-box ">
+          <h2>Jemi Cluster</h2>
+          <small>Junior Forensic Analyst - 2022</small>
+          <p>
+            I gained hands-on exposure to investigating and analyzing digital
+            evidence. Collaborating with seasoned professionals, I acquired
+            practical skills in conducting forensic examinations, recovering
+            deleted data, and preserving chain of custody
+          </p>
+        </div>
+      </div>
+
+      <div id="container" className=" left-container">
+        <img src="/images/id.png" alt="" />
+        <div className="text-box ">
+          <h2>Infoziant It Solutions</h2>
+          <small>Information Security Engineer - 2022</small>
+          <p>
+            Collaborating with the security team, I assisted in implementing and
+            monitoring security measures to safeguard sensitive data and
+            mitigate potential risks.
+          </p>
+        </div>
+      </div>
+
+      <div id="container" className=" right-container">
+        <img src="/images/id.png" alt="" />
+        <div className="text-box ">
+          <h2>Stigmata Techno Solutions</h2>
+          <small>Junior Security Analyst - 2022</small>
+          <p>
+            This role allowed me to gain valuable hands-on experience in
+            analyzing security threats, monitoring network activities, and
+            detecting potential vulnerabilities. I actively contributed to risk
+            assessments, and assisted in the implementation of security measures
+          </p>
+        </div>
+      </div>
+
+      <div id="container" className=" left-container">
+        <img src="/images/id.png" alt="" />
+        <div className="text-box ">
+          <h2>Stigmata Techno Solutions</h2>
+          <small>Network Associate - 2022</small>
+          <p>
+            I was exposed to the dynamic world of networking. Collaborating
+            closely with the network team, I gained valuable hands-on experience
+            in configuring and troubleshooting network devices, ensuring smooth
+            connectivity and optimal performance.
+          </p>
+        </div>
+      </div>
+
+      <div id="container" className=" right-container">
+        <img src="/images/id.png" alt="" />
+        <div className="text-box ">
+          <h2>Social Mascots</h2>
+          <small>Ethical Hacker - 2022</small>
+          <p>
+            Under the guidance of skilled professionals, I gained valuable
+            hands-on experience in assessing network vulnerabilities, conducting
+            penetration tests, and identifying potential security risks
+          </p>
+        </div>
+      </div>
+    </div>
+  );
+};
 const aboutme = () => {
+  const observerCallback = ([entry]) => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add("timeline");
+      document.querySelectorAll("#container").forEach((entry1) => {
+        entry1.classList.add("container");
+      });
+    }
+  };
+  const observerOptions = {
+    threshold: 0,
+  };
+
   useEffect(() => {
     document.title = "About Me";
     ReactGA.initialize("G-6LSJFNRLP1");
     ReactGA.pageview(window.location.pathname + window.location.search);
+
+    const observer = new IntersectionObserver(
+      observerCallback,
+      observerOptions
+    );
+    observer.observe(document.getElementById("timeline"));
   }, []);
   return (
     <Parent>
@@ -102,6 +207,14 @@ const aboutme = () => {
         </SkillContainer>
       </Skills>
       <Head>
+        <span>#</span>Experiences
+        <Dash />
+      </Head>
+      <Child>
+        <span>/</span>Internships
+      </Child>
+      {Experiences()}
+      <Head>
         <span>#</span>Current Works
         <Dash />
       </Head>
@@ -113,7 +226,10 @@ const aboutme = () => {
           color: "slategray",
         }}
       />
-      <OnGoingWorks />
+      <Works>
+        {" "}
+        <OnGoingWorks />
+      </Works>
       <HdrStrongIcon
         style={{
           fontSize: "5vw",
@@ -310,7 +426,11 @@ const Other = styled.div`
   border: 1px solid #abb2bf;
   padding: 1vw;
 `;
-
+const Works = styled.div`
+  @media all and (max-width: 768px) and (max-height: 1024px) and (orientation: portrait) {
+    margin-top: -10vh;
+  }
+`;
 const PersonalTouch = styled.div`
   margin-top: 10vh;
   @media all and (max-width: 768px) and (max-height: 1024px) and (orientation: portrait) {
@@ -401,5 +521,22 @@ const StraightLine2 = styled.div`
     right: 1.7vw;
     height: 5vh;
     width: 5vh;
+  }
+`;
+
+const Child = styled.div`
+  margin-left: 10vw;
+  margin-top: 5vh;
+  color: white;
+  font-size: 1.4vw;
+  font-weight: 500;
+  font-family: Source Code Pro;
+  span {
+    color: #c778dd;
+  }
+  @media all and (max-width: 768px) and (max-height: 1024px) and (orientation: portrait) {
+    font-size: 3vw;
+    margin-top: 2vh;
+    margin-left: 5vw;
   }
 `;
