@@ -17,6 +17,7 @@ const App = () => {
       <HelmetProvider>
         <Helmet>
           <meta property="og:image" content={"/images/og.jpg"} />
+          <link rel="canonical" href="https://www.shadowctrl.me" />
         </Helmet>
 
         <BrowserRouter>
@@ -26,6 +27,9 @@ const App = () => {
               path="/"
               element={
                 <>
+                  <Helmet>
+                    <link rel="canonical" href="https://www.shadowctrl.me" />
+                  </Helmet>
                   <Navbar />
                   <Main />
                   <Footer />
@@ -36,6 +40,9 @@ const App = () => {
               path="/Home"
               element={
                 <>
+                  <Helmet>
+                    <link rel="canonical" href="https://www.shadowctrl.me" />
+                  </Helmet>
                   <Navbar />
                   <Main />
                   <Footer />
@@ -46,6 +53,9 @@ const App = () => {
               path="/Works"
               element={
                 <>
+                  <Helmet>
+                    <link rel="canonical" href="https://www.shadowctrl.me" />
+                  </Helmet>
                   <Navbar /> <Works /> <Footer />
                 </>
               }
@@ -55,6 +65,9 @@ const App = () => {
               path="Contact"
               element={
                 <>
+                  <Helmet>
+                    <link rel="canonical" href="https://www.shadowctrl.me" />
+                  </Helmet>
                   <Navbar />
                   <Contactus /> <Footer />
                 </>
@@ -64,6 +77,9 @@ const App = () => {
               path="About Me"
               element={
                 <>
+                  <Helmet>
+                    <link rel="canonical" href="https://www.shadowctrl.me" />
+                  </Helmet>
                   <Navbar />
                   <Aboutme />
                   <Footer />
@@ -74,6 +90,9 @@ const App = () => {
               path="Services"
               element={
                 <>
+                  <Helmet>
+                    <link rel="canonical" href="https://www.shadowctrl.me" />
+                  </Helmet>
                   <Navbar />
                   <Services />
                   <Footer />
