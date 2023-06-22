@@ -3,12 +3,7 @@
     <url>
         <loc>https://www.shadowctrl.me/</loc>
         <changefreq>daily</changefreq>
-        <priority>1yarn run dev</priority>
-    </url>
-    <url>
-        <loc>https://www.shadowctrl.me/Home</loc>
-        <changefreq>daily</changefreq>
-        <priority>0.7</priority>
+        <priority>1</priority>
     </url>
     <url>
         <loc>https://www.shadowctrl.me/Works</loc>
@@ -18,7 +13,7 @@
     <url>
         <loc>https://www.shadowctrl.me/About%20Me</loc>
         <changefreq>daily</changefreq>
-        <priority>0.7</priority>
+        <priority>0.9</priority>
     </url>
     <url>
         <loc>https://www.shadowctrl.me/Services</loc>
@@ -28,6 +23,6 @@
     <url>
         <loc>https://www.shadowctrl.me/Contact</loc>
         <changefreq>daily</changefreq>
-        <priority>0.7</priority>
+        <priority>0.9</priority>
     </url>
 </urlset>
