@@ -251,7 +251,7 @@ const Quote = styled.div`
   justify-content: center;
   align-items: center;
   color: white;
-  font-size: 2vw;
+  font-size: 1.8vw;
   margin-top: -20vh;
   border: 1px solid #bdb7b7;
   margin-left: 10vw;
