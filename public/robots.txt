@@ -1,2 +1,4 @@
-user-agent: *
+User-agent: *
+Allow: /
+
 sitemap:https://www.shadowctrl.me/sitemap.xml
