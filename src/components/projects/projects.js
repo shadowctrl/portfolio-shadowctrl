@@ -1,11 +1,10 @@
 const projects = [
   {
     image: "/images/discordjs.webp",
-    languages: "NodeJS, MongoDB, Discord API",
+    languages: "NodeJS, MongoDB, Discord API, Discord.js",
     title: "Discord Application",
-    description: "A multi functional discord bot",
-    cached: "https://github.com/shadowctrl/whitehatian-discord-bot",
-    live: "https://discord.gg/QKjrhegdx5",
+    description: "Ticketing System",
+    cached: "https://github.com/muralianand12345/Discord-Ticket-Bot",
   },
   {
     image: "/images/csi.webp",
@@ -41,11 +40,11 @@ const projects = [
 
 export const onGoingProjects = [
   {
-    image: "/images/whitehatian_website.webp",
-    languages: "ReactJS, NodeJS, Firebase, Html, Css",
-    title: "White Hatians Website",
-    description: "A website for the cyber security club 'White Hatians'",
-    progress: "https://github.com/shadowctrl/White-Hatians-Website",
+    image: "/images/shadowx.webp",
+    languages: "ReactJS, NodeJS, Tailwind CSS, Lottie",
+    title: "ShadowX Website",
+    description: "A startup website design",
+    progress: "https://github.com/shadowctrl/ShadowX",
   },
 ];
 

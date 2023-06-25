@@ -72,8 +72,8 @@ const works = () => {
         <span>#</span>Completed Projects
       </Child>
       <ProjectMain>
-        <Box1 />
-        <Box />
+        {/* <Box1 />
+        <Box /> */}
         <ProjectsRenderer>
           {projects.map((value, index) => (
             <ProjectContainer key={value.title}>
