@@ -78,7 +78,7 @@ export const Project = (Title) => {
 export default Project;
 
 const Projects = styled.div`
-  padding-top: 5vh;
+  padding-top: 10vh;
   @media all and (max-width: 768px) and (max-height: 1024px) and (orientation: portrait) {
     padding: 0;
   }
@@ -173,15 +173,19 @@ const ProjectContainer = styled.div`
   box-shadow: -1vw 1vh 2vh #c778dd;
   padding-bottom: 2vh;
   width: min-content;
+  border-radius: 1vw;
+  overflow: hidden;
   @media all and (max-width: 768px) and (max-height: 1024px) and (orientation: portrait) {
     margin-right: 0;
     box-shadow: -1vh 1vh 1.5vh #c778dd;
+    border-radius: 5vw;
   }
 `;
 const ProjectImage = styled.div`
   img {
     width: 20vw;
     height: 20vh;
+    object-fit: cover;
   }
   @media all and (max-width: 768px) and (max-height: 1024px) and (orientation: portrait) {
     img {

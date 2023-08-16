@@ -1,12 +1,25 @@
-import React from "react";
+import React, { useState } from "react";
 import styled from "styled-components";
+import GitHubIcon from "@mui/icons-material/GitHub";
+import InstagramIcon from "@mui/icons-material/Instagram";
+// import { Switch, Space } from "antd";
+import "./navbar.css";
 import union from "../../assets/Union.svg";
 import thm from "../../assets/thm.svg";
 import items from "./components";
-import GitHubIcon from "@mui/icons-material/GitHub";
-import InstagramIcon from "@mui/icons-material/Instagram";
-import "./navbar.css";
+
 const Navbar = () => {
+  const [loading, setLoading] = useState(false);
+  // const [checked, setChecked] = useState(false);
+
+  // const handleClick = () => {
+  //   setLoading(!loading);
+  //   setTimeout(() => {
+  //     setLoading(() => false);
+  //   }, 500);
+
+  //   document.getElementById("root").classList.toggle("night_theme");
+  // };
   return (
     <Parent>
       <Line></Line>
@@ -47,6 +60,14 @@ const Navbar = () => {
               {value}
             </li>
           ))}
+          {/* <li>
+            <Switch
+              checkedChildren="Night"
+              unCheckedChildren="Dark"
+              loading={loading}
+              onClick={handleClick}
+            />
+          </li> */}
         </ul>
       </Components>
     </Parent>
@@ -61,7 +82,7 @@ const Parent = styled.div`
   padding-right: 10vw;
   display: flex;
   justify-content: space-between;
-
+  position: relative;
   @media all and (max-width: 768px) and (max-height: 1024px) and (orientation: portrait) {
     padding-top: 1vh;
     padding-right: 0;
@@ -77,7 +98,7 @@ const Img = styled.div`
   }
   h1 {
     padding-top: 0.5vh;
-    font-size: 1vw;
+    font-size: 1.2vw;
     margin-left: 0.4vw;
     color: #c778dd;
     font-family: mars;
@@ -103,7 +124,7 @@ const Line = styled.div`
       height: 0vh;
     }
     100% {
-      height: 19vh;
+      height: 15vh;
     }
   }
 
@@ -117,7 +138,7 @@ const Line = styled.div`
         height: 0vh;
       }
       100% {
-        height: 15vh;
+        height: 13vh;
       }
     }
   }
@@ -127,7 +148,7 @@ const Line = styled.div`
 const Socials = styled.div`
   cursor: pointer;
   position: absolute;
-  margin-top: 10vh;
+  margin-top: 6vh;
   color: #abb2bf;
   margin-left: -7vw;
 
@@ -135,21 +156,27 @@ const Socials = styled.div`
     width: 1.8vw;
   }
   @media all and (max-width: 768px) and (max-height: 1024px) and (orientation: portrait) {
-    margin-top: 5.2vh;
+    margin-top: 3.2vh;
     margin-left: -5vw;
     font-size: 2vw;
   }
 `;
 const Components = styled.div`
+  /* position: relative; */
   color: #e8dcdc;
   ul {
     display: flex;
     justify-content: end;
+    align-items: center;
     list-style-type: none;
   }
   li {
     margin-right: 1vw;
     cursor: pointer;
+  }
+  li:last-child {
+    /* position: absolute; */
+    margin-right: 0vw;
   }
   li:hover {
     animation-name: bounce;

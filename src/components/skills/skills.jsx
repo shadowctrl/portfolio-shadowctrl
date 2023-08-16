@@ -1,4 +1,4 @@
-import React,{useEffect} from "react";
+import React, { useEffect } from "react";
 import styled from "styled-components";
 import CropIcon from "@mui/icons-material/Crop";
 import DashboardOutlinedIcon from "@mui/icons-material/DashboardOutlined";
@@ -85,7 +85,7 @@ const Skills = () => {
 export default Skills;
 
 const Parent = styled.div`
-  padding-top: 5vh;
+  padding-top: 10vh;
   font-family: Fira Code;
   @media all and (max-width: 768px) and (max-height: 1024px) and (orientation: portrait) {
   }

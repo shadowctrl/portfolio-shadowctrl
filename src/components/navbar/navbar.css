@@ -1,23 +1,22 @@
 @keyframes zoompop {
-    0%{
+  0% {
     transform: scale(0);
     opacity: 1;
-    }
-    100%{
+  }
+  100% {
     transform: scale(1);
     opacity: 1;
-    }
-    
- }
- .SocialItem1{
-animation: zoompop 0.2s ease-in 0.5s forwards;
-opacity: 0;
+  }
 }
-.SocialItem2{
-animation: zoompop 0.2s ease-in 0.7s forwards;
-opacity: 0;
+.SocialItem1 {
+  animation: zoompop 0.2s ease-in 0.5s forwards;
+  opacity: 0;
 }
-.SocialItem3{
-animation: zoompop 0.2s ease-in 0.9s forwards;
-opacity: 0;
+.SocialItem2 {
+  animation: zoompop 0.2s ease-in 0.7s forwards;
+  opacity: 0;
+}
+.SocialItem3 {
+  animation: zoompop 0.2s ease-in 0.9s forwards;
+  opacity: 0;
 }

@@ -1,14 +1,22 @@
 const projects = [
   {
-    image: "/images/discordjs.webp",
-    languages: "NodeJS, MongoDB, Discord API, Discord.js",
-    title: "Discord Application",
-    description: "Ticketing System",
-    cached: "https://github.com/muralianand12345/Discord-Ticket-Bot",
+    image: "/images/hackatank.webp",
+    languages: "ReactJS, Html, Css",
+    title: "Hackathon Website",
+    description: "Showcasing my national-level, 24-hour hackathon website.",
+    live: "https://www.hackatank.tech",
+    cached: "https://github.com/shadowctrl/HackATank-Website",
+  },
+  {
+    image: "/images/pepper.webp",
+    languages: "NodeJS, MongoDB, Lavalink, Discord API",
+    title: "Verified Discord Bot",
+    description: "A officially Verified Discord Music Application",
+    live: "https://pepperbot.muralianand.in/",
   },
   {
     image: "/images/csi.webp",
-    languages: "Reactjs, Html, Css, Javascript",
+    languages: "Reactjs, Html, Css",
     title: "CSI International Conference",
     description: "NGTCA 2023 website",
     live: "https://icngt2023.org",
@@ -23,7 +31,7 @@ const projects = [
 
   {
     image: "/images/portfolio.webp",
-    languages: "ReactJS, Javascript, Html, Css",
+    languages: "ReactJS, Html, Css",
     title: "Portfolio",
     description: "Portfolio Website",
     live: "https://shadowctrl.me",
@@ -31,10 +39,10 @@ const projects = [
 
   {
     image: "/images/discordjs.webp",
-    languages: "NodeJS, MongoDB, Lavalink, Discord API",
+    languages: "NodeJS, MongoDB, Discord API",
     title: "Discord Application",
-    description: "Discord Music Application",
-    live: "https://tarlan-discordbot.gitbook.io/",
+    description: "Ticketing System",
+    cached: "https://github.com/muralianand12345/Discord-Ticket-Bot",
   },
 ];
 

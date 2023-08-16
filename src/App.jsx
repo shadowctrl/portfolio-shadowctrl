@@ -1,7 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import "./index.css";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 import Error from "./error";
 import Main from "./components/main/main";
 import Works from "./components/works/works";
@@ -11,37 +11,21 @@ import Navbar from "./components/navbar/navbar";
 import Aboutme from "./components/aboutme/aboutme";
 import Services from "./components/services/services";
 import { Helmet, HelmetProvider } from "react-helmet-async";
+
 const App = () => {
   return (
     <React.StrictMode>
       <HelmetProvider>
-        <Helmet>
-          <meta property="og:image" content={"/images/og.jpg"} />
-          <link rel="canonical" href="https://www.shadowctrl.me" />
-        </Helmet>
-
         <BrowserRouter>
           <Routes>
             <Route path="*" element={<Error />} />
-            <Route
-              path="/"
-              element={
-                <>
-                  <Helmet>
-                    <link rel="canonical" href="https://www.shadowctrl.me" />
-                  </Helmet>
-                  <Navbar />
-                  <Main />
-                  <Footer />
-                </>
-              }
-            />
+            <Route path="/" element={<Navigate to={"/Home"} />} />
             <Route
               path="/Home"
               element={
                 <>
                   <Helmet>
-                    <link rel="canonical" href="https://www.shadowctrl.me" />
+                    <link rel="canonical" href="https://www.shadowctrl.me/" />
                   </Helmet>
                   <Navbar />
                   <Main />
@@ -54,7 +38,10 @@ const App = () => {
               element={
                 <>
                   <Helmet>
-                    <link rel="canonical" href="https://www.shadowctrl.me" />
+                    <link
+                      rel="canonical"
+                      href="https://www.shadowctrl.me/Works"
+                    />
                   </Helmet>
                   <Navbar /> <Works /> <Footer />
                 </>
@@ -66,7 +53,10 @@ const App = () => {
               element={
                 <>
                   <Helmet>
-                    <link rel="canonical" href="https://www.shadowctrl.me" />
+                    <link
+                      rel="canonical"
+                      href="https://www.shadowctrl.me/Contact"
+                    />
                   </Helmet>
                   <Navbar />
                   <Contactus /> <Footer />
@@ -78,7 +68,10 @@ const App = () => {
               element={
                 <>
                   <Helmet>
-                    <link rel="canonical" href="https://www.shadowctrl.me" />
+                    <link
+                      rel="canonical"
+                      href="https://www.shadowctrl.me/About Me"
+                    />
                   </Helmet>
                   <Navbar />
                   <Aboutme />
@@ -91,7 +84,10 @@ const App = () => {
               element={
                 <>
                   <Helmet>
-                    <link rel="canonical" href="https://www.shadowctrl.me" />
+                    <link
+                      rel="canonical"
+                      href="https://www.shadowctrl.me/Services"
+                    />
                   </Helmet>
                   <Navbar />
                   <Services />

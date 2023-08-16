@@ -46,8 +46,8 @@ const Main = () => {
         <FormatQuoteBottom>
           <FormatQuoteIcon />
         </FormatQuoteBottom>
-        <SideBox />
-        {Project("Projects")}
+        {/* <SideBox /> */}
+        <ProjectPadding>{Project("Projects")}</ProjectPadding>
         <Skills />
         {/* <Aboutme /> */}
         <Head>
@@ -271,7 +271,11 @@ const FormatQuoteBottom = styled.div`
     margin-top: -1.2vh;
   }
 `;
-
+const ProjectPadding = styled.div`
+  @media all and (max-width: 768px) and (max-height: 1024px) and (orientation: portrait) {
+    padding-top: 15vh;
+  }
+`;
 const SideBox = styled.div`
   color: white;
   border: 1px solid #bdb7b7;
@@ -291,7 +295,7 @@ const Head = styled.div`
   color: white;
   font-family: Fira Code;
   margin-left: 10vw;
-  margin-top: 5vh;
+  margin-top: 10vh;
   font-size: 2vw;
   font-weight: 600;
   span {
