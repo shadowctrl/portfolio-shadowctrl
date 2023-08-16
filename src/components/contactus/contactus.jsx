@@ -36,7 +36,7 @@ const Github = (width = "50vw", size = "1vw", ml = "0.02vw") => {
   );
 };
 
-const Youtube = (width = "50vw", size = "1vw", ml = "0.02vw") => {
+const Youtube = (width = "35vw", size = "1vw", ml = "0.02vw") => {
   return (
     <li onClick={() => window.open("https://youtube.com/@shadowctrl")}>
       <span>
