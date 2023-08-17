@@ -19,9 +19,9 @@ const App = () => {
         <BrowserRouter>
           <Routes>
             <Route path="*" element={<Error />} />
-            <Route path="/" element={<Navigate to={"/Home"} />} />
+            <Route path="/Home" element={<Navigate to={"/Home"} />} />
             <Route
-              path="/Home"
+              path="/"
               element={
                 <>
                   <Helmet>
