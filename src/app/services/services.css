@@ -1,0 +1,97 @@
+.serviceParent {
+  margin-left: 10vw;
+  margin-top: 5vh;
+}
+.serviceHead {
+  display: flex;
+  align-items: center;
+  color: white;
+  font-family: Fira Code;
+  margin-top: 10vh;
+  font-size: 2vw;
+  font-weight: 600;
+}
+.serviceHead span {
+  color: #c778dd;
+}
+.serviceDash {
+  border-top: 1px solid #c778dd;
+  width: 35vw;
+  margin-left: 2vw;
+}
+.serviceServices {
+  margin-top: 10vh;
+  margin-left: -10vw;
+  color: #c778dd;
+  padding: 0vh 5vw;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-items: center;
+  align-items: center;
+  column-gap: 2vw;
+}
+.serviceServiceItems {
+  font-size: 1.5vw;
+  font-weight: 900;
+  font-family: mars;
+  border-radius: 0.5vw;
+  border: 0.1vw solid #c778dd;
+  padding: 2vh 1.3vw;
+}
+.serviceServiceItems p {
+  color: white;
+  font-family: Fira Code;
+  font-size: 1vw;
+  text-align: justify;
+  font-weight: 500;
+}
+.serviceServiceItems span {
+  background-color: #fad0c4;
+  background-image: linear-gradient(315deg, #fad0c4 0%, #f1a7f1 74%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.serviceMobile {
+  display: none;
+}
+.serviceDesktop {
+  display: flex;
+}
+@media all and (max-width: 768px) and (max-height: 1024px) and (orientation: portrait) {
+  .serviceParent {
+    margin: 0;
+    margin-left: 0vw;
+  }
+  .serviceHead {
+    font-size: 5vw;
+    margin-left: 5vw;
+    margin-top: 5vh;
+  }
+  .serviceDash {
+    width: 100%;
+  }
+  .serviceServices {
+    margin-top: 5vh;
+    margin-left: 0vw;
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 2vh;
+    justify-content: center;
+    align-items: center;
+    margin: 5vw;
+  }
+  .serviceServiceItems {
+    font-size: 3.5vw;
+    padding: 2vw;
+  }
+  .serviceServiceItems p {
+    font-size: 3vw;
+  }
+  .serviceMobile {
+    display: flex;
+  }
+  .serviceDesktop {
+    display: none;
+  }
+}
