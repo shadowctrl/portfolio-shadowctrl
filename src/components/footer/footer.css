@@ -1,0 +1,47 @@
+.footerParent {
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-items: center;
+  padding-top: 10vh;
+  padding-bottom: 1vh;
+}
+
+.footerMedia {
+  display: flex;
+  color: #778899;
+}
+
+.footerText {
+  color: #778899;
+  padding-top: 1vh;
+  font-family: "Libre Barcode 128 Text";
+  font-size: 2vw;
+}
+
+@media all and (max-width: 768px) and (max-height: 1024px) and (orientation: portrait) {
+  .footerText {
+    font-size: 6vw;
+  }
+}
+
+.footerMobile {
+  display: none;
+}
+
+@media all and (max-width: 768px) and (max-height: 1024px) and (orientation: portrait) {
+  .footerMobile {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+.footerDesktop {
+  display: block;
+}
+
+@media all and (max-width: 768px) and (max-height: 1024px) and (orientation: portrait) {
+  .footerDesktop {
+    display: none;
+  }
+}
