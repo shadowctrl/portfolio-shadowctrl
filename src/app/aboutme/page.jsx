@@ -30,10 +30,10 @@ const Aboutme = () => {
           applications using cutting-edge technologies, I am confident that I
           can deliver high-quality work to clients with diverse needs.
           <br /> <br />
-          Whether it's building a custom web application, integrating
-          third-party APIs, or managing a database on Firebase, I have the
-          skills and experience to get the job done. As a Cyber Security
-          graduate, I understand the importance of building secure and resilient
+          Whether building a custom web application, integrating third-party
+          APIs, or managing a database on Firebase, I have the skills and
+          experience to get the job done. As a Cyber Security graduate, I
+          understand the importance of building secure and resilient
           applications and am committed to implementing industry best practices
           in all my projects.
           <br /> <br />

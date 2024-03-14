@@ -41,8 +41,8 @@ const Contactme = () => {
 
       <div className="contact">
         <p>
-          I'm Interested in freelance opportunities. However, if you have any
-          other queries don't hesitate to contact me.
+          {`I'm`} Interested in freelance opportunities. However, if you have
+          any other queries feel free to contact me.
         </p>
         <span>
           <h3>Message Me Here</h3>
