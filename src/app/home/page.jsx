@@ -4,7 +4,7 @@ import Link from "next/link";
 import Image from "next/image";
 import projects from "../works/projects";
 import Skills from "../../components/skills/skills";
-import Contactme from "../contactme/page";
+import Contactme from "../contact/page";
 
 const Home = () => {
   const ViewAll = (size) => {
@@ -20,16 +20,16 @@ const Home = () => {
       <div className="homeMain1">
         <div className="homeIntro">
           <h1>
-            Shadowctrl is a <span> Security Professional </span>
+            Shadowctrl is a <span> Mern Stack </span>
             <br />
-            and a <span>Mern Stack Developer</span>
+            and a <span>Next.js Developer</span>
           </h1>
-          <p>
-            He develops robust security mechanisms to protect critical systems
-            and crafts responsive websites that meet creativity
-          </p>
-          <Link href="/contactme">
-            <button className="homeContact">Contact Me</button>
+          <p>Fueling Your Vision with Code, Coffee, and Creativity</p>
+          <Link
+            href="https://www.upwork.com/freelancers/~01701539e14beb9820"
+            target="_blank"
+          >
+            <button className="homeContact">Hire Me</button>
           </Link>
         </div>
         <div className="homeImg">
@@ -41,7 +41,7 @@ const Home = () => {
           />
           <p className="homePara">
             <span className="homeBox"></span>
-            Currently working as Freelancer
+            Freelancer
           </p>
         </div>
       </div>

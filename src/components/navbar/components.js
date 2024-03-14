@@ -1,2 +1,2 @@
-const items = ["home", "works", "services", "aboutme", "contactme"];
+const items = ["home", "works", "services", "aboutme", "contact"];
 export default items;

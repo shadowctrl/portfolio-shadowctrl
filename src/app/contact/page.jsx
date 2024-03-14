@@ -27,7 +27,7 @@ const IconEmail = (size = "1.3vw", pr = "0.5vw") => {
           paddingRight: pr,
         }}
       />
-      shadowctrl@shadowctrl.me
+      admin@shadowctrl.me
     </>
   );
 };
