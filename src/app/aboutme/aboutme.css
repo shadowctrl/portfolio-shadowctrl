@@ -1,0 +1,240 @@
+.aboutParent {
+  padding-top: 5vh;
+  font-family: Fira Code;
+}
+
+.aboutHead {
+  display: flex;
+  align-items: center;
+  color: white;
+  font-family: Fira Code;
+  margin-left: 10vw;
+  margin-top: 5vh;
+  font-size: 2vw;
+  font-weight: 600;
+}
+.aboutHead span {
+  color: #c778dd;
+}
+@media all and (max-width: 768px) and (max-height: 1024px) and (orientation: portrait) {
+  .aboutHead {
+    font-size: 5vw;
+    margin-left: 5vw;
+    margin-top: 3vh;
+  }
+}
+
+.aboutDash {
+  border-top: 1px solid #c778dd;
+  width: 36vw;
+  margin-left: 2vw;
+}
+
+.aboutSideBox {
+  color: white;
+  border: 1px solid #bdb7b7;
+  padding: 2vw;
+  margin-top: 10vh;
+  margin-left: 90vw;
+}
+
+.aboutBorder {
+  border: 1px solid #bdbdbd;
+  padding: 0.5vw;
+  writing-mode: vertical-lr;
+  text-orientation: upright;
+  text-align: center;
+  font-size: 1vw;
+  color: #c778dd;
+}
+.aboutBorder span {
+  font-family: Source Code Pro;
+  padding-top: 1.5vh;
+}
+@media all and (max-width: 768px) and (max-height: 1024px) and (orientation: portrait) {
+  .aboutBorder {
+    padding: 0%.5;
+    font-size: 5vw;
+    margin-top: 3vh;
+    display: none;
+  }
+}
+
+.aboutContainer {
+  display: flex;
+  margin-right: 10vw;
+}
+.aboutContainer img {
+  width: 15vw;
+  border-radius: 1vw;
+  opacity: 0.8;
+  box-shadow: 2vw 2vh 2vw;
+}
+@media all and (max-width: 768px) and (max-height: 1024px) and (orientation: portrait) {
+  .aboutContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0vw;
+    padding: 0vw;
+  }
+  .aboutContainer img {
+    min-width: 85vw;
+    max-width: 90vw;
+  }
+}
+
+.aboutAbout {
+  padding-left: 7.5vw;
+  padding-top: 5vh;
+  padding-right: 4vw;
+  text-align: justify;
+  color: #abb2bf;
+  font-family: Fira Code;
+}
+@media all and (max-width: 768px) and (max-height: 1024px) and (orientation: portrait) {
+  .aboutAbout {
+    padding: 5vw;
+    margin-top: 2vh;
+    font-size: 3vw;
+  }
+}
+
+.aboutPersonalTouch {
+  margin-top: 10vh;
+}
+@media all and (max-width: 768px) and (max-height: 1024px) and (orientation: portrait) {
+  .aboutPersonalTouch {
+    margin-top: 6vh;
+  }
+}
+
+.aboutHobbieTitle {
+  display: flex;
+  flex-direction: row;
+}
+
+.aboutPersonalTouchHead {
+  display: flex;
+  align-items: center;
+  color: white;
+  font-family: Fira Code;
+  margin-left: 10vw;
+  margin-top: 5vh;
+  font-size: 2vw;
+  font-weight: 600;
+  span {
+    color: #c778dd;
+  }
+}
+@media all and (max-width: 768px) and (max-height: 1024px) and (orientation: portrait) {
+  .aboutPersonalTouchHead {
+    font-size: 5vw;
+    margin-left: 5vw;
+    margin-top: 3vh;
+  }
+}
+.aboutPersonalTouchHobbies p {
+  font-family: Fira Code;
+  text-align: center;
+  margin: 5vh 10vw;
+  color: #bcc4d3;
+  font-size: 1vw;
+  padding: 0.8vw;
+  border: 1px solid #abb2bf;
+}
+@media all and (max-width: 768px) and (max-height: 1024px) and (orientation: portrait) {
+  .aboutPersonalTouchHobbies p {
+    font-size: 3vw;
+    margin-top: 2vh;
+    margin-left: 3vw;
+    margin-right: 3vw;
+    padding: 2vw;
+    text-align: justify;
+    border: 1px solid #67696d;
+  }
+}
+
+.aboutPersonalTouchFactsContainer {
+  margin-top: 5vh;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  color: #bcc4d3;
+  font-family: Fira Code;
+  margin-right: 10vw;
+  margin-left: 10vw;
+  column-gap: 1vw;
+  row-gap: 2vh;
+}
+@media all and (max-width: 768px) and (max-height: 1024px) and (orientation: portrait) {
+  .aboutPersonalTouchFactsContainer {
+    margin-left: 2vw;
+    margin-right: 2vw;
+    font-size: 3vw;
+  }
+}
+
+.aboutPersonalTouchFactsItem {
+  padding: 0.5vw;
+  border: 1px solid #7b7a7a;
+}
+
+.aboutStraightLine {
+  border-left: 1px solid white;
+  border-bottom: 1px solid white;
+  margin-top: 10vh;
+  height: 15vh;
+  width: 15vh;
+  position: absolute;
+  margin-left: 10vw;
+}
+@media all and (max-width: 768px) and (max-height: 1024px) and (orientation: portrait) {
+  .aboutStraightLine {
+    margin-top: 29vh;
+    margin-left: 0vw;
+    left: 1.7vw;
+    height: 5vh;
+    width: 5vh;
+  }
+}
+
+.aboutStraightLine2 {
+  border-right: 1px solid white;
+  border-top: 1px solid white;
+  margin-top: 15vh;
+  height: 15vh;
+  width: 15vh;
+  position: absolute;
+  right: 8vw;
+  margin-left: 10vw;
+}
+@media all and (max-width: 768px) and (max-height: 1024px) and (orientation: portrait) {
+  .aboutStraightLine2 {
+    margin-top: 13vh;
+    margin-right: 0vw;
+    right: 1.7vw;
+    height: 5vh;
+    width: 5vh;
+  }
+}
+
+.aboutChild {
+  margin-left: 10vw;
+  margin-top: 5vh;
+  color: white;
+  font-size: 1.4vw;
+  font-weight: 500;
+  font-family: Source Code Pro;
+}
+.aboutChild span {
+  color: #c778dd;
+}
+@media all and (max-width: 768px) and (max-height: 1024px) and (orientation: portrait) {
+  .aboutChild {
+    font-size: 3vw;
+    margin-top: 2vh;
+    margin-left: 5vw;
+  }
+}

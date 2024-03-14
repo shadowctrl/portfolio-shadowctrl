@@ -1,0 +1,128 @@
+.skillsMain {
+  padding-top: 10vh;
+}
+.skillsParent {
+  display: flex;
+}
+.skillsHead {
+  display: flex;
+  align-items: center;
+  color: white;
+  font-family: Fira Code;
+  margin-left: 10vw;
+  margin-top: 5vh;
+  font-size: 2vw;
+  font-weight: 600;
+}
+.skillsHead span {
+  color: #c778dd;
+}
+
+.skillsDash {
+  border-top: 1px solid #c778dd;
+  width: 38vw;
+  margin-left: 2vw;
+}
+
+.skills {
+  border: 0.2vw dotted #c778dd;
+  padding: 2vh 1vw;
+  border-radius: 1vw;
+  margin-top: 5vh;
+  margin-left: 5vw;
+  color: white;
+  font-size: 1.1vw;
+  display: grid;
+  grid-column-gap: 5vw;
+  grid-row-gap: 5vh;
+  grid-template-columns: 15vw 15vw 15vw;
+}
+
+.skillsTitle {
+  border: 1px solid #bdb7b7;
+  text-align: center;
+  padding: 0.3vw;
+  margin: 0.3vw;
+  color: #c776dd;
+  font-size: 1.3vw;
+  font-weight: 700;
+  font-family: Fira Code;
+}
+
+.languages {
+  border: 1px solid white;
+  border-radius: 1vw;
+  padding: 0.5vw;
+  text-align: left;
+  font-family: Fira Code;
+}
+
+.databases {
+  border: 1px solid white;
+  border-radius: 1vw;
+  padding: 0.5vw;
+  text-align: left;
+  font-family: Fira Code;
+}
+
+.other {
+  border: 1px solid white;
+  border-radius: 1vw;
+  padding: 0.5vw;
+  text-align: left;
+  font-family: Fira Code;
+}
+
+.os {
+  border: 1px solid white;
+  border-radius: 1vw;
+  padding: 0.5vw;
+  text-align: left;
+  font-family: Fira Code;
+}
+.languages ul,
+.databases ul,
+.other ul,
+.os ul {
+  padding: 1vh 0vw;
+  margin-left: 3vw;
+  list-style-type: circle;
+}
+@media all and (max-width: 768px) and (max-height: 1024px) and (orientation: portrait) {
+  .skillsParent {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+  }
+  .skillsHead {
+    font-size: 5vw;
+    margin-left: 5vw;
+    margin-top: 3vh;
+  }
+  .skills {
+    font-size: 5vw;
+    margin: 0;
+    display: grid;
+    grid-template-columns: none;
+    grid-auto-flow: row dense;
+    grid-column-gap: 0;
+    grid-row-gap: 2vh;
+    place-content: center;
+    padding: 2vw;
+    border: 0.7vw dotted #c778dd;
+    font-size: 4vw;
+  }
+
+  .skillsTitle {
+    font-size: 5vw;
+  }
+
+  .languages ul,
+  .databases ul,
+  .other ul,
+  .os ul {
+    margin-left: 7vw;
+  }
+}

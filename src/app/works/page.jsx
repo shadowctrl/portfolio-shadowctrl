@@ -61,7 +61,7 @@ export const OnGoingWorks = (Title) => {
   );
 };
 
-const works = () => {
+const Works = () => {
   return (
     <div className="worksParent">
       <div className="worksHead">
@@ -126,4 +126,4 @@ const works = () => {
   );
 };
 
-export default works;
+export default Works;
