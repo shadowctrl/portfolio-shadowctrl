@@ -13,19 +13,19 @@ export default function sitemap() {
       priority: 0.8,
     },
     {
-      url: "https://acme.com/services",
+      url: "https://shadowctrl.me/services",
       lastModified: new Date(),
       changeFrequency: "weekly",
       priority: 0.8,
     },
     {
-      url: "https://acme.com/aboutme",
+      url: "https://shadowctrl.me/aboutme",
       lastModified: new Date(),
       changeFrequency: "weekly",
       priority: 0.8,
     },
     {
-      url: "https://acme.com/contact",
+      url: "https://shadowctrl.me/contact",
       lastModified: new Date(),
       changeFrequency: "weekly",
       priority: 0.8,
