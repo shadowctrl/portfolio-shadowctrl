@@ -4,6 +4,12 @@ import { onGoingProjects } from "./projects";
 import Image from "next/image";
 import Link from "next/link";
 
+export const metadata = {
+  title: "shadowctrl | Showcasing my Works",
+  description:
+    "Explore my portfolio of web development projects built with React.js, Next.js, and other cutting-edge technologies.",
+};
+
 export const OnGoingWorks = (Title) => {
   return (
     <div>

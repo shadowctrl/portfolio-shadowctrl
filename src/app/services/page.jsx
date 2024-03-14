@@ -3,6 +3,12 @@ import CodeIcon from "@mui/icons-material/Code";
 import SecurityIcon from "@mui/icons-material/Security";
 import ApiSharpIcon from "@mui/icons-material/ApiSharp";
 
+export const metadata = {
+  title: "shadowctrl | Services Offered",
+  description:
+    "I offer custom web development services using React.js, Next.js, and more. Bring your vision to life!",
+};
+
 const IconCode = (size = "10vw") => {
   return (
     <span>

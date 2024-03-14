@@ -3,6 +3,12 @@ import Image from "next/image";
 import { OnGoingWorks } from "../works/page";
 import "./aboutme.css";
 
+export const metadata = {
+  title: "shadowctrl | About Me",
+  description:
+    "A web developer fueled by a passion for crafting exceptional online experiences. Get to know more about me here!",
+};
+
 const Aboutme = () => {
   return (
     <div className="aboutParent">

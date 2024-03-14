@@ -6,6 +6,12 @@ import projects from "../works/projects";
 import Skills from "../../components/skills/skills";
 import Contactme from "../contact/page";
 
+export const metadata = {
+  title: "shadowctrl | Home",
+  description:
+    "Vijayaraghavan N - Web Developer | Chennai, India | React, Next.js, Express.js & More! | Hire Me",
+};
+
 const Home = () => {
   const ViewAll = (size) => {
     return (

@@ -1,6 +1,13 @@
 import "./contactme.css";
 import { BsDiscord } from "react-icons/bs";
 import { MdEmail } from "react-icons/md";
+
+export const metadata = {
+  title: "shadowctrl | Let's Connect",
+  description:
+    "Have a project in mind? Let's discuss!, using the options below or reach out for a coffee chat.",
+};
+
 const IconDiscord = (size = "1.3vw", pr = "0.5vw", pb = "1vh") => {
   return (
     <>
