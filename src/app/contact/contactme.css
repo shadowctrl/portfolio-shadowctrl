@@ -1,13 +1,13 @@
 .contactparent {
   padding-top: 5vh;
-  font-family: Fira Code;
+  font-family: var(--font-sourceCode);
 }
 
 .contacthead {
   display: flex;
   align-items: center;
   color: white;
-  font-family: Fira Code;
+  font-family: var(--font-poppins);
   margin-left: 10vw;
   margin-top: 5vh;
   font-size: 2vw;
@@ -37,9 +37,17 @@
   margin-left: 10vw;
 }
 .contact p {
-  font-family: Fira Code;
+  font-family: var(--font-sourceCode);
   color: #abb2bf;
   padding-right: 3vw;
+  font-size: 18px;
+
+  a {
+    color: #c778dd;
+  }
+  a:hover {
+    text-decoration: underline;
+  }
 }
 .contact span {
   color: #abb2bf;

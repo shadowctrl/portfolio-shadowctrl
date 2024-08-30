@@ -19,6 +19,8 @@
 
 .homeIntro h1 {
   font-size: 2.3vw;
+  font-family: var(--font-taurus);
+  line-height: 6vh;
 }
 
 .homeIntro h1 span {
@@ -26,9 +28,10 @@
 }
 
 .homeIntro p {
-  margin-top: 4vh;
-  font-size: 2vw;
+  margin-top: 3vh;
+  font-size: 64px;
   color: grey;
+  font-family: var(--font-barcode);
 }
 
 @media all and (max-width: 768px) and (max-height: 1024px) and (orientation: portrait) {
@@ -83,6 +86,7 @@
   margin-right: 3vw;
   color: #bdb7b7;
   font-size: 1vw;
+  font-family: var(--font-sourceCode);
 }
 
 .homePara .homeBox {
@@ -93,9 +97,9 @@
 }
 
 .homeContact {
-  font-size: 1.5vw;
+  font-size: 22px;
   margin-top: 1vw;
-  width: 10vw;
+  width: 8vw;
   padding: 0.2vw 0.4vw;
   color: #c778dd;
   font-weight: 600;
@@ -103,6 +107,9 @@
   box-sizing: border-box;
   box-shadow: 0vh 1vh 1vh;
   cursor: pointer;
+  font-weight: 700;
+  font-family: var(--font-sourceCode);
+  text-transform: uppercase;
 }
 
 @media all and (max-width: 768px) and (max-height: 1024px) and (orientation: portrait) {
@@ -149,6 +156,7 @@
   margin-left: 10vw;
   margin-right: 35vw;
   padding: 1vh;
+  font-family: var(--font-sourceCode);
 }
 
 @media all and (max-width: 768px) and (max-height: 1024px) and (orientation: portrait) {
@@ -171,7 +179,7 @@
 }
 
 .homeProjectPadding {
-  padding-top: 5vh;
+  padding-top: 3vh;
 }
 
 .homeSideBox {
@@ -199,6 +207,7 @@
   margin-bottom: 5vh;
   font-size: 2vw;
   font-weight: 600;
+  font-family: var(--font-poppins);
 }
 
 .homeHead span {
@@ -227,11 +236,15 @@
   text-align: center;
   font-size: 1.3vw;
   color: #c778dd;
+  position: absolute;
 }
-
+.homeBorder span:first-child {
+  padding-top: 0;
+}
 .homeBorder span {
-  font-family: Source Code Pro;
+  font-family: var(--font-sourceCode);
   padding-top: 1.5vh;
+  font-weight: 700;
 }
 
 @media all and (max-width: 768px) and (max-height: 1024px) and (orientation: portrait) {
@@ -244,7 +257,7 @@
 
 .homeContainer {
   display: flex;
-  margin-right: 10vw;
+  align-items: center;
 }
 
 .homeContainer .profileImage {
@@ -271,12 +284,12 @@
 }
 
 .homeAbout {
-  padding-left: 7.5vw;
-  padding-top: 5vh;
-  padding-right: 4vw;
+  padding-left: 10vw;
   text-align: justify;
   color: #abb2bf;
-  font-family: Fira Code;
+  font-family: var(--font-poppins);
+  font-size: 18px;
+  width: 70%;
 }
 
 @media all and (max-width: 768px) and (max-height: 1024px) and (orientation: portrait) {
@@ -291,10 +304,12 @@
   cursor: pointer;
   display: flex;
   align-items: center;
+  gap: 10px;
   color: lightslategray;
   font-size: 1.2vw;
   font-family: Fira Code;
   margin-left: 30vw;
+  font-family: var(--font-sourceCode);
 }
 
 @media all and (max-width: 768px) and (max-height: 1024px) and (orientation: portrait) {

@@ -5,6 +5,7 @@ import Image from "next/image";
 import projects from "../works/projects";
 import Skills from "../../components/skills/skills";
 import Contactme from "../contact/page";
+import { FaArrowCircleRight } from "react-icons/fa";
 
 export const metadata = {
   title: "shadowctrl | Home",
@@ -17,7 +18,9 @@ const Home = () => {
     return (
       <div className="homeViewall">
         View all
-        <span style={{ fontSize: size }}></span>
+        <span style={{ fontSize: size }}>
+          <FaArrowCircleRight />
+        </span>
       </div>
     );
   };
@@ -26,9 +29,9 @@ const Home = () => {
       <div className="homeMain1">
         <div className="homeIntro">
           <h1>
-            Shadowctrl is a <span> Mern Stack </span>
+            shadowctrl is a <span> next.js </span>
             <br />
-            and a <span>Next.js Developer</span>
+            and a <span>full-stack Developer</span>
           </h1>
           <p>Fueling Your Vision with Code, Coffee, and Creativity</p>
           <Link
@@ -52,22 +55,16 @@ const Home = () => {
         </div>
       </div>
       <div className="homeMain2">
-        {/* <div className="homeFormatQuoteTop">
-          <div className="homeFormatQuoteIcon"></div>
-        </div> */}
         <div className="homeQuote">
           The Quieter You Become The More You Able To Hear
         </div>
-        {/* <div className="homeFormatQuoteBottom">
-          <div className="homeFormatQuoteIcon"></div>
-        </div> */}
         <div className="homeProjectPadding">
           <div className="homeHead">
             <span>#</span>
             Projects
             <div className="homeDash"></div>
             <div className="homeMobile">{ViewAll("4vw")}</div>
-            <div className="homeDesktop">{ViewAll("1.5vw")}</div>
+            <div className="homeDesktop">{ViewAll("1.2vw")}</div>
           </div>
 
           <div className="worksProjectsRenderer">
@@ -88,12 +85,8 @@ const Home = () => {
                   {value.live ? (
                     <button className="worksProjectLiveButton">
                       <Link href={value.live} target="_blank">
-                        {" "}
+                        Live
                       </Link>
-                      Live{" "}
-                      {/* <ArrowOutwardSharpIcon
-                      style={{ fontSize: "1vw", marginLeft: "0.3vw" }}
-                    /> */}
                     </button>
                   ) : (
                     ""
@@ -102,10 +95,7 @@ const Home = () => {
                   {value.cached ? (
                     <button className="worksProjectCachedButton">
                       <Link href={value.cached} target="_blank">
-                        Cached{" "}
-                        {/* <AutorenewSharp
-                        style={{ fontSize: "1vw", marginLeft: "0.3vw" }}
-                      /> */}
+                        Cached
                       </Link>
                     </button>
                   ) : (
@@ -135,31 +125,23 @@ const Home = () => {
             <span>L</span>
           </div>
           <div className="homeAbout">
-            With over 3+ years of learnings in the field of cybersecurity, I
-            bring a wealth of knowledge to the table. Since 2018, I have been
-            immersing myself in the world of cybersecurity, continuously
-            expanding my skills and staying ahead of emerging threats. My
-            passion lies in securing digital assets and ensuring the utmost
-            protection of sensitive information.
-            <br /> <br />
-            In addition to my cybersecurity prowess, I am also proficient in
-            developing websites using the MERN stack. This combination of skills
-            allows me to not only create dynamic and engaging web applications
-            but also integrate robust security measures into their foundation. I
-            pride myself on delivering secure software solutions that prioritize
-            the confidentiality and integrity of user data.
-            <br /> <br />
-            With excellent communication skills, a strong work ethic, and a
-            dedication to delivering projects on time and within budget, I am
-            confident that I can exceed your expectations as a freelancer.
+            I'm a Full-Stack Developer (MERN) with a B.E. in Cyber Security from
+            SRM University, specializing in Next.js and the MERN stack. With
+            experience in Linux, API integration, Firebase, and frontend
+            technologies like Tailwind CSS and Ant Design, I create secure and
+            responsive web applications. My expertise includes SEO setup,
+            digital strategy optimization, and developing verified Discord
+            applications. I’m keen to understand your project needs and
+            collaborate effectively. Let's work together on Upwork to bring your
+            vision to life!
           </div>
-          <Image
+          {/* <Image
             src="/assets/shadowctrl.webp"
             alt="Shadowctrl"
             width={500}
             height={200}
             className="profileImage"
-          />
+          /> */}
         </div>
       </div>
       <Contactme />

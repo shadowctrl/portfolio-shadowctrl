@@ -1,3 +1,4 @@
+import Link from "next/link";
 import "./contactme.css";
 import { BsDiscord } from "react-icons/bs";
 import { MdEmail } from "react-icons/md";
@@ -49,22 +50,14 @@ const Contactme = () => {
       <div className="contact">
         <p>
           {`I'm`} Interested in freelance opportunities. However, if you have
-          any other queries feel free to contact me.
+          any other queries feel free to {""}
+          <Link
+            href="https://www.upwork.com/freelancers/~01701539e14beb9820"
+            target="_blank"
+          >
+            contact me.
+          </Link>
         </p>
-        <span>
-          <h3>Message Me Here</h3>
-          <div className="contactcontainer">
-            <div className="contactmobile">
-              {IconDiscord("5vw", "0.5vw", "0vw")}
-            </div>
-            <div className="contactdesktop">{IconDiscord()}</div>
-          </div>
-
-          <div className="contactcontainer">
-            <div className="contactmobile">{IconEmail("5vw")}</div>
-            <div className="contactdesktop">{IconEmail()}</div>
-          </div>
-        </span>
       </div>
     </div>
   );

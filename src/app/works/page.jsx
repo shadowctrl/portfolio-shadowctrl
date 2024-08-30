@@ -34,11 +34,7 @@ export const OnGoingWorks = (Title) => {
               {value.live ? (
                 <div className="worksProjectLiveButton">
                   <Link href={value.live}>
-                    Live
-                    {/* <ArrowOutwardSharpIcon
-                      style={{ fontSize: "1vw", marginLeft: "0.3vw" }}
-                    /> */}
-                    <span className="worksArrowIcon"></span>{" "}
+                    <p> Live</p>
                   </Link>
                 </div>
               ) : (
@@ -49,11 +45,6 @@ export const OnGoingWorks = (Title) => {
                 <div className="works-project-cached-button">
                   <Link href={value.progress} target="_blank">
                     Progress
-                    <span className="arrow-icon">
-                      {/* <ArrowOutwardSharpIcon
-                        style={{ fontSize: "1vw", marginLeft: "0.3vw" }}
-                      /> */}
-                    </span>
                   </Link>
                 </div>
               ) : (

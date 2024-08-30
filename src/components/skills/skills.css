@@ -1,5 +1,5 @@
 .skillsMain {
-  padding-top: 10vh;
+  padding-top: 5vh;
 }
 .skillsParent {
   display: flex;
@@ -13,6 +13,7 @@
   margin-top: 5vh;
   font-size: 2vw;
   font-weight: 600;
+  font-family: var(--font-poppins);
 }
 .skillsHead span {
   color: #c778dd;
@@ -46,7 +47,7 @@
   color: #c776dd;
   font-size: 1.3vw;
   font-weight: 700;
-  font-family: Fira Code;
+  font-family: var(--font-sourceCode);
 }
 
 .languages {
@@ -54,7 +55,7 @@
   border-radius: 1vw;
   padding: 0.5vw;
   text-align: left;
-  font-family: Fira Code;
+  font-family: var(--font-sourceCode);
 }
 
 .databases {
@@ -62,7 +63,7 @@
   border-radius: 1vw;
   padding: 0.5vw;
   text-align: left;
-  font-family: Fira Code;
+  font-family: var(--font-sourceCode);
 }
 
 .other {
@@ -70,7 +71,7 @@
   border-radius: 1vw;
   padding: 0.5vw;
   text-align: left;
-  font-family: Fira Code;
+  font-family: var(--font-sourceCode);
 }
 
 .os {
@@ -78,7 +79,7 @@
   border-radius: 1vw;
   padding: 0.5vw;
   text-align: left;
-  font-family: Fira Code;
+  font-family: var(--font-sourceCode);
 }
 .languages ul,
 .databases ul,

@@ -135,7 +135,7 @@
   height: auto;
   border-radius: 1vw;
   overflow: hidden;
-  box-shadow: 0vw 0vh 0.5vw 0.5vw #c778dd;
+  box-shadow: 0vw 0vh 1vw 0.2vw #c778dd;
 }
 @media all and (max-width: 768px) and (max-height: 1024px) and (orientation: portrait) {
   .worksProjectContainer {
@@ -161,12 +161,12 @@
   padding: 0.5vw;
   text-align: center;
   color: #bdb7b7;
-  font-family: Fira Code;
+  font-family: var(--font-sourceCode);
 }
 
 .worksProjectTitle {
   padding: 1vw;
-  font-family: poppins;
+  font-family: var(--font-poppins);
   font-size: 1.5vw;
   font-weight: 600;
   color: #c778dd;
@@ -185,7 +185,7 @@
   padding-bottom: 1vw;
   padding-left: 1.5vw;
   padding-right: 1.5vw;
-  font-family: Fira Code;
+  font-family: var(--font-sourceCode);
   color: #bdb7b7;
   text-align: center;
 }
@@ -203,6 +203,7 @@
   border: 1px solid #c778dd;
   padding: 0.5vh 2vw;
 }
+
 @media all and (max-width: 768px) and (max-height: 1024px) and (orientation: portrait) {
   .worksProjectLiveButton {
     padding: 0.5vh 3vw;

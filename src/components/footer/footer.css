@@ -15,7 +15,7 @@
 .footerText {
   color: #778899;
   padding-top: 1vh;
-  font-family: "Libre Barcode 128 Text";
+  font-family: var(--font-barcode);
   font-size: 2vw;
 }
 
