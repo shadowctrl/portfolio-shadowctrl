@@ -25,20 +25,6 @@ const IconDiscord = (size = "1.3vw", pr = "0.5vw", pb = "1vh") => {
   );
 };
 
-const IconEmail = (size = "1.3vw", pr = "0.5vw") => {
-  return (
-    <>
-      <MdEmail
-        size={size}
-        style={{
-          verticalAlign: "middle",
-          paddingRight: pr,
-        }}
-      />
-      admin@shadowctrl.me
-    </>
-  );
-};
 const Contactme = () => {
   return (
     <div className="contactparent">
