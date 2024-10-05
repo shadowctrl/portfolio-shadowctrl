@@ -40,10 +40,10 @@ const Navbar = () => {
       <div className="navbarComponents">
         <ul>
           {items.map((value, index) => (
-            <li key={value}>
-              <Link href={`/${value}`}>
+            <li key={value.name}>
+              <Link href={value.path}>
                 <span>#</span>
-                {value}
+                {value.name}
               </Link>
             </li>
           ))}
