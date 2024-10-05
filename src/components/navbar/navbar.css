@@ -70,7 +70,7 @@
 .navbarComponents li {
   margin-right: 1vw;
   cursor: pointer;
-  font-size: 16px;
+  font-size: 12px;
   font-weight: 500;
   font-family: var(--font-mars);
 }
@@ -99,7 +99,6 @@
 
 .navbarComponents span {
   color: #c778dd;
-  font-size: 1vw;
   margin-right: 1px;
-  font-size: 11px;
+  font-size: 7px;
 }
