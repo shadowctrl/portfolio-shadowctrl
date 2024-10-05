@@ -6,10 +6,10 @@
   display: flex;
   align-items: center;
   color: white;
-  font-family: Fira Code;
+  font-family: var(--font-poppins);
   margin-top: 10vh;
   font-size: 2vw;
-  font-weight: 600;
+  font-weight: 700;
 }
 .serviceHead span {
   color: #c778dd;
@@ -24,26 +24,28 @@
   margin-left: -10vw;
   color: #c778dd;
   padding: 0vh 5vw;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  display: flex;
   justify-items: center;
   align-items: center;
+  width: 100%;
   column-gap: 2vw;
 }
 .serviceServiceItems {
   font-size: 1.5vw;
   font-weight: 900;
-  font-family: mars;
+  font-family: var(--font-mars);
   border-radius: 0.5vw;
   border: 0.1vw solid #c778dd;
   padding: 2vh 1.3vw;
+  width: 35%;
 }
 .serviceServiceItems p {
   color: white;
-  font-family: Fira Code;
+  font-family: var(--font-poppins);
   font-size: 1vw;
   text-align: justify;
   font-weight: 500;
+  margin-top: 2vh;
 }
 .serviceServiceItems span {
   background-color: #fad0c4;

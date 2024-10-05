@@ -61,30 +61,6 @@ const services = () => {
             creating and designing websites that are user-friendly.
           </p>
         </div>
-        <div class="serviceServiceItems">
-          <div class="serviceMobile">{IconSecurity("30vw")}</div>
-          <div class="serviceDesktop">{IconSecurity()}</div>
-          <br />
-          <span>VAPT</span>
-          <p>
-            As a passion towards CyberSecurity, I could idenfy and analyze
-            potential security flaws in a system, networks. Through the
-            assesments, i uncover vulnerabilities and assess the impact on the
-            security of the system.{" "}
-          </p>
-        </div>
-        <div class="serviceServiceItems">
-          <div class="serviceMobile">{IconApi("30vw")}</div>
-          <div class="serviceDesktop">{IconApi()}</div>
-          <br />
-          <span>DISCORD BOT</span>
-          <p>
-            I am proficient in developing Discord bots, crafting tailored
-            solutions that automate tasks and enhance interactive experiences
-            within the Discord ecosystem.I create bots that performs
-            moderations, role management and integrating with external services.
-          </p>
-        </div>
       </div>
     </div>
   );
