@@ -13,7 +13,7 @@ const Aboutme = () => {
   return (
     <div className="aboutParent">
       <div className="aboutHead">
-        <span>/</span>About-Me
+        <span>/</span>About Me
         <div className="aboutDash"></div>
       </div>
       <div className="aboutContainer">
@@ -30,22 +30,14 @@ const Aboutme = () => {
           <span>L</span>
         </div>
         <div className="aboutAbout">
-          As a MERN stack developer with expertise in Discord API, Google API,
-          Firebase, and Cyber Security, I am excited to offer my services as a
-          freelancer. With a proven track record of building robust and scalable
-          applications using cutting-edge technologies, I am confident that I
-          can deliver high-quality work to clients with diverse needs.
+          I'm a Full-Stack Developer, specializing in Next.js and the MERN
+          stack. With experience in Linux, API integration, Firebase, and
+          frontend technologies like Tailwind CSS, Ant Design etc..., I Develop
+          secure and responsive web applications. My expertise includes building
+          SEO friendly Next.js applications, Structured Code and I’m keen to
+          understand your project needs and collaborate effectively.
           <br /> <br />
-          Whether building a custom web application, integrating third-party
-          APIs, or managing a database on Firebase, I have the skills and
-          experience to get the job done. As a Cyber Security graduate, I
-          understand the importance of building secure and resilient
-          applications and am committed to implementing industry best practices
-          in all my projects.
-          <br /> <br />
-          With excellent communication skills, a strong work ethic, and a
-          dedication to delivering projects on time and within budget, I am
-          confident that I can exceed your expectations as a freelancer.
+          Let's work together to bring your vision to life!
         </div>
         <Image
           src="/assets/shadowctrl.webp"
@@ -63,9 +55,9 @@ const Aboutme = () => {
             <div className="aboutDash" />
           </div>
           <p>
-            I am not completely immersed in the Cyber World, you could find me
+            I am not completely immersed in the Tech World, you could find me
             exploring outdoors. I have a deep love for traveling and bike rides
-            which helps me recharge and gain fresh perspectives.
+            which helps me recharge.
           </p>
         </div>
         <div className="aboutPersonalTouchFacts">
