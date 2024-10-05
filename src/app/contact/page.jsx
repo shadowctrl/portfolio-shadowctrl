@@ -51,10 +51,7 @@ const Contactme = () => {
         <p>
           {`I'm`} Interested in freelance opportunities. However, if you have
           any other queries feel free to {""}
-          <Link
-            href="https://www.upwork.com/freelancers/~01701539e14beb9820"
-            target="_blank"
-          >
+          <Link href="mailto:admin@shadowctrl.me" target="_blank">
             contact me.
           </Link>
         </p>

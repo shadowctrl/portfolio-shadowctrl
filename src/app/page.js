@@ -38,7 +38,7 @@ const Home = () => {
             href="https://www.upwork.com/freelancers/~01701539e14beb9820"
             target="_blank"
           >
-            <button className="homeContact">Hire Me</button>
+            <button className="homeContact">Get Quote</button>
           </Link>
         </div>
         <div className="homeImg">
@@ -125,15 +125,13 @@ const Home = () => {
             <span>L</span>
           </div>
           <div className="homeAbout">
-            I'm a Full-Stack Developer (MERN) with a B.E. in Cyber Security from
-            SRM University, specializing in Next.js and the MERN stack. With
-            experience in Linux, API integration, Firebase, and frontend
-            technologies like Tailwind CSS and Ant Design, I create secure and
-            responsive web applications. My expertise includes SEO setup,
-            digital strategy optimization, and developing verified Discord
-            applications. I’m keen to understand your project needs and
-            collaborate effectively. Let's work together on Upwork to bring your
-            vision to life!
+            I'm a Full-Stack Developer, specializing in Next.js and the MERN
+            stack. With experience in Linux, API integration, Firebase, and
+            frontend technologies like Tailwind CSS, Ant Design etc..., I
+            Develop secure and responsive web applications. My expertise
+            includes building SEO friendly Next.js applications, Structured Code
+            and I’m keen to understand your project needs and collaborate
+            effectively. Let's work together to bring your vision to life!
           </div>
           {/* <Image
             src="/assets/shadowctrl.webp"
