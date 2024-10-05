@@ -42,7 +42,7 @@ export const OnGoingWorks = (Title) => {
               )}
 
               {value.progress ? (
-                <div className="works-project-cached-button">
+                <div className="worksProjectCachedButton">
                   <Link href={value.progress} target="_blank">
                     Progress
                   </Link>
