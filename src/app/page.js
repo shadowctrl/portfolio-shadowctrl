@@ -10,7 +10,7 @@ import { FaArrowCircleRight } from "react-icons/fa";
 export const metadata = {
   title: "shadowctrl | Home",
   description:
-    "Vijayaraghavan N - Web Developer | Chennai, India | React, Next.js, Express.js & More! | Hire Me",
+    "Vijayaraghavan N - Skilled Full stack developer | Next.js Developer | React.js Developer | Freelancer",
 };
 
 const Home = () => {
