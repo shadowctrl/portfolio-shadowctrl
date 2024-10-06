@@ -165,6 +165,7 @@
   text-align: center;
   color: #bdb7b7;
   font-family: var(--font-sourceCode);
+  font-size: 14px;
 }
 
 .worksProjectTitle {

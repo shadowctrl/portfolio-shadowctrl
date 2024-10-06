@@ -3,7 +3,7 @@ const projects = [
     image: "/assets/techfrom10.png",
     languages: "Next.js, GPT Image Gen, AWS S3, Shadcn",
     title: "TechFrom10",
-    description: "AI powered Tech Roundup",
+    description: "AI powered Tech Roundups, Tech news & Gadgets",
     live: "https://techfrom10.com",
     cached: "https://github.com/shadowctrl/Techfrom10",
   },
