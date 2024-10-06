@@ -90,12 +90,8 @@ const Works = () => {
                 {value.live ? (
                   <button className="worksProjectLiveButton">
                     <Link href={value.live} target="_blank">
-                      {" "}
+                      Live
                     </Link>
-                    Live{" "}
-                    {/* <ArrowOutwardSharpIcon
-                      style={{ fontSize: "1vw", marginLeft: "0.3vw" }}
-                    /> */}
                   </button>
                 ) : (
                   ""
@@ -105,9 +101,6 @@ const Works = () => {
                   <button className="worksProjectCachedButton">
                     <Link href={value.cached} target="_blank">
                       Cached{" "}
-                      {/* <AutorenewSharp
-                        style={{ fontSize: "1vw", marginLeft: "0.3vw" }}
-                      /> */}
                     </Link>
                   </button>
                 ) : (
