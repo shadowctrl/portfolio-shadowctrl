@@ -11,7 +11,7 @@ const projects = [
     image: "/assets/fcc.png",
     languages: "Next.js, GPT4o API, Perplexity AI, Bing V7, AJAX, MongoDB ",
     title: "Fact Check Central",
-    description: "Real-Time News Application",
+    description: "Real-Time News Application with Fact checking",
     live: "https://factcheckcentral.org",
     cached: "https://github.com/shadowctrl/FactCheckCentral",
   },
@@ -19,8 +19,7 @@ const projects = [
     image: "/assets/csi-conv.png",
     languages: "Node.js, Express, Firebase Auth, Firestore, Google API",
     title: "CSI Event Registration System",
-    description:
-      "Aimed to streamline the event registration process with participants QR code validation",
+    description: "Streamlines event registration process with QR validation",
     cached: "https://github.com/An-On-Y-mous/CSI-convention-2k24",
   },
   {
@@ -28,7 +27,7 @@ const projects = [
     languages: "ReactJS, Html, Css",
     title: "Hackathon Website",
     description:
-      "full-stack web platform is designed to facilitate seamless participation and management for hackathon events.",
+      "Facilitate seamless participation and management for hackathon events",
     live: "https://hackatank.shadowctrl.me",
     cached: "https://github.com/shadowctrl/Hackatank",
   },
@@ -57,7 +56,7 @@ const projects = [
   {
     image: "/assets/portfolio.webp",
     languages: "ReactJS, Html, Css",
-    title: "Shhadowctrl",
+    title: "Shadowctrl",
     description: "Shadowctrl Website",
     live: "https://shadowctrl.me",
     cached: "https://github.com/shadowctrl/portfolio-shadowctrl",
