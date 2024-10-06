@@ -1,11 +1,36 @@
 const projects = [
   {
+    image: "/assets/techfrom10.png",
+    languages: "Next.js, GPT Image Gen, AWS S3, Shadcn",
+    title: "TechFrom10",
+    description: "AI powered Tech Roundup",
+    live: "https://techfrom10.com",
+    cached: "https://github.com/shadowctrl/Techfrom10",
+  },
+  {
+    image: "/assets/fcc.png",
+    languages: "Next.js, GPT4o API, Perplexity AI, Bing V7, AJAX, MongoDB ",
+    title: "Fact Check Central",
+    description: "Real-Time News Application",
+    live: "https://factcheckcentral.org",
+    cached: "https://github.com/shadowctrl/FactCheckCentral",
+  },
+  {
+    image: "/assets/csi-conv.png",
+    languages: "Node.js, Express, Firebase Auth, Firestore, Google API",
+    title: "CSI Event Registration System",
+    description:
+      "Aimed to streamline the event registration process with participants QR code validation",
+    cached: "https://github.com/An-On-Y-mous/CSI-convention-2k24",
+  },
+  {
     image: "/assets/hackatank.webp",
     languages: "ReactJS, Html, Css",
     title: "Hackathon Website",
-    description: "Showcasing my national-level, 24-hour hackathon website.",
-    live: "https://www.hackatank.tech",
-    cached: "https://github.com/shadowctrl/HackATank-Website",
+    description:
+      "full-stack web platform is designed to facilitate seamless participation and management for hackathon events.",
+    live: "https://hackatank.shadowctrl.me",
+    cached: "https://github.com/shadowctrl/Hackatank",
   },
   {
     image: "/assets/pepper.webp",
@@ -32,9 +57,10 @@ const projects = [
   {
     image: "/assets/portfolio.webp",
     languages: "ReactJS, Html, Css",
-    title: "Portfolio",
-    description: "Portfolio Website",
+    title: "Shhadowctrl",
+    description: "Shadowctrl Website",
     live: "https://shadowctrl.me",
+    cached: "https://github.com/shadowctrl/portfolio-shadowctrl",
   },
 
   {
@@ -48,13 +74,12 @@ const projects = [
 
 export const onGoingProjects = [
   {
-    image: "/assets/shadowx.webp",
-    languages: "ReactJS, NodeJS, Tailwind CSS, Lottie",
-    title: "ShadowX Website",
-    description: "A startup website design",
-    progress: "https://github.com/shadowctrl/ShadowX",
+    image: "/assets/shadowx-hotline.jpeg",
+    languages: "Next.js, SERP API",
+    title: "ShadowX Hotline",
+    description: "Be updated with Latest Cyber Security News",
+    progress: "https://github.com/shadowctrl/shadowx-hotline",
   },
 ];
 
 export default projects;
-// export { onGoingProjects };
