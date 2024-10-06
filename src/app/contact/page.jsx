@@ -35,10 +35,10 @@ const Contactme = () => {
 
       <div className="contact">
         <p>
-          {`I'm`} Interested in freelance & part-time opportunities. However, if
-          you have any other queries feel free to {""}
+          {`I'm`} available for freelance and part-time opportunities. If you
+          have any other inquiries, feel free to{" "}
           <Link href="mailto:admin@shadowctrl.me" target="_blank">
-            contact me.
+            get in touch.
           </Link>
         </p>
       </div>
