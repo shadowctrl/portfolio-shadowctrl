@@ -32,21 +32,21 @@ export const OnGoingWorks = (Title) => {
             <div className="worksProjectDes">{value.description}</div>
             <div className="worksProjectButtons">
               {value.live ? (
-                <div className="worksProjectLiveButton">
-                  <Link href={value.live}>
-                    <p> Live</p>
-                  </Link>
-                </div>
+                <Link href={value.live} className="worksProjectLiveButton">
+                  <p>Live</p>
+                </Link>
               ) : (
                 ""
               )}
 
               {value.progress ? (
-                <div className="worksProjectCachedButton">
-                  <Link href={value.progress} target="_blank">
-                    Progress
-                  </Link>
-                </div>
+                <Link
+                  href={value.progress}
+                  target="_blank"
+                  className="worksProjectCachedButton"
+                >
+                  Progress
+                </Link>
               ) : (
                 ""
               )}
@@ -88,21 +88,25 @@ const Works = () => {
               <div className="worksProjectDes">{value.description}</div>
               <div className="worksProjectButtons">
                 {value.live ? (
-                  <button className="worksProjectLiveButton">
-                    <Link href={value.live} target="_blank">
-                      Live
-                    </Link>
-                  </button>
+                  <Link
+                    href={value.live}
+                    target="_blank"
+                    className="worksProjectLiveButton"
+                  >
+                    Live
+                  </Link>
                 ) : (
                   ""
                 )}
 
                 {value.cached ? (
-                  <button className="worksProjectCachedButton">
-                    <Link href={value.cached} target="_blank">
-                      Cached{" "}
-                    </Link>
-                  </button>
+                  <Link
+                    href={value.cached}
+                    target="_blank"
+                    className="worksProjectCachedButton"
+                  >
+                    Cached{" "}
+                  </Link>
                 ) : (
                   ""
                 )}

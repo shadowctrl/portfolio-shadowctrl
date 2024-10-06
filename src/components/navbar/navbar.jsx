@@ -18,14 +18,14 @@ const Navbar = () => {
             style={{ fontSize: "1.8vw" }}
           />
         </Link>
-        <br />
+
         <Link href="https://github.com/shadowctrl" target="_blank">
           <GitHubIcon
             className="navbarSocialItem2"
             style={{ fontSize: "1.8vw" }}
           />
         </Link>
-        <br />
+
         <Link href="https://tryhackme.com/p/shadowctrl" target="_blank">
           <Image alt="Try Hack Me" className="navbarSocialItem3" src={thm} />
         </Link>
@@ -40,12 +40,10 @@ const Navbar = () => {
       <div className="navbarComponents">
         <ul>
           {items.map((value, index) => (
-            <li key={value.name}>
-              <Link href={value.path}>
-                <span>#</span>
-                {value.name}
-              </Link>
-            </li>
+            <Link href={value.path} key={value.name}>
+              <span>#</span>
+              {value.name}
+            </Link>
           ))}
         </ul>
       </div>
