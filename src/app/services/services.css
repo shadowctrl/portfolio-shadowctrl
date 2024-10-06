@@ -21,9 +21,7 @@
 }
 .serviceServices {
   margin-top: 10vh;
-  margin-left: -10vw;
   color: #c778dd;
-  padding: 0vh 5vw;
   display: flex;
   justify-items: center;
   align-items: center;
@@ -31,13 +29,19 @@
   column-gap: 2vw;
 }
 .serviceServiceItems {
+  background-color: rgb(199, 120, 221, 0.1);
   font-size: 1.5vw;
   font-weight: 900;
-  font-family: var(--font-mars);
+  font-family: var(--font-poppins);
   border-radius: 0.5vw;
-  border: 0.1vw solid #c778dd;
+  /* border: 0.1vw solid #c778dd; */
   padding: 2vh 1.3vw;
-  width: 35%;
+  width: 30%;
+  text-transform: uppercase;
+  height: 250px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 .serviceServiceItems p {
   color: white;
@@ -95,5 +99,18 @@
   }
   .serviceDesktop {
     display: none;
+  }
+}
+
+.service-contact {
+  margin-top: 10vh;
+  margin-left: -10vw;
+  text-align: center;
+
+  a {
+    color: #c778dd;
+    &:hover {
+      text-decoration: underline;
+    }
   }
 }

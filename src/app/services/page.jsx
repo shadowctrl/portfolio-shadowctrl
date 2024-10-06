@@ -2,6 +2,7 @@ import "./services.css";
 import CodeIcon from "@mui/icons-material/Code";
 import SecurityIcon from "@mui/icons-material/Security";
 import ApiSharpIcon from "@mui/icons-material/ApiSharp";
+import Link from "next/link";
 
 export const metadata = {
   title: "shadowctrl | Services Offered",
@@ -21,7 +22,7 @@ const IconCode = (size = "10vw") => {
   );
 };
 
-const IconSecurity = (size = "10vw") => {
+const IconSecurity = (size = "8vw") => {
   return (
     <SecurityIcon
       style={{
@@ -52,15 +53,28 @@ const services = () => {
           <div class="serviceMobile">{IconCode("30vw")}</div>
           <div class="serviceDesktop">{IconCode()}</div>
           <br />
-          <span>WEB DEVELOPMENT</span>
-          <p>
-            {" "}
-            I utilize my expertise in coding languages such as HTML, CSS, and
-            JavaScript to build a website that ensures optimal performance
-            across different browsers and devices. my primary focus is on
-            creating and designing websites that are user-friendly.
-          </p>
+          <span>Front-end DEVELOPMENT</span>
         </div>
+        <div class="serviceServiceItems">
+          <div class="serviceMobile">{IconApi("30vw")}</div>
+          <div class="serviceDesktop">{IconApi()}</div>
+          <br />
+          <span>Full Stack DEVELOPMENT</span>
+        </div>
+        <div class="serviceServiceItems">
+          <div class="serviceMobile">{IconSecurity("30vw")}</div>
+          <div class="serviceDesktop">{IconSecurity()}</div>
+          <br />
+          <span>Code Maintenance</span>
+        </div>
+      </div>
+      <div className="service-contact">
+        <h3>
+          Having anything in mind?{" "}
+          <Link href={"https://upwork.com/freelancers/shadowctrl"}>
+            Let's talk about it!{" "}
+          </Link>
+        </h3>
       </div>
     </div>
   );
