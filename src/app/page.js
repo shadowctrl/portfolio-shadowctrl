@@ -16,12 +16,12 @@ export const metadata = {
 const Home = () => {
   const ViewAll = (size) => {
     return (
-      <div className="homeViewall">
+      <Link className="homeViewall" href={"/works"}>
         View all
         <span style={{ fontSize: size }}>
           <FaArrowCircleRight />
         </span>
-      </div>
+      </Link>
     );
   };
   return (
