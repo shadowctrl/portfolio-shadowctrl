@@ -70,9 +70,9 @@ export default function RootLayout({ children }) {
         <Navbar />
         {children}
         <Footer />
+        <Analytics />
       </body>
       <GoogleAnalytics gaId="G-6LSJFNRLP1" />
-      <Analytics />
     </html>
   );
 }
