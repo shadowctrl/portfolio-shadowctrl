@@ -8,7 +8,8 @@ import Contactme from "./contact/page";
 import { FaArrowCircleRight } from "react-icons/fa";
 
 export const metadata = {
-  title: "shadowctrl | Home",
+  title:
+    "Shadowctrl Home | Next.js Developer | Full-stack Developer | Freelancer",
   description:
     "Vijayaraghavan N - Skilled Full stack developer | Next.js Developer | React.js Developer | Freelancer",
 };
