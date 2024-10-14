@@ -4,8 +4,7 @@ import { OnGoingWorks } from "../works/page";
 import "./aboutme.css";
 
 export const metadata = {
-  title:
-    "Shadowctrl | About Me | Next.js Developer | Full-stack Developer | Freelancer",
+  title: "About Me | shadowctrl",
   description:
     "A web developer fueled by a passion for crafting exceptional online experiences. Get to know more about me here!",
 };

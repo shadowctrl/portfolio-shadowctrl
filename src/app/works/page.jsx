@@ -5,8 +5,7 @@ import Image from "next/image";
 import Link from "next/link";
 
 export const metadata = {
-  title:
-    "Shadowctrl | Showcasing my Works | Next.js Developer | Full-stack Developer | Freelancer",
+  title: "Portfolio Works | shadowctrl",
   description:
     "Explore my portfolio of web development projects built with React.js, Next.js, and other cutting-edge technologies.",
 };

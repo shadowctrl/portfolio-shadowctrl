@@ -6,7 +6,7 @@ import Link from "next/link";
 import Image from "next/image";
 
 export const metadata = {
-  title: "shadowctrl | Services Offered",
+  title: "Services Offered | Project Catalog | shadowctrl",
   description:
     "I offer custom web development services using React.js, Next.js, and more. Bring your vision to life!",
 };

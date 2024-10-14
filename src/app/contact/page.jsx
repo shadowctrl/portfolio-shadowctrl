@@ -4,8 +4,7 @@ import { BsDiscord } from "react-icons/bs";
 import { MdEmail } from "react-icons/md";
 
 export const metadata = {
-  title:
-    "Shadowctrl | Let's Connect | Next.js Developer | Full-stack Developer | Freelancer",
+  title: "Contact Me | shadowctrl",
   description:
     "Have a project in mind? Let's discuss!, using the options below or reach out for a coffee chat.",
 };
