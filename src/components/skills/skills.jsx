@@ -28,6 +28,7 @@ const Skills = () => {
           <div className="languages">
             <div className="skillsTitle"> LANGUAGES</div>
             <ul>
+              <li>NextJS</li>
               <li>NodeJS</li>
               <li>ReactJS</li>
               <li>Python3</li>
