@@ -62,7 +62,7 @@ const Home = () => {
         <div className="homeProjectPadding">
           <div className="homeHead">
             <span>#</span>
-            Projects
+            Works
             <div className="homeDash"></div>
             <div className="homeMobile">{ViewAll("4vw")}</div>
             <div className="homeDesktop">{ViewAll("1.2vw")}</div>

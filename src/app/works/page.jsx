@@ -63,7 +63,7 @@ const Works = () => {
   return (
     <div className="worksParent">
       <div className="worksHead">
-        <span>/</span>Projects
+        <span>/</span>Works
       </div>
 
       <div className="worksChild">
