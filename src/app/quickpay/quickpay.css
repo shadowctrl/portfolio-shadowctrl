@@ -1,0 +1,67 @@
+.quickpay-parent {
+  padding: 7vh 10vw;
+  display: flex;
+  flex-direction: column;
+  gap: 2vh;
+}
+
+.quickpay-head-parent {
+  padding: 3vh 0;
+  p {
+    font-size: 14px;
+  }
+}
+.quickpay-head {
+  display: flex;
+  align-items: center;
+  color: white;
+  font-family: var(--font-poppins);
+  font-size: 2vw;
+  font-weight: 600;
+
+  span {
+    color: #c778dd;
+  }
+}
+
+.quickpay-dash {
+  border-top: 1px solid #c778dd;
+  width: 36vw;
+  margin-left: 2vw;
+}
+
+.quickpay-container {
+  display: flex;
+  justify-content: space-around;
+}
+
+.quickpay-item {
+  display: flex;
+  flex-direction: column;
+  gap: 2vh;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(199, 120, 221, 0.2);
+  border-top: 5px solid white;
+  border-bottom: 5px solid white;
+  padding: 3vh 1vw;
+  border-radius: 1vw;
+  h3 {
+    width: 150px;
+    padding: 1vh 1vw;
+    border-radius: 5vw;
+    font-size: 16px;
+    font-weight: 800;
+    font-family: var(--font-poppins);
+    text-align: center;
+    transition: all 0.1s ease;
+
+    &:hover {
+      width: 200px;
+    }
+  }
+
+  img {
+    border-radius: 1vw;
+  }
+}
