@@ -4,6 +4,10 @@
   display: flex;
   flex-direction: column;
   gap: 2vh;
+
+  @media (max-width: 768px) {
+    padding-top: 10vh;
+  }
 }
 
 .quickpay-head-parent {
@@ -19,6 +23,9 @@
   font-size: 2vw;
   font-weight: 600;
 
+  @media (max-width: 768px) {
+    font-size: 22px;
+  }
   span {
     color: #c778dd;
   }
@@ -28,12 +35,25 @@
   border-top: 1px solid #c778dd;
   width: 36vw;
   margin-left: 2vw;
+
+  @media (max-width: 768px) {
+    width: 45vw;
+  }
 }
 
 .quickpay-container {
   display: flex;
   justify-content: space-around;
   padding-top: 5vh;
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5vh;
+    width: 350px;
+    padding-top: 2vh;
+  }
 }
 
 .quickpay-item {
@@ -47,6 +67,11 @@
   border-bottom: 5px solid white;
   padding: 3vh 1vw;
   border-radius: 1vw;
+
+  @media (max-width: 768px) {
+    padding: 2vh 5vw;
+  }
+
   h3 {
     width: 150px;
     padding: 1vh 1vw;
