@@ -1,6 +1,10 @@
 .aboutParent {
   padding-top: 15vh;
   margin: 0 5vw;
+
+  @media (max-width: 768px) {
+    padding-top: 10vh;
+  }
 }
 
 .aboutHead {
@@ -18,8 +22,7 @@
 @media all and (max-width: 768px) and (max-height: 1024px) and (orientation: portrait) {
   .aboutHead {
     font-size: 22px;
-    margin-left: 5vw;
-    margin-top: 3vh;
+    margin: 0;
   }
 }
 
@@ -92,7 +95,7 @@
 }
 @media all and (max-width: 768px) and (max-height: 1024px) and (orientation: portrait) {
   .aboutAbout {
-    padding: 5vw;
+    padding: 0;
     margin-top: 2vh;
     font-size: 3vw;
   }
@@ -165,9 +168,9 @@
 }
 @media all and (max-width: 768px) and (max-height: 1024px) and (orientation: portrait) {
   .aboutPersonalTouchFactsContainer {
-    margin-left: 2vw;
-    margin-right: 2vw;
-    font-size: 3vw;
+    margin-left: 0;
+    margin-right: 0;
+    font-size: 16px;
   }
 }
 
@@ -175,6 +178,10 @@
   padding: 0.5vw;
   border: 1px solid #7b7a7a;
   font-size: 14px;
+
+  @media (max-width: 768px) {
+    font-size: 10px;
+  }
 }
 
 .aboutStraightLine {
@@ -187,7 +194,7 @@
 }
 @media all and (max-width: 768px) and (max-height: 1024px) and (orientation: portrait) {
   .aboutStraightLine {
-    margin-top: 29vh;
+    margin-top: 25vh;
     margin-left: 0vw;
     left: 1.7vw;
     height: 5vh;
