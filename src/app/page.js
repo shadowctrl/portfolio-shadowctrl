@@ -16,16 +16,6 @@ export const metadata = {
 };
 
 const Home = () => {
-  const ViewAll = (size) => {
-    return (
-      <Link className="homeViewall" href={"/works"}>
-        View all
-        <span style={{ fontSize: size }}>
-          <FaArrowCircleRight />
-        </span>
-      </Link>
-    );
-  };
   return (
     <div>
       <div className="homeParent">
@@ -78,8 +68,12 @@ const Home = () => {
               <span>#</span>
               Works
               <div className="homeDash"></div>
-              <div className="homeMobile">{ViewAll("4vw")}</div>
-              <div className="homeDesktop">{ViewAll("1.2vw")}</div>
+              <Link className="homeViewall" href={"/works"}>
+                View all
+                <span style={{ fontSize: "1vw" }}>
+                  <FaArrowCircleRight />
+                </span>
+              </Link>
             </div>
             <div className="worksProjectsRenderer">
               {projects.slice(0, 3).map((value, index) => (

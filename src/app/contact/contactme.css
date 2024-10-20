@@ -2,6 +2,11 @@
   padding-top: 15vh;
   margin: 0 5vw;
   font-family: var(--font-sourceCode);
+
+  @media (max-width: 768px) {
+    padding-top: 5vh;
+    margin: 0;
+  }
 }
 
 .contacthead {
@@ -17,7 +22,7 @@
 }
 @media all and (max-width: 768px) and (max-height: 1024px) and (orientation: portrait) {
   .contacthead {
-    font-size: 5vw;
+    font-size: 22px;
     margin-left: 5vw;
     margin-top: 3vh;
   }
@@ -25,7 +30,7 @@
 
 .contactdash {
   border-top: 1px solid #c778dd;
-  width: 36vw;
+  width: 40vw;
   margin-left: 2vw;
 }
 
@@ -33,12 +38,20 @@
   display: flex;
   align-items: center;
   padding-top: 2vh;
+
+  @media (max-width: 768px) {
+    margin: 0 5vw;
+  }
 }
 .contact p {
   font-family: var(--font-sourceCode);
   color: #abb2bf;
   padding-right: 3vw;
   font-size: 18px;
+
+  @media (max-width: 768px) {
+    font-size: 14px;
+  }
 
   a {
     color: #c778dd;
@@ -92,6 +105,14 @@
   border-radius: 1vw;
   background-color: white;
 
+  @media (max-width: 768px) {
+    flex-direction: column;
+    margin: 2vh 5vw;
+    padding: 1vh 3vw;
+    gap: 3vh;
+    border-radius: 3vw;
+  }
+
   .contact-left {
     flex: 4;
     color: black;
@@ -104,12 +125,21 @@
       flex-direction: column;
       gap: 2vh;
       padding: 2vh 1vw;
+
+      @media (max-width: 768px) {
+        padding: 1vh 1vw;
+      }
     }
     .contact-icon {
       padding: 5px;
       border-radius: 1vw;
       border: 1px solid black;
       font-size: 40px;
+
+      @media (max-width: 768px) {
+        padding: 3px;
+        font-size: 32px;
+      }
 
       &:hover {
         background-color: #c778dd;
@@ -126,6 +156,10 @@
     .contact-social-icons {
       display: flex;
       gap: 1vw;
+
+      @media (max-width: 768px) {
+        gap: 3vw;
+      }
 
       a {
         padding: 5px;
@@ -146,9 +180,18 @@
     display: flex;
     flex-direction: column;
     gap: 5vh;
+
+    @media (max-width: 768px) {
+      border-radius: 3vw;
+    }
+
     h1 {
       font-size: 28px;
       font-weight: 600;
+
+      @media (max-width: 768px) {
+        font-size: 26px;
+      }
     }
     p {
       font-size: 16px;
@@ -182,6 +225,10 @@
       color: white;
       border-radius: 1vw;
       font-weight: 600;
+
+      @media (max-width: 768px) {
+        border-radius: 5vw;
+      }
     }
     .form-desc {
       display: flex;
