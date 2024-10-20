@@ -4,8 +4,7 @@
   font-family: var(--font-sourceCode);
 
   @media (max-width: 768px) {
-    padding-top: 5vh;
-    margin: 0;
+    padding-top: 10vh;
   }
 }
 
@@ -23,8 +22,6 @@
 @media all and (max-width: 768px) and (max-height: 1024px) and (orientation: portrait) {
   .contacthead {
     font-size: 22px;
-    margin-left: 5vw;
-    margin-top: 3vh;
   }
 }
 
@@ -107,7 +104,7 @@
 
   @media (max-width: 768px) {
     flex-direction: column;
-    margin: 2vh 5vw;
+    margin: 2vh 2vw;
     padding: 1vh 3vw;
     gap: 3vh;
     border-radius: 3vw;
