@@ -7,26 +7,38 @@
   width: 100%;
   padding: 2vh 2vw;
   border-bottom: 1px solid #c778dd;
-  /* border-radius: 1vw; */
   background-color: rgb(0, 0, 0, 0.2);
   backdrop-filter: blur(5px);
   z-index: 1;
+  @media (max-width: 768px) {
+    padding: 1.5vh 4vw;
+  }
 }
 
 .navbarImg {
   cursor: pointer;
   display: flex;
   align-items: center;
+  gap: 2px;
+
+  @media (max-width: 768px) {
+    img {
+      width: 18px;
+    }
+  }
 }
 
 .navbarImg h1 {
   padding-top: 0.5vh;
-  font-size: 1.3vw;
-  margin-left: 0.4vw;
+  font-size: 18px;
   color: #c778dd;
   font-family: var(--font-mars);
   font-weight: 900;
   letter-spacing: -6px;
+
+  @media (max-width: 768px) {
+    font-size: 18px;
+  }
 }
 
 @keyframes navbarPopdown {
@@ -40,6 +52,10 @@
 
 .navbarComponents {
   color: #e8dcdc;
+
+  @media (max-width: 768px) {
+    display: none;
+  }
 }
 
 .navbarComponents ul {
