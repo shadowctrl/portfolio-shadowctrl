@@ -6,6 +6,7 @@ import projects from "./works/projects";
 import Skills from "../components/skills/skills";
 import Contactme from "./contact/page";
 import { FaArrowCircleRight } from "react-icons/fa";
+import { MdFormatQuote } from "react-icons/md";
 
 export const metadata = {
   title:
@@ -29,36 +30,48 @@ const Home = () => {
     <div className="homeParent">
       <div className="homeMain1">
         <div className="homeIntro">
-          <h1>
-            shadowctrl is a <span> next.js </span>
-            <br />
-            and a <span>full-stack Developer</span>
-          </h1>
-          <p>Fueling Your Vision with Code, Coffee, and Creativity</p>
-          <Link
-            href="https://www.upwork.com/freelancers/~01701539e14beb9820"
-            target="_blank"
-          >
-            <button className="homeContact">Get Quote</button>
-          </Link>
+          <div className="flex flex-col gap-[2vh]">
+            <div className="flex flex-col gap-[2vh]">
+              <h1>
+                shadowctrl is a <span> next.js </span>
+                <br />
+                and a <span>full-stack Developer</span>
+              </h1>
+              <p>
+                Freelancing with a Personal Touch: Your Vision, My Passion for
+                Development
+              </p>
+            </div>
+            <Link
+              href="https://www.upwork.com/freelancers/~01701539e14beb9820"
+              target="_blank"
+              className="homeContact"
+            >
+              Get Quote
+            </Link>
+          </div>
+          <div className="homeQuote-parent">
+            <MdFormatQuote className="homeFormatQuoteTop" />
+            <div className="homeQuote">
+              The Quieter You Become The More You Able To Hear
+            </div>
+            <MdFormatQuote className="homeFormatQuoteBottom" />
+          </div>
         </div>
         <div className="homeImg">
           <Image
             src="/assets/anonymous.webp"
             alt="Anonymous"
-            width={500}
+            width={350}
             height={500}
           />
           <p className="homePara">
-            <span className="homeBox"></span>
+            <span className="homeBox" />
             Freelancer
           </p>
         </div>
       </div>
       <div className="homeMain2">
-        <div className="homeQuote">
-          The Quieter You Become The More You Able To Hear
-        </div>
         <div className="homeProjectPadding">
           <div className="homeHead">
             <span>#</span>
@@ -67,7 +80,6 @@ const Home = () => {
             <div className="homeMobile">{ViewAll("4vw")}</div>
             <div className="homeDesktop">{ViewAll("1.2vw")}</div>
           </div>
-
           <div className="worksProjectsRenderer">
             {projects.slice(0, 3).map((value, index) => (
               <div className="worksProjectContainer" key={value.title}>

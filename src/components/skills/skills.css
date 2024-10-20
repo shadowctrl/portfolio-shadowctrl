@@ -9,7 +9,7 @@
   align-items: center;
   color: white;
   font-family: Fira Code;
-  margin-left: 10vw;
+  /* margin-left: 10vw; */
   margin-top: 5vh;
   font-size: 2vw;
   font-weight: 600;
@@ -30,7 +30,6 @@
   padding: 2vh 1vw;
   border-radius: 1vw;
   margin-top: 5vh;
-  margin-left: 5vw;
   color: white;
   font-size: 1.1vw;
   display: grid;

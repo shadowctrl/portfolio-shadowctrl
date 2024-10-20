@@ -18,7 +18,7 @@ const Skills = () => {
     <div className="skillsMain">
       <div className="skillsHead">
         <span>#</span> Skills
-        <div className="skillsDash"></div>
+        <div className="skillsDash" />
       </div>
 
       <div className="skillsParent">

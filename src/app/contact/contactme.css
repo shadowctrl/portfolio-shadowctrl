@@ -8,7 +8,7 @@
   align-items: center;
   color: white;
   font-family: var(--font-poppins);
-  margin-left: 10vw;
+  /* margin-left: 10vw; */
   margin-top: 5vh;
   font-size: 2vw;
   font-weight: 600;
@@ -34,7 +34,7 @@
   display: flex;
   align-items: center;
   padding-top: 2vh;
-  margin-left: 10vw;
+  /* margin-left: 10vw; */
 }
 .contact p {
   font-family: var(--font-sourceCode);
