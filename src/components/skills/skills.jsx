@@ -1,19 +1,6 @@
 import "./skills.css";
 
 const Skills = () => {
-  const IconCrop = (size, mt = "5vh", mtr = "10vw") => {
-    return (
-      <span
-        style={{
-          color: "slategrey",
-          fontSize: size,
-          marginTop: mt,
-          marginLeft: mtr,
-          marginBottom: mt,
-        }}
-      />
-    );
-  };
   return (
     <div className="skillsMain">
       <div className="skillsHead">
@@ -22,8 +9,6 @@ const Skills = () => {
       </div>
 
       <div className="skillsParent">
-        <div className="skillsMobile">{IconCrop("50vw", "2vh", "0vw")}</div>
-        <div className="skillsDesktop">{IconCrop("10vw")}</div>
         <div className="skills">
           <div className="languages">
             <div className="skillsTitle"> LANGUAGES</div>

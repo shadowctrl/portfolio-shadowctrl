@@ -9,7 +9,6 @@
   align-items: center;
   color: white;
   font-family: Fira Code;
-  /* margin-left: 10vw; */
   margin-top: 5vh;
   font-size: 2vw;
   font-weight: 600;
@@ -91,15 +90,13 @@
 @media all and (max-width: 768px) and (max-height: 1024px) and (orientation: portrait) {
   .skillsParent {
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: 0;
+    margin: 3vh;
   }
   .skillsHead {
     font-size: 5vw;
-    margin-left: 5vw;
-    margin-top: 3vh;
+    margin-top: 0;
   }
   .skills {
     font-size: 5vw;
@@ -108,7 +105,7 @@
     grid-template-columns: none;
     grid-auto-flow: row dense;
     grid-column-gap: 0;
-    grid-row-gap: 2vh;
+    grid-row-gap: 3vh;
     place-content: center;
     padding: 2vw;
     border: 0.7vw dotted #c778dd;

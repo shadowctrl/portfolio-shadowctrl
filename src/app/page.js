@@ -147,13 +147,6 @@ const Home = () => {
               Code and I’m keen to understand your project needs and collaborate
               effectively. Let's work together to bring your vision to life!
             </div>
-            {/* <Image
-            src="/assets/shadowctrl.webp"
-            alt="Shadowctrl"
-            width={500}
-            height={200}
-            className="profileImage"
-          /> */}
           </div>
         </div>
       </div>
