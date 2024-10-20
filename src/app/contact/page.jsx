@@ -17,6 +17,21 @@ export const metadata = {
     "Have a project in mind? Let's discuss!, using the options below or reach out for a coffee chat.",
 };
 
+const handleSubmit = async (formData) => {
+  "use server";
+  const rawFormData = {
+    name: formData.get("name"),
+    mail: formData.get("mail"),
+    description: formData.get("description"),
+  };
+
+  const res = await fetch("https://shadowctrl.me/api/sendMail", {
+    method: "POST",
+    body: JSON.stringify({ data: rawFormData }),
+  });
+
+  console.log(res.status);
+};
 const Contactme = () => {
   return (
     <div className="contactparent">
@@ -77,16 +92,18 @@ const Contactme = () => {
             <p>Tell us more about yourself and what you got in mind.</p>
           </div>
 
-          <form
-            action="
-          "
-          >
-            <input type="text" placeholder="Your name" />
-            <input type="text" placeholder="you@company.com" />
-            <div className="form-desc">
+          <form action={handleSubmit}>
+            <input type="text" placeholder="Your name" name="name" required />
+            <input
+              type="text"
+              placeholder="you@company.com"
+              name="mail"
+              required
+            />
+            <div className="form-desc" required>
               <label htmlFor="desc">Tell us little about the project...</label>
               <br />
-              <input type="text" id="desc" />
+              <input type="text" id="desc" name="description" />
             </div>
             <button type="submit">Let's get Started</button>
           </form>
