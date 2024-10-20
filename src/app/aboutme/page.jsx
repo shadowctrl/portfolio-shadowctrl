@@ -17,18 +17,6 @@ const Aboutme = () => {
         <div className="aboutDash"></div>
       </div>
       <div className="aboutContainer">
-        <div className="aboutBorder">
-          <span>S</span>
-          <span>H</span>
-          <span>A</span>
-          <span>D</span>
-          <span>O</span>
-          <span>W</span>
-          <span>C</span>
-          <span>T</span>
-          <span>R</span>
-          <span>L</span>
-        </div>
         <div className="aboutAbout">
           I'm a Full-Stack Developer, specializing in Next.js and the MERN
           stack. With experience in Linux, API integration, Firebase, and
@@ -92,6 +80,7 @@ const Aboutme = () => {
             <div className="aboutPersonalTouchFactsItem">
               I am not an avid mobile device user
             </div>
+            <div className="aboutPersonalTouchFactsItem">Sudden Planner</div>
           </div>
         </div>
       </div>
