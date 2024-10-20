@@ -12,7 +12,7 @@ export const metadata = {
 
 export const OnGoingWorks = (Title) => {
   return (
-    <div>
+    <div className="flex flex-col items-start">
       <div className="worksChild2">
         <span>#</span>Currently Working On
       </div>
@@ -70,8 +70,6 @@ const Works = () => {
       </div>
 
       <div className="worksProjectMain">
-        {/* <Box1 />
-    <Box /> */}
         <div className="worksProjectsRenderer">
           {projects.map((value, index) => (
             <div className="worksProjectContainer" key={value.title}>
