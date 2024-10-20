@@ -1,6 +1,6 @@
 .serviceParent {
-  margin-left: 10vw;
-  margin-top: 5vh;
+  margin: 0 5vw;
+  margin-top: 15vh;
 }
 .serviceHead {
   display: flex;
@@ -20,7 +20,7 @@
   margin-left: 2vw;
 }
 .serviceServices {
-  margin-top: 10vh;
+  margin-top: 5vh;
   color: #c778dd;
   display: flex;
   justify-items: center;
@@ -104,7 +104,6 @@
 
 .service-contact {
   margin-top: 10vh;
-  margin-left: -10vw;
   text-align: center;
 
   a {

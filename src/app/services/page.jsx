@@ -115,10 +115,7 @@ const services = () => {
       <div className="service-contact">
         <h3>
           Having anything in mind?{" "}
-          <Link
-            href={"https://upwork.com/freelancers/shadowctrl"}
-            target="_blank"
-          >
+          <Link href={"/contact"} target="_blank">
             Let's talk about it!{" "}
           </Link>
         </h3>
