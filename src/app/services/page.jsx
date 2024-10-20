@@ -72,7 +72,7 @@ const services = () => {
       <div className="service-projects">
         <div class="serviceHead">
           <span>#</span>Project Catalog
-          <div class="serviceDash"></div>
+          <div class="serviceDash" />
         </div>
         <h2 className="service-projects-head">
           Buy Custom Website Programming services, priced and ready to go.
