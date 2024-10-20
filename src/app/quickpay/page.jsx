@@ -5,7 +5,7 @@ import Image from "next/image";
 export const metadata = {
   title: "Quick Pay | shadowctrl",
   description:
-    "Pay Hassle free with any mode you prefer!. Wise | Paypal | Bank transfer",
+    "Pay Hassle free with any mode you prefer!. Wise, Paypal, Pyoneer, Razorpay and Bank transfer",
 };
 
 const Page = ({}) => {

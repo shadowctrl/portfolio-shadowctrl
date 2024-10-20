@@ -1,12 +1,12 @@
 .quickpay-parent {
-  padding: 7vh 10vw;
+  padding-top: 15vh;
+  margin: 0 5vw;
   display: flex;
   flex-direction: column;
   gap: 2vh;
 }
 
 .quickpay-head-parent {
-  padding: 3vh 0;
   p {
     font-size: 14px;
   }
@@ -33,6 +33,7 @@
 .quickpay-container {
   display: flex;
   justify-content: space-around;
+  padding-top: 5vh;
 }
 
 .quickpay-item {
