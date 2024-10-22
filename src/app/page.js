@@ -4,7 +4,7 @@ import Link from "next/link";
 import Image from "next/image";
 import projects from "./works/projects";
 import Skills from "../components/skills/skills";
-import Contactme from "./contact/page";
+import Contact from "./contact/page";
 import { FaArrowCircleRight } from "react-icons/fa";
 import { MdFormatQuote } from "react-icons/md";
 
@@ -144,7 +144,7 @@ const Home = () => {
           </div>
         </div>
       </div>
-      <Contactme />
+      <Contact />
     </div>
   );
 };
