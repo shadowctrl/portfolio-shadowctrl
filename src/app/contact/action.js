@@ -5,7 +5,7 @@ export const handleAction = async (formData) => {
     description: formData.get("description"),
   };
 
-  const res = await fetch("http://localhost:3000/api/sendMail", {
+  const res = await fetch(`http://${process.env.VERCEL_URL}/api/sendMail`, {
     method: "POST",
     body: JSON.stringify({ data: rawFormData }),
     cache: "no-store",
