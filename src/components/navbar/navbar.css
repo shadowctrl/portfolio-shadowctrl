@@ -11,6 +11,7 @@
   backdrop-filter: blur(5px);
   z-index: 1;
   @media (max-width: 768px) {
+    display: none;
     padding: 1.5vh 4vw;
   }
 }
@@ -99,4 +100,14 @@
   color: #c778dd;
   margin-right: 1px;
   font-size: 7px;
+}
+
+.navbar-navmob {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .navbar-navmob {
+    display: block;
+  }
 }

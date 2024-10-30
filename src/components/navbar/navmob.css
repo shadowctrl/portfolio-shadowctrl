@@ -1,0 +1,115 @@
+.navmob-parent {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 7vh;
+  padding: 1.5vh 4vw;
+  border-bottom: 1px solid #c778dd;
+  background-color: rgb(0, 0, 0, 0.2);
+  backdrop-filter: blur(5px);
+  z-index: 1;
+  transition: all 0.2s ease;
+}
+
+.navmob-parent-active {
+  height: 9vh;
+}
+.navmob-icon {
+  color: #c778dd;
+  font-size: 22px;
+  transition: all 0.3s ease;
+  transform: rotate(-45deg);
+}
+
+.navmob-icon-active {
+  transform: rotate(-90deg);
+}
+
+.navMob-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navmob-components {
+  transform: translateY(0vh);
+
+  ul {
+    display: flex;
+    gap: 2vw;
+    justify-content: space-between;
+  }
+  a {
+    font-size: 12px;
+    font-family: var(--font-sourceCode);
+    display: flex;
+    align-items: center;
+    opacity: 0;
+
+    span {
+      color: #c778dd;
+      padding: 1px;
+      font-size: 14px;
+    }
+  }
+}
+
+.navcomp-disable {
+  display: none;
+}
+
+.fade-in a {
+  animation: fadeIn 0.5s ease-in-out forwards;
+}
+
+.fade-out a {
+  animation: fadeOut 0.5s ease-in-out backwards;
+}
+
+@keyframes fadeIn {
+  0% {
+    transform: translateY(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+}
+
+.fade-in a:nth-child(1),
+.fade-out a:nth-child(1) {
+  animation-delay: 0s;
+}
+
+.fade-in a:nth-child(2),
+.fade-out a:nth-child(2) {
+  animation-delay: 0.2s;
+}
+
+.fade-in a:nth-child(3),
+.fade-out a:nth-child(3) {
+  animation-delay: 0.4s;
+}
+
+.fade-in a:nth-child(4),
+.fade-out a:nth-child(4) {
+  animation-delay: 0.6s;
+}
+
+.fade-in a:nth-child(5),
+.fade-out a:nth-child(5) {
+  animation-delay: 0.8s;
+}
