@@ -22,17 +22,14 @@ const Home = () => {
         <div className="homeMain1">
           <div className="homeIntro">
             <div className="flex flex-col gap-[2vh]">
-              <div className="flex flex-col gap-[2vh]">
-                <h1>
-                  shadowctrl is a <span> next.js </span>
-                  <br />
-                  and a <span>full-stack Developer</span>
-                </h1>
-                <p>
-                  Freelancing with a Personal Touch: Your Vision, My Passion for
-                  Development
-                </p>
-              </div>
+              <h1>
+                shadowctrl is a <span>next.js</span> and a{" "}
+                <span>full-stack Developer</span>
+              </h1>
+              <p>
+                Freelancing with a Personal Touch: Your Vision, My Passion for
+                Development
+              </p>
               <Link
                 href="https://www.upwork.com/freelancers/~01701539e14beb9820"
                 target="_blank"
@@ -76,7 +73,7 @@ const Home = () => {
               </Link>
             </div>
             <div className="worksProjectsRenderer">
-              {projects.slice(0, 3).map((value, index) => (
+              {projects.slice(0, 3).map((value) => (
                 <div className="worksProjectContainer" key={value.title}>
                   <div className="worksProjectImage">
                     <Image
@@ -90,24 +87,19 @@ const Home = () => {
                   <div className="worksProjectTitle">{value.title}</div>
                   <div className="worksProjectDes">{value.description}</div>
                   <div className="worksProjectButtons">
-                    {value.live ? (
+                    {value.live && (
                       <button className="worksProjectLiveButton">
                         <Link href={value.live} target="_blank">
                           Live
                         </Link>
                       </button>
-                    ) : (
-                      ""
                     )}
-
-                    {value.cached ? (
+                    {value.cached && (
                       <button className="worksProjectCachedButton">
                         <Link href={value.cached} target="_blank">
                           Cached
                         </Link>
                       </button>
-                    ) : (
-                      ""
                     )}
                   </div>
                 </div>
@@ -116,7 +108,8 @@ const Home = () => {
           </div>
           <Skills />
           <div className="homeHead">
-            <span>#</span>About Me
+            <span>#</span>
+            About Me
             <div className="homeDash" />
           </div>
           <div className="homeContainer">
@@ -138,7 +131,7 @@ const Home = () => {
               frontend technologies like Tailwind CSS, Ant Design etc..., I
               Develop secure and responsive web applications. My expertise
               includes building SEO friendly Next.js applications, Structured
-              Code and I’m keen to understand your project needs and collaborate
+              Code and I'm keen to understand your project needs and collaborate
               effectively. Let's work together to bring your vision to life!
             </div>
           </div>
