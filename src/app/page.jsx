@@ -1,12 +1,14 @@
 import "./home.css";
 import "./works/works.css";
+import dynamic from "next/dynamic";
+import projects from "./works/projects";
 import Link from "next/link";
 import Image from "next/image";
-import projects from "./works/projects";
-import Skills from "../components/skills/skills";
-import Contact from "./contact/page";
 import { FaArrowCircleRight } from "react-icons/fa";
 import { MdFormatQuote } from "react-icons/md";
+
+const Skills = dynamic(() => import("../components/skills/skills"));
+const Contact = dynamic(() => import("./contact/page"));
 
 export const metadata = {
   title:
