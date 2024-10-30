@@ -3,7 +3,7 @@ import union from "../../assets/Union.svg";
 import items from "./components";
 import Link from "next/link";
 import Image from "next/image";
-import Navmob from "./navmob";
+import Navmob from "./navMob";
 
 const Navbar = () => {
   return (
