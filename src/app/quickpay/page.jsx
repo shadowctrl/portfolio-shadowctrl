@@ -14,7 +14,7 @@ const Page = ({}) => {
       <div className="quickpay-head-parent">
         <div className="quickpay-head">
           <span>#</span>
-          <h1>Quick Pay</h1>
+          <h2>Quick Pay</h2>
           <div className="quickpay-dash"></div>
         </div>{" "}
         <p>Pay Hassle free with any mode you prefer!</p>
@@ -25,6 +25,7 @@ const Page = ({}) => {
             src={"/assets/wise-quick-pay-qr-code.png"}
             width={200}
             height={200}
+            alt="wise payment"
           />
 
           <Link
@@ -39,6 +40,7 @@ const Page = ({}) => {
             src={"/assets/paypal-quick-pay-qr-code.png"}
             width={200}
             height={200}
+            alt="paypal payment"
           />
 
           <Link

@@ -22,7 +22,7 @@ export const OnGoingWorks = (Title) => {
             <div className="worksProjectImage">
               <Image
                 src={value.image}
-                alt="Projects"
+                alt={value.title}
                 width="500"
                 height="500"
               />
@@ -76,7 +76,7 @@ const Works = () => {
               <div className="worksProjectImage">
                 <Image
                   src={value.image}
-                  alt="Projects"
+                  alt={value.title}
                   width="500"
                   height="500"
                 />

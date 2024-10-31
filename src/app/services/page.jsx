@@ -44,35 +44,35 @@ const IconApi = (size = "9vw") => {
 };
 const services = () => {
   return (
-    <div class="serviceParent">
-      <div class="serviceHead">
+    <div className="serviceParent">
+      <div className="serviceHead">
         <span>/</span>Services
-        <div class="serviceDash"></div>
+        <div className="serviceDash"></div>
       </div>
-      <div class="serviceServices">
-        <div class="serviceServiceItems">
-          <div class="serviceMobile">{IconCode("30vw")}</div>
-          <div class="serviceDesktop">{IconCode()}</div>
+      <div className="serviceServices">
+        <div className="serviceServiceItems">
+          <div className="serviceMobile">{IconCode("30vw")}</div>
+          <div className="serviceDesktop">{IconCode()}</div>
           <br />
           <span>Front-end DEVELOPMENT</span>
         </div>
-        <div class="serviceServiceItems">
-          <div class="serviceMobile">{IconApi("30vw")}</div>
-          <div class="serviceDesktop">{IconApi()}</div>
+        <div className="serviceServiceItems">
+          <div className="serviceMobile">{IconApi("30vw")}</div>
+          <div className="serviceDesktop">{IconApi()}</div>
           <br />
           <span>Full Stack DEVELOPMENT</span>
         </div>
-        <div class="serviceServiceItems">
-          <div class="serviceMobile">{IconSecurity("30vw")}</div>
-          <div class="serviceDesktop">{IconSecurity()}</div>
+        <div className="serviceServiceItems">
+          <div className="serviceMobile">{IconSecurity("30vw")}</div>
+          <div className="serviceDesktop">{IconSecurity()}</div>
           <br />
           <span>Code Maintenance</span>
         </div>
       </div>
       <div className="service-projects">
-        <div class="serviceHead">
+        <div className="serviceHead">
           <span>#</span>Project Catalog
-          <div class="serviceDash" />
+          <div className="serviceDash" />
         </div>
         <h2 className="service-projects-head">
           Buy Custom Website Programming services, priced and ready to go.
@@ -83,6 +83,7 @@ const services = () => {
             src={"/images/nextjs-reactjs-upwork-shadowctrl.jpg"}
             width={350}
             height={750}
+            alt="shadowctrl"
           />
 
           <h2 className="service-project-container-headline">
