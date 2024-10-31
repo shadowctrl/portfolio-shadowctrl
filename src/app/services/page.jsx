@@ -80,7 +80,7 @@ const services = () => {
         <div className="service-project-container">
           <p className="service-project-price">From $99</p>
           <Image
-            src={"/images/nextjs-reactjs-upwork-shadowctrl.jpg"}
+            src={"/images/nextjs-reactjs-upwork-shadowctrl.webp"}
             width={350}
             height={750}
             alt="shadowctrl"

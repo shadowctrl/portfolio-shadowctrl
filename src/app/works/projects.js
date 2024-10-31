@@ -1,6 +1,6 @@
 const projects = [
   {
-    image: "/assets/techfrom10.png",
+    image: "/assets/techfrom10.webp",
     languages: "Next.js, GPT Image Gen, AWS S3, Shadcn",
     title: "TechFrom10",
     description: "AI powered Tech Roundups, Tech news & Gadgets",
@@ -8,7 +8,7 @@ const projects = [
     cached: "https://github.com/shadowctrl/Techfrom10",
   },
   {
-    image: "/assets/fcc.png",
+    image: "/assets/fcc.webp",
     languages: "Next.js, GPT4o API, Perplexity AI, Bing V7, AJAX, MongoDB ",
     title: "Fact Check Central",
     description: "Real-Time News Application with Fact checking",
@@ -16,7 +16,7 @@ const projects = [
     cached: "https://github.com/shadowctrl/FactCheckCentral",
   },
   {
-    image: "/assets/csi-conv.png",
+    image: "/assets/csi-conv.webp",
     languages: "Node.js, Express, Firebase Auth, Firestore, Google API",
     title: "CSI Event Registration System",
     description: "Streamlines event registration process with QR validation",

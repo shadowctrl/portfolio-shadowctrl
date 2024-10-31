@@ -21,12 +21,6 @@
   display: flex;
   align-items: center;
   gap: 2px;
-
-  @media (max-width: 768px) {
-    img {
-      width: 18px;
-    }
-  }
 }
 
 .navbarImg h1 {

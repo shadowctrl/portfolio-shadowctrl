@@ -80,8 +80,8 @@ const Home = () => {
                     <Image
                       src={value.image}
                       alt="Projects"
-                      width="500"
-                      height="500"
+                      width={500}
+                      height={500}
                     />
                   </div>
                   <div className="worksProjectLang">{value.languages}</div>

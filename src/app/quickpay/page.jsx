@@ -22,7 +22,7 @@ const Page = ({}) => {
       <div className="quickpay-container">
         <div className="quickpay-item">
           <Image
-            src={"/assets/wise-quick-pay-qr-code.png"}
+            src={"/assets/wise-quick-pay-qr-code.webp"}
             width={200}
             height={200}
             alt="wise payment"
@@ -37,7 +37,7 @@ const Page = ({}) => {
         </div>
         <div className="quickpay-item">
           <Image
-            src={"/assets/paypal-quick-pay-qr-code.png"}
+            src={"/assets/paypal-quick-pay-qr-code.webp"}
             width={200}
             height={200}
             alt="paypal payment"
