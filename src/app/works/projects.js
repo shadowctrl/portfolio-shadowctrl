@@ -73,7 +73,7 @@ const projects = [
 
 export const onGoingProjects = [
   {
-    image: "/assets/shadowx-hotline.jpeg",
+    image: "/assets/shadowx-hotline.webp",
     languages: "Next.js, SERP API",
     title: "ShadowX Hotline",
     description: "Be updated with Latest Cyber Security News",
