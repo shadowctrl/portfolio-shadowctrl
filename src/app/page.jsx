@@ -11,9 +11,11 @@ const Skills = dynamic(() => import("../components/skills/skills"));
 const Contact = dynamic(() => import("./contact/page"));
 
 export const metadata = {
-  title: "Full Stack Developer & Freelancer - shadowctrl",
+  title: "Full Stack Developer | Next.js | Freelancer - shadowctrl",
   description:
     "Skilled Full Stack Developer with expertise in Next.js, React, Node.js, and MongoDB. Passionate about building seamless web applications and integrating APIs. Freelancing to create impactful digital solutions.",
+  keywords:
+    "shadowctrl, vijayaraghavan, shadowcontrol, cmd+ctrl shadow, ctrl shadrow, shadow ctrl, Vijayaraghavan N, shadowctrl.me, dhadowctrl freelancer, chennai freelancer, full stack developer chennai",
 };
 
 const Home = () => {
