@@ -67,13 +67,12 @@
   border-bottom: 5px solid white;
   padding: 3vh 1vw;
   border-radius: 1vw;
-
   @media (max-width: 768px) {
     padding: 2vh 5vw;
   }
 
   h3 {
-    width: 150px;
+    width: 10vw;
     padding: 1vh 1vw;
     border-radius: 5vw;
     font-size: 16px;
