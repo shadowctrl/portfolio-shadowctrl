@@ -1,5 +1,22 @@
 const projects = [
   {
+    image: "/assets/tenderonline.webp",
+    languages: "Next.js, shadcn, Admin Dashboard, Express, Mongodb",
+    title: "TenderOnline",
+    description:
+      "Optimized, improved functionalities, additional features & Razorpay",
+    live: "https://tenderonline.co.in",
+    cached: "https://github.com/shadowctrl/",
+  },
+  {
+    image: "/assets/aidir.webp",
+    languages: "Next.js, API, Custom CMS",
+    title: "AI Tools Directory",
+    description: "AI tools categorized by roles, tasks, and functionalities.",
+    live: "https://ai41.ai",
+    cached: "https://github.com/shadowctrl/toolsdirectory",
+  },
+  {
     image: "/assets/techfrom10.webp",
     languages: "Next.js, GPT Image Gen, AWS S3, Shadcn",
     title: "TechFrom10",
