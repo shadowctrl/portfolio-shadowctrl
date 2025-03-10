@@ -55,6 +55,7 @@ const Home = () => {
 							alt="Anonymous"
 							width={350}
 							height={500}
+							loading="eager"
 						/>
 						<p className="homePara">
 							<span className="homeBox" />
