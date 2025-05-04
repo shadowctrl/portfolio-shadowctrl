@@ -11,11 +11,11 @@ const Skills = dynamic(() => import('../components/skills/skills'));
 const Contact = dynamic(() => import('./contact/page'));
 
 export const metadata = {
-	title: 'Top-Rated Full Stack Developer - shadowctrl',
+	title: 'Freelance Web Developer | Next.js Full Stack Developer - shadowctrl',
 	description:
-		'Skilled Full Stack Developer with expertise in NextJs, NestJs React, Node.js, and MongoDB. Passionate about building seamless web applications and integrating APIs. Freelancing to create impactful digital solutions.',
+		'Professional Freelance Web Developer specializing in Next.js, React, and full stack development. I create custom websites, web applications and digital solutions with expertise in NestJs, Node.js, and MongoDB.',
 	keywords:
-		'Top rated full stack developer, Top rated dev, Full stack top rated, full stack developer upwork, Top rated developer, shadowctrl, vijayaraghavan, shadowcontrol, cmd+ctrl shadow, ctrl shadrow, shadow ctrl, Vijayaraghavan N, shadowctrl.me, dhadowctrl freelancer, chennai freelancer, full stack developer chennai',
+		'freelance web developer, web developer freelancer, upwork web developer, freelance web developer website, full stack developer, next.js developer, shadowctrl, Vijayaraghavan N, web development services, chennai freelancer',
 };
 
 const Home = () => {
@@ -33,11 +33,7 @@ const Home = () => {
 								Freelancing with a Personal Touch: Your Vision, My Passion for
 								Development
 							</p>
-							<Link
-								href="https://www.upwork.com/freelancers/~01701539e14beb9820"
-								target="_blank"
-								className="homeContact"
-							>
+							<Link href="/contact" className="homeContact">
 								Get Quote
 							</Link>
 						</div>
@@ -130,13 +126,18 @@ const Home = () => {
 							<span>L</span>
 						</div>
 						<div className="homeAbout">
-							I'm a Full-Stack Developer, specializing in Next.js and the MERN
-							stack. With experience in Linux, API integration, Firebase, and
-							frontend technologies like Tailwind CSS, Ant Design etc..., I
-							Develop secure and responsive web applications. My expertise
-							includes building SEO friendly Next.js applications, Structured
-							Code and I'm keen to understand your project needs and collaborate
-							effectively. Let's work together to bring your vision to life!
+							As a professional freelance web developer with over 4 years of
+							experience, I specialize in creating custom websites and web
+							applications using Next.js and Nest.js. I deliver complete web
+							development solutions focusing on intuitive, high-performance user
+							interfaces and scalable backends. My services include seamless
+							integration of APIs, CMS platforms, and payment gateways. I'm
+							proficient in using ORM's with PostgreSQL and MongoDB as
+							databases, ensuring efficient data management for your web
+							projects. I also handle SEO optimization and server deployments to
+							maintain smooth application performance. For larger projects, I
+							manage a self-hosted Kubernetes server, allowing for enhanced
+							deployment control and scalability that meets your business needs.
 						</div>
 					</div>
 				</div>
