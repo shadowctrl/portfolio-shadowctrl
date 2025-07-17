@@ -1,0 +1,273 @@
+.homeParent {
+  padding: 0 5vw;
+  margin-top: 15vh;
+
+  @media (max-width: 768px) {
+    margin-top: 10vh;
+    padding: 0 5vw;
+  }
+}
+
+.homeMain1 {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+    align-items: center;
+    gap: 2vh;
+  }
+
+  .homePara {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid white;
+    padding: 0.3vw;
+    margin-left: 3vw;
+    margin-right: 3vw;
+    color: #bdb7b7;
+    font-size: 1vw;
+    font-family: var(--font-sourceCode);
+
+    @media (max-width: 768px) {
+      font-size: 14px;
+      gap: 2px;
+    }
+  }
+
+  .homePara .homeBox {
+    height: 2vh;
+    width: 1vw;
+    background-color: #c778dd;
+    margin-right: 0.5vw;
+
+    @media (max-width: 768px) {
+      width: 2vh;
+    }
+  }
+}
+
+.homeIntro {
+  display: flex;
+  flex-direction: column;
+  gap: 15vh;
+  flex: 8;
+
+  @media (max-width: 768px) {
+    gap: 5vh;
+  }
+
+  h1 {
+    font-size: 44px;
+    font-family: var(--font-taurus);
+    line-height: 52px;
+
+    @media (max-width: 768px) {
+      font-size: 18px;
+      line-height: 24px;
+    }
+
+    span {
+      color: #c778dd;
+    }
+  }
+
+  p {
+    font-size: 40px;
+    color: grey;
+    font-family: var(--font-barcode);
+
+    @media (max-width: 768px) {
+      font-size: 6vw;
+      line-height: 32px;
+    }
+  }
+
+  a {
+    font-size: 18px;
+    width: fit-content;
+    padding: 0.2vw 0.4vw;
+    color: #c778dd;
+    border: 1px solid white;
+    box-sizing: border-box;
+    box-shadow: 0vh 1vh 1vh;
+    cursor: pointer;
+    font-weight: 600;
+    font-family: var(--font-sourceCode);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+
+    @media (max-width: 768px) {
+      font-size: 16px;
+      padding: 2px 2vw;
+      border-radius: 1vw;
+      box-shadow: 0vh 1vw 1vw;
+    }
+  }
+}
+
+.homeQuote-parent {
+  position: relative;
+  width: fit-content;
+
+  .homeFormatQuoteTop {
+    color: #bdb7b7;
+    position: absolute;
+    margin-left: 2vw;
+    margin-top: -1.5vh;
+    transform: scaleX(-1);
+    font-size: 24px;
+  }
+
+  .homeQuote {
+    color: white;
+    font-size: 26px;
+    border: 1px solid #bdb7b7;
+    padding: 1vh 1vw;
+    font-family: var(--font-sourceCode);
+
+    @media (max-width: 768px) {
+      font-size: 14px;
+    }
+  }
+
+  .homeFormatQuoteBottom {
+    color: #bdb7b7;
+    position: absolute;
+    margin-top: -1.5vh;
+    font-size: 24px;
+    right: 2vw;
+  }
+}
+
+.homeImg {
+  flex: 3;
+}
+
+.homeMain2 {
+  position: relative;
+}
+
+.homeProjectPadding {
+  padding-top: 3vh;
+
+  @media (max-width: 768px) {
+    padding: 0;
+  }
+}
+
+.homeHead {
+  display: flex;
+  align-items: center;
+  color: white;
+  font-family: Fira Code;
+  margin-top: 10vh;
+  margin-bottom: 5vh;
+  font-size: 2vw;
+  font-weight: 600;
+  font-family: var(--font-poppins);
+
+  @media (max-width: 768px) {
+    margin-top: 5vh;
+    font-size: 22px;
+    margin-bottom: 3vh;
+  }
+}
+
+.homeHead span {
+  color: #c778dd;
+}
+
+.homeDash {
+  border-top: 1px solid #c778dd;
+  width: 36vw;
+  margin-left: 2vw;
+}
+
+.homeBorder {
+  border: 1px solid #bdbdbd;
+  padding: 0.5vw;
+  writing-mode: vertical-lr;
+  text-orientation: upright;
+  text-align: center;
+  font-size: 1.3vw;
+  color: #c778dd;
+  position: absolute;
+  right: -5vw;
+
+  @media (max-width: 768px) {
+    font-size: 16px;
+  }
+}
+.homeBorder span:first-child {
+  padding-top: 0;
+}
+.homeBorder span {
+  font-family: var(--font-sourceCode);
+  padding-top: 1.5vh;
+  font-weight: 700;
+}
+
+.homeContainer {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.homeContainer .profileImage {
+  border-radius: 1vw;
+  opacity: 0.8;
+  box-shadow: 1vw 2vh 2vw slategrey;
+  width: 18vw;
+}
+
+.homeAbout {
+  text-align: justify;
+  color: #abb2bf;
+  font-family: var(--font-poppins);
+  font-size: 18px;
+  width: 70%;
+
+  @media (max-width: 768px) {
+    font-size: 14px;
+    width: 90%;
+  }
+}
+
+.homeViewall {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: lightslategray;
+  font-size: 1.2vw;
+  font-family: Fira Code;
+  margin-left: 30vw;
+  font-family: var(--font-sourceCode);
+
+  @media (max-width: 768px) {
+    font-size: 12px;
+    margin-left: 12vw;
+  }
+}
+
+.homeViewall:hover {
+  color: #c778dd;
+  animation: homeTransition 0.3s linear forwards;
+}
+
+@keyframes homeTransition {
+  100% {
+    transform: translateX(0.5vw);
+  }
+}
+
+.homeMobile {
+  display: none;
+}
+
+.homeDesktop {
+  display: block;
+}
