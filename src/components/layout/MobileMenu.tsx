@@ -16,7 +16,7 @@ export default function MobileMenu({
 	navigation: MenuProps[];
 }) {
 	const [isOpen, setIsOpen] = useState(false);
-	const menuRef = useRef<React.RefObject<HTMLDivElement> | null>(null);
+	const menuRef = useRef<HTMLDivElement>(null);
 
 	const closeMenu = useCallback(() => {
 		setIsOpen(false);
