@@ -12,18 +12,20 @@ export function JsonLd() {
 				description:
 					'Full Stack Developer and Founder of Asynx Private Limited',
 				url: 'https://shadowctrl.me',
-				image: 'https://shadowctrl.me/assets/shadowctrl.webp',
+				image:
+					'https://shadowctrl.me/assets/vijayaraghavan.jpg                                             ',
 				sameAs: [
 					'https://github.com/shadowctrl',
 					'https://linkedin.com/in/shadowctrl',
 					'https://twitter.com/_shadowctrl_',
 					'https://upwork.com/freelancers/shadowctrl',
+					'https://instagram.com/_.shadowctrl._',
 				],
 				jobTitle: 'Full Stack Developer',
 				worksFor: {
 					'@type': 'Organization',
 					name: 'Asynx Private Limited',
-					url: 'https://asynx.dev',
+					url: 'https://asynx.in',
 				},
 				knowsAbout: [
 					'Next.js',
@@ -40,7 +42,7 @@ export function JsonLd() {
 				'@type': 'Organization',
 				'@id': 'https://shadowctrl.me/#organization',
 				name: 'Asynx Private Limited',
-				url: 'https://asynx.dev',
+				url: 'https://asynx.in',
 				founder: {
 					'@id': 'https://shadowctrl.me/#person',
 				},
