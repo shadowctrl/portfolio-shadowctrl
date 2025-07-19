@@ -5,7 +5,7 @@ import Link from 'next/link';
 export default function Hero() {
 	return (
 		<section className="section">
-			<div className="container">
+			<div className="container pt-12 md:pt-16 lg:pt-0">
 				<div className="grid lg:grid-cols-2 gap-12 items-center">
 					<div className="animate-fade-in-left">
 						<div className="mb-6">
@@ -14,12 +14,12 @@ export default function Hero() {
 							</span>
 						</div>
 
-						<h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold mb-6">
+						<h1 className="text-xl sm:text-5xl lg:text-6xl font-bold mb-6">
 							Full Stack Developer &{' '}
 							<span className="text-gradient">Founder</span>
 						</h1>
 
-						<p className="text-xl text-gray-300 mb-8 leading-relaxed">
+						<p className="text-base sm:text-xl text-gray-300 mb-8 leading-relaxed">
 							Leading innovative web solutions through{' '}
 							<Link
 								href={'https://asynx.in'}

@@ -47,7 +47,7 @@ const contactInfo = [
 
 export default function ContactPage() {
 	return (
-		<div className="pt-24">
+		<div className="lg:pt-24 pt-12 md:pt-20">
 			<section className="section">
 				<div className="container">
 					<div className="text-center mb-16">
