@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import { Inter, JetBrains_Mono } from 'next/font/google';
+import Head from 'next/head';
 import type React from 'react';
 import Footer from '../components/layout/Footer';
 import Header from '../components/layout/Header';
@@ -99,9 +100,9 @@ export default function RootLayout({
 }) {
 	return (
 		<html lang="en" className={`${inter.variable} ${jetbrainsMono.variable}`}>
-			<head>
+			<Head>
 				<JsonLd />
-			</head>
+			</Head>
 			<body className="bg-gray-950 text-gray-100 antialiased">
 				<Header />
 				<main className="min-h-screen">{children}</main>

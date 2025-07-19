@@ -4,7 +4,7 @@ import Link from 'next/link';
 const stats = [
 	{ icon: Award, label: 'Years Experience', value: '5+' },
 	{ icon: Users, label: 'Happy Clients', value: '30+' },
-	{ icon: Code, label: 'Projects Completed', value: '100+' },
+	{ icon: Code, label: 'Projects Completed', value: '50+' },
 	{ icon: Briefcase, label: 'Company Founded', value: '1' },
 ];
 

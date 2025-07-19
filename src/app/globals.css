@@ -162,6 +162,12 @@ h6 {
 /* Responsive utilities */
 @media (max-width: 640px) {
 	.section {
-		@apply py-12 px-4;
+		@apply py-20 px-4;
+	}
+}
+
+@media (min-width: 640px) and (max-width: 1023px) {
+	.section {
+		@apply py-24;
 	}
 }
