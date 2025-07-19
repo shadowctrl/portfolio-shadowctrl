@@ -1,9 +1,9 @@
 import type { Metadata } from 'next';
 import { Inter, JetBrains_Mono } from 'next/font/google';
-import Head from 'next/head';
+import Script from 'next/script';
 import type React from 'react';
+import Header from '../components/Header/Header';
 import Footer from '../components/layout/Footer';
-import Header from '../components/layout/Header';
 import { JsonLd } from '../components/seo/JsonLd';
 import './globals.css';
 
@@ -100,9 +100,12 @@ export default function RootLayout({
 }) {
 	return (
 		<html lang="en" className={`${inter.variable} ${jetbrainsMono.variable}`}>
-			<Head>
-				<JsonLd />
-			</Head>
+			<JsonLd />
+			<Script
+				type="text/javascript"
+				src="//widget.trustpilot.com/bootstrap/v5/tp.widget.bootstrap.min.js"
+				async
+			></Script>
 			<body className="bg-gray-950 text-gray-100 antialiased">
 				<Header />
 				<main className="min-h-screen">{children}</main>
