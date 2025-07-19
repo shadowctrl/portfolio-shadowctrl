@@ -85,9 +85,7 @@ export const metadata: Metadata = {
 		creator: '@_shadowctrl_',
 		images: ['/og-image.jpg'],
 	},
-	verification: {
-		google: 'your-google-verification-code',
-	},
+
 	alternates: {
 		canonical: 'https://shadowctrl.me',
 	},
