@@ -4,7 +4,7 @@ import Link from 'next/link';
 
 export default function Hero() {
 	return (
-		<section className="section pt-32 pb-20">
+		<section className="section">
 			<div className="container">
 				<div className="grid lg:grid-cols-2 gap-12 items-center">
 					<div className="animate-fade-in-left">
