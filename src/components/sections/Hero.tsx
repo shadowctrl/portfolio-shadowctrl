@@ -14,7 +14,7 @@ export default function Hero() {
 							</span>
 						</div>
 
-						<h1 className="text-xl sm:text-5xl lg:text-6xl font-bold mb-6">
+						<h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold mb-6">
 							Full Stack Developer &{' '}
 							<span className="text-gradient">Founder</span>
 						</h1>
