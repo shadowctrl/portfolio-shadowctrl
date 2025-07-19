@@ -55,7 +55,7 @@ const values = [
 
 export default function AboutPage() {
 	return (
-		<div className="pt-24">
+		<div className="lg:pt-24 pt-12 md:pt-20">
 			{/* Hero Section */}
 			<section className="section">
 				<div className="container">

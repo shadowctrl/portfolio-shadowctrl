@@ -1,14 +1,8 @@
-import {
-	ArrowRight,
-	Code,
-	Database,
-	Headphones,
-	Shield,
-	Smartphone,
-	Zap,
-} from 'lucide-react';
+import { ArrowRight } from 'lucide-react';
 import type { Metadata } from 'next';
 import Link from 'next/link';
+import { process } from '../../../constants/processes.constant';
+import { services } from '../../../constants/services.constant';
 
 export const metadata: Metadata = {
 	title: 'Web Development Services - Full Stack Solutions by Shadowctrl',
@@ -26,129 +20,9 @@ export const metadata: Metadata = {
 	],
 };
 
-const services = [
-	{
-		icon: Code,
-		title: 'Full Stack Development',
-		description:
-			'End-to-end web application development using modern technologies like Next.js, React, and Node.js.',
-		features: [
-			'Custom Web Applications',
-			'API Development',
-			'Database Design',
-			'Performance Optimization',
-		],
-		pricing: 'Starting at $5,000',
-		timeline: '2-8 weeks',
-	},
-	{
-		icon: Smartphone,
-		title: 'E-commerce Solutions',
-		description:
-			'Complete e-commerce platforms with payment integration, inventory management, and admin dashboards.',
-		features: [
-			'Online Stores',
-			'Payment Gateways',
-			'Inventory Management',
-			'Order Processing',
-		],
-		pricing: 'Starting at $8,000',
-		timeline: '4-12 weeks',
-	},
-	{
-		icon: Database,
-		title: 'SaaS Development',
-		description:
-			'Scalable Software-as-a-Service applications with multi-tenancy, subscriptions, and analytics.',
-		features: [
-			'Multi-tenant Architecture',
-			'Subscription Management',
-			'Analytics Dashboard',
-			'API Integration',
-		],
-		pricing: 'Starting at $15,000',
-		timeline: '8-16 weeks',
-	},
-	{
-		icon: Zap,
-		title: 'Business Automation',
-		description:
-			'Custom ERP and CRM systems to streamline business processes and improve efficiency.',
-		features: [
-			'ERP Systems',
-			'CRM Solutions',
-			'Workflow Automation',
-			'Data Analytics',
-		],
-		pricing: 'Starting at $12,000',
-		timeline: '6-14 weeks',
-	},
-	{
-		icon: Shield,
-		title: 'Maintenance & Support',
-		description:
-			'Ongoing maintenance, updates, and technical support to keep your applications running smoothly.',
-		features: [
-			'24/7 Monitoring',
-			'Security Updates',
-			'Performance Optimization',
-			'Bug Fixes',
-		],
-		pricing: 'Starting at $500/month',
-		timeline: 'Ongoing',
-	},
-	{
-		icon: Headphones,
-		title: 'Consulting & Strategy',
-		description:
-			'Technical consulting and strategic planning to help you make informed technology decisions.',
-		features: [
-			'Technology Assessment',
-			'Architecture Planning',
-			'Code Review',
-			'Best Practices',
-		],
-		pricing: 'Starting at $150/hour',
-		timeline: '1-4 weeks',
-	},
-];
-
-const process = [
-	{
-		step: '01',
-		title: 'Discovery & Planning',
-		description:
-			'We discuss your requirements, goals, and create a detailed project plan.',
-	},
-	{
-		step: '02',
-		title: 'Design & Architecture',
-		description:
-			'Create wireframes, designs, and technical architecture for your project.',
-	},
-	{
-		step: '03',
-		title: 'Development',
-		description:
-			'Build your application using modern technologies and best practices.',
-	},
-	{
-		step: '04',
-		title: 'Testing & Launch',
-		description:
-			'Thorough testing, deployment, and launch of your application.',
-	},
-	{
-		step: '05',
-		title: 'Support & Maintenance',
-		description:
-			'Ongoing support, updates, and maintenance to ensure optimal performance.',
-	},
-];
-
 export default function ServicesPage() {
 	return (
-		<div className="pt-24">
+		<div className="lg:pt-24 pt-12 md:pt-20">
 			{/* Hero Section */}
 			<section className="section">
 				<div className="container text-center">

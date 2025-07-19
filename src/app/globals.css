@@ -12,6 +12,14 @@
 	--text-primary: #f8fafc;
 	--text-secondary: #cbd5e1;
 	--text-muted: #64748b;
+	--background-gradient: linear-gradient(
+		to bottom right,
+		#000000 0%,
+		#0a0a0a 25%,
+		#1a0f1f 50%,
+		#0a0a0a 75%,
+		#000000 100%
+	);
 }
 
 * {
@@ -35,6 +43,10 @@ body {
 		#000000 100%
 	);
 	min-height: 100vh;
+}
+
+.bg-gradient-custom {
+	background: var(--background-gradient);
 }
 
 /* Custom scrollbar */
@@ -162,12 +174,12 @@ h6 {
 /* Responsive utilities */
 @media (max-width: 640px) {
 	.section {
-		@apply py-20 px-4;
+		@apply py-12 px-4;
 	}
 }
 
 @media (min-width: 640px) and (max-width: 1023px) {
 	.section {
-		@apply py-24;
+		@apply py-12;
 	}
 }
