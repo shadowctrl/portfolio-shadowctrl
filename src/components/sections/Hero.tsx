@@ -1,6 +1,6 @@
 import { ArrowRight, ExternalLink, Github, Linkedin } from 'lucide-react';
-import Image from 'next/image';
 import Link from 'next/link';
+import { InteractiveTerminal } from './InteractiveTerminal';
 
 export default function Hero() {
 	return (
@@ -79,46 +79,43 @@ export default function Hero() {
 						</div>
 					</div>
 
-					<div className="animate-fade-in-right">
-						<div className="relative">
-							<div className="absolute inset-0 bg-gradient-to-r from-purple-500 to-cyan-500 rounded-2xl blur-2xl opacity-20"></div>
-							<div className="relative bg-gray-900/50 backdrop-blur-sm border border-gray-800 rounded-2xl p-8">
-								<Image
-									src="/assets/anonymous.webp"
-									alt="Shadowctrl - Full Stack Developer and Founder"
-									width={400}
-									height={500}
-									className="rounded-xl mx-auto"
-									priority
-								/>
-								<div className="mt-6 text-center">
-									<div className="inline-flex items-center px-4 py-2 bg-gradient-to-r from-purple-600/20 to-cyan-500/20 text-purple-300 rounded-full text-sm font-medium border border-purple-500/30">
-										<span className="w-2 h-2 bg-green-400 rounded-full mr-2 animate-pulse"></span>
-										Founder & CEO at Asynx
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
+					{/* Interactive Terminal */}
+					<InteractiveTerminal />
 				</div>
 
 				{/* Stats Section */}
 				<div className="mt-20 grid grid-cols-2 md:grid-cols-4 gap-8">
-					<div className="text-center">
-						<div className="text-3xl font-bold text-purple-400 mb-2">50+</div>
-						<div className="text-gray-400">Projects Completed</div>
+					<div className="group text-center bg-gray-900/30 backdrop-blur-sm border border-gray-800 rounded-xl p-6 hover:bg-gray-900/50 hover:border-purple-500/50 hover:shadow-lg hover:shadow-purple-500/20 transition-all duration-300">
+						<div className="text-3xl font-bold text-purple-400 mb-2 group-hover:text-purple-300 transition-colors">
+							50+
+						</div>
+						<div className="text-gray-400 group-hover:text-gray-300 transition-colors">
+							Projects Completed
+						</div>
 					</div>
-					<div className="text-center">
-						<div className="text-3xl font-bold text-purple-400 mb-2">30+</div>
-						<div className="text-gray-400">Happy Clients</div>
+					<div className="group text-center bg-gray-900/30 backdrop-blur-sm border border-gray-800 rounded-xl p-6 hover:bg-gray-900/50 hover:border-purple-500/50 hover:shadow-lg hover:shadow-purple-500/20 transition-all duration-300">
+						<div className="text-3xl font-bold text-purple-400 mb-2 group-hover:text-purple-300 transition-colors">
+							30+
+						</div>
+						<div className="text-gray-400 group-hover:text-gray-300 transition-colors">
+							Happy Clients
+						</div>
 					</div>
-					<div className="text-center">
-						<div className="text-3xl font-bold text-purple-400 mb-2">100%</div>
-						<div className="text-gray-400">Client Satisfaction</div>
+					<div className="group text-center bg-gray-900/30 backdrop-blur-sm border border-gray-800 rounded-xl p-6 hover:bg-gray-900/50 hover:border-purple-500/50 hover:shadow-lg hover:shadow-purple-500/20 transition-all duration-300">
+						<div className="text-3xl font-bold text-purple-400 mb-2 group-hover:text-purple-300 transition-colors">
+							100%
+						</div>
+						<div className="text-gray-400 group-hover:text-gray-300 transition-colors">
+							Client Satisfaction
+						</div>
 					</div>
-					<div className="text-center">
-						<div className="text-3xl font-bold text-purple-400 mb-2">24/7</div>
-						<div className="text-gray-400">Support Available</div>
+					<div className="group text-center bg-gray-900/30 backdrop-blur-sm border border-gray-800 rounded-xl p-6 hover:bg-gray-900/50 hover:border-purple-500/50 hover:shadow-lg hover:shadow-purple-500/20 transition-all duration-300">
+						<div className="text-3xl font-bold text-purple-400 mb-2 group-hover:text-purple-300 transition-colors">
+							24/7
+						</div>
+						<div className="text-gray-400 group-hover:text-gray-300 transition-colors">
+							Support Available
+						</div>
 					</div>
 				</div>
 			</div>
