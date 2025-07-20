@@ -13,7 +13,7 @@ export function JsonLd() {
 					'Full Stack Developer and Founder of Asynx Private Limited',
 				url: 'https://shadowctrl.me',
 				image:
-					'https://shadowctrl.me/assets/vijayaraghavan.jpg                                             ',
+					'https://shadowctrl.me/images/vijayaraghavan.jpg                                             ',
 				sameAs: [
 					'https://github.com/shadowctrl',
 					'https://linkedin.com/in/shadowctrl',
