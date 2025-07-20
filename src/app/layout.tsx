@@ -69,7 +69,7 @@ export const metadata: Metadata = {
 			'Top-rated freelance full stack developer specializing in Next.js, React, and scalable web solutions.',
 		images: [
 			{
-				url: '/og-image.jpg',
+				url: '/og-image.png',
 				width: 1200,
 				height: 630,
 				alt: 'Shadowctrl - Full Stack Developer',
@@ -83,7 +83,7 @@ export const metadata: Metadata = {
 		description:
 			'Top-rated freelance full stack developer specializing in Next.js, React, and scalable web solutions.',
 		creator: '@_shadowctrl_',
-		images: ['/og-image.jpg'],
+		images: ['/og-image.png'],
 	},
 
 	alternates: {
