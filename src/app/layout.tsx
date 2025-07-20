@@ -1,3 +1,4 @@
+import { GoogleAnalytics } from '@next/third-parties/google';
 import type { Metadata } from 'next';
 import { Inter, JetBrains_Mono } from 'next/font/google';
 import Script from 'next/script';
@@ -109,6 +110,7 @@ export default function RootLayout({
 				<main className="min-h-screen">{children}</main>
 				<Footer />
 			</body>
+			<GoogleAnalytics gaId="G-6LSJFNRLP1" />
 		</html>
 	);
 }
