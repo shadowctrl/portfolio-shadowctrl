@@ -15,7 +15,7 @@ export const metadata: Metadata = {
 	title:
 		'About Vijayaraghavan - Founder & Director of Asynx Devs Private Limited',
 	description:
-		'Learn about my journey from passionate coder to successful entrepreneur. Founder of Asynx Private Limited, Top-rated Upwork freelancer with 4+ years of experience in full stack development.',
+		'Learn about my journey from passionate coder to successful entrepreneur. Founder of Asynx Private Limited, Over 5+ years of experience in full stack development.',
 };
 
 const stats = [
