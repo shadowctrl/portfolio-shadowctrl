@@ -24,30 +24,15 @@ export const metadata: Metadata = {
 	metadataBase: new URL('https://shadowctrl.me'),
 	title: {
 		default:
-			'Shadowctrl - Full Stack Developer & Founder of Asynx Private Limited',
+			'Vijayaraghavan Founder & Director of Asynx Devs Private Limited | Shadowctrl | Asynx Devs Pvt. Ltd',
 		template: '%s | Shadowctrl',
 	},
 	description:
-		'Top-rated freelance full stack developer specializing in Next.js, React, and scalable web solutions. Founder of Asynx Private Limited. Building end-to-end ecommerce, SaaS applications, and custom web solutions for businesses worldwide.',
-	keywords: [
-		'full stack developer',
-		'next.js developer',
-		'react developer',
-		'freelance developer',
-		'web development',
-		'ecommerce development',
-		'saas development',
-		'upwork top rated',
-		'asynx private limited',
-		'custom web solutions',
-		'scalable applications',
-		'business automation',
-		'erp systems',
-		'crm development',
-	],
+		'Founder of Asynx Devs Private Limited. One-Stop SaaS & eCommerce Partner for businesses worldwide.',
+
 	authors: [{ name: 'Shadowctrl', url: 'https://shadowctrl.me' }],
 	creator: 'Shadowctrl',
-	publisher: 'Asynx Private Limited',
+	publisher: 'Asynx Devs Private Limited',
 	robots: {
 		index: true,
 		follow: true,
@@ -63,11 +48,7 @@ export const metadata: Metadata = {
 		type: 'website',
 		locale: 'en_US',
 		url: 'https://shadowctrl.me',
-		siteName: 'Shadowctrl Portfolio',
-		title:
-			'Shadowctrl - Full Stack Developer & Founder of Asynx Private Limited',
-		description:
-			'Top-rated freelance full stack developer specializing in Next.js, React, and scalable web solutions.',
+		siteName: 'Vijayaraghavan Portfolio',
 		images: [
 			{
 				url: '/og-image.png',
@@ -79,10 +60,6 @@ export const metadata: Metadata = {
 	},
 	twitter: {
 		card: 'summary_large_image',
-		title:
-			'Shadowctrl - Full Stack Developer & Founder of Asynx Private Limited',
-		description:
-			'Top-rated freelance full stack developer specializing in Next.js, React, and scalable web solutions.',
 		creator: '@_shadowctrl_',
 		images: ['/og-image.png'],
 	},

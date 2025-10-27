@@ -12,17 +12,10 @@ import Image from 'next/image';
 import Link from 'next/link';
 
 export const metadata: Metadata = {
-	title: 'About Shadowctrl - Full Stack Developer & Entrepreneur',
+	title:
+		'About Vijayaraghavan - Founder & Director of Asynx Devs Private Limited',
 	description:
 		'Learn about my journey from passionate coder to successful entrepreneur. Founder of Asynx Private Limited, Top-rated Upwork freelancer with 4+ years of experience in full stack development.',
-	keywords: [
-		'about shadowctrl',
-		'full stack developer story',
-		'asynx private limited founder',
-		'upwork top rated developer',
-		'web development entrepreneur',
-		'freelance developer journey',
-	],
 };
 
 const stats = [
@@ -113,49 +106,62 @@ export default function AboutPage() {
 
 						<div className="space-y-8 text-gray-300 leading-relaxed">
 							<p className="text-lg">
-								Started with a passion for coding that turned into a full-time
-								freelancing career, earning the{' '}
+								<strong>Vijayaraghavan N</strong> is the{' '}
+								<span className="font-semibold">Founder and Director</span> of{' '}
 								<Link
-									href={'https://upwork.com/freelancers/shadowctrl'}
-									target="blank"
-									className="text-purple-400 font-semibold hover:underline transition-all"
-								>
-									Top Rated badge on Upwork
-								</Link>{' '}
-								and building strong, long-term client relationships based on
-								trust, quality, and reliability.
-							</p>
-
-							<p className="text-lg">
-								Today, I lead{' '}
-								<Link
-									href={'https://asynx.in'}
+									href="https://asynx.in"
 									target="blank"
 									className="text-purple-400 font-semibold hover:underline transition-all"
 								>
 									Asynx Private Limited
 								</Link>
-								, a growing product and service-based company with a strong
-								mission of delivering high-quality work with the best support
-								and a client-first approach.
+								, a growing technology firm specializing in modern web
+								solutions, SaaS products, and custom software development.
 							</p>
 
 							<p className="text-lg">
-								With hands-on experience in building end-to-end ecommerce, SaaS
-								applications, and custom web solutions, I help businesses scale
-								and increase their efficiency with maintainable software.
+								Starting his journey with a strong passion for coding,
+								Vijayaraghavan transitioned into a full-time freelance career,
+								earning the{' '}
+								<Link
+									href="https://upwork.com/freelancers/shadowctrl"
+									target="blank"
+									className="text-purple-400 font-semibold hover:underline transition-all"
+								>
+									Top Rated badge on Upwork
+								</Link>
+								. Through his dedication to quality, reliability, and
+								transparent communication, he has built long-term client
+								relationships and a solid professional reputation.
 							</p>
 
 							<p className="text-lg">
-								Currently, I'm focused on developing internal ERP and CRM
-								systems with a vision to elevate our client experience to the
-								next level, while expanding our team and continuing to deliver
-								client projects with care and precision.
+								Under his leadership, Asynx has evolved into a product and
+								service-based company with a mission to deliver high-quality
+								digital solutions, exceptional client support, and a
+								client-first approach that drives lasting partnerships.
 							</p>
 
 							<p className="text-lg">
-								I'm always open to collaborating and connecting with like-minded
-								individuals, founders, developers, and potential partners.
+								With hands-on experience in developing end-to-end eCommerce
+								platforms, SaaS applications, and enterprise-grade web
+								solutions, Vijayaraghavan helps businesses scale and enhance
+								operational efficiency through robust, maintainable software
+								systems.
+							</p>
+
+							<p className="text-lg">
+								Currently, he is leading the development of internal ERP and CRM
+								systems aimed at elevating client experience to the next level,
+								while continuing to expand the Asynx team and oversee projects
+								with precision, innovation, and care.
+							</p>
+
+							<p className="text-lg">
+								Driven by a passion for technology and collaboration,
+								Vijayaraghavan is always open to connecting with like-minded
+								founders, developers, and industry professionals to create
+								impactful, forward-thinking digital solutions.
 							</p>
 						</div>
 					</div>

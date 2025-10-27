@@ -20,7 +20,8 @@ export default function Hero() {
 						</h1>
 
 						<p className="text-base sm:text-xl text-gray-300 mb-8 leading-relaxed">
-							Leading innovative web solutions through{' '}
+							One Stop eCommerce & SaaS Partner, Leading innovative web
+							solutions through{' '}
 							<Link
 								href={'https://asynx.in'}
 								target="blank"
@@ -28,8 +29,7 @@ export default function Hero() {
 							>
 								Asynx Private Limited
 							</Link>
-							. Top-rated on Upwork, building scalable digital products for
-							businesses worldwide.
+							.
 						</p>
 
 						<div className="flex flex-col sm:flex-row gap-4 mb-8">
