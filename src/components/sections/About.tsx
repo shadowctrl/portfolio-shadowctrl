@@ -1,4 +1,5 @@
 import { Award, Briefcase, Code, Users } from 'lucide-react';
+import Image from 'next/image';
 import Link from 'next/link';
 
 const stats = [
@@ -75,25 +76,37 @@ export default function About() {
 							</p>
 						</div>
 					</div>
-
 					<div className="animate-fade-in-right">
-						<div className="grid grid-cols-2 gap-6">
-							{stats.map((stat, index) => {
-								const Icon = stat.icon;
-								return (
-									<div key={index} className="card text-center">
-										<Icon className="h-8 w-8 text-purple-500 mx-auto mb-4" />
-										<div className="text-3xl font-bold text-white mb-2">
-											{stat.value}
-										</div>
-										<div className="text-gray-400 text-sm">{stat.label}</div>
-									</div>
-								);
-							})}
+						<div className="relative">
+							<div className="absolute inset-0 bg-gradient-to-r from-purple-500 to-cyan-500 rounded-2xl blur-2xl opacity-20"></div>
+							<div className="relative bg-gray-900/50 backdrop-blur-sm border border-gray-800 rounded-2xl p-8">
+								<Image
+									src="/images/raghav.jpg"
+									alt="Shadowctrl - Full Stack Developer"
+									width={400}
+									height={500}
+									className="rounded-xl mx-auto"
+								/>
+							</div>
 						</div>
 					</div>
 				</div>
-
+				<div className="animate-fade-in-right">
+					<div className="grid grid-cols-2 gap-6">
+						{stats.map((stat, index) => {
+							const Icon = stat.icon;
+							return (
+								<div key={index} className="card text-center">
+									<Icon className="h-8 w-8 text-purple-500 mx-auto mb-4" />
+									<div className="text-3xl font-bold text-white mb-2">
+										{stat.value}
+									</div>
+									<div className="text-gray-400 text-sm">{stat.label}</div>
+								</div>
+							);
+						})}
+					</div>
+				</div>
 				<div className="text-center">
 					<p className="text-lg text-gray-300 mb-6">
 						I'm always open to collaborating and connecting with like-minded
